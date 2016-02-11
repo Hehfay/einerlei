@@ -1,0 +1,10 @@
+USE Quiz;
+
+DROP TABLE if EXISTS license;
+
+CREATE TABLE license(
+  id         INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  licenseKey VARCHAR(255) NOT NULL UNIQUE,
+  active     BOOL NOT NULL,
+  PRIMARY KEY(id)
+);
