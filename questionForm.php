@@ -8,7 +8,6 @@
 
 <?php
 
-
 $host = "";
 $username = "imeisner";
 $password = "imeisner";
@@ -29,45 +28,93 @@ else
   echo "<form action='./questionSubmit.php'>";
   echo "<table>";
 
-  $i = 1;
-  //while($i <=14)
-  //{
-    $demQuery = "select * from Question where questionNumber='".$i."a'"; 
-    $demResult = $mysqli->query($demQuery);
+  $query = "select questionNumber, question from Question LIMIT 0,14"; 
+  $result = $mysqli->query($query);
 
-    if($demResult)
-    {
-      $num_demRows = $demResult->num_rows;
-      if($num_demRows == 1)
-      {
-        $num_demCols = $demResult->field_count;
-        $demRow = $demResult->fetch_assoc();
+  if($result)
+  {
+    $row = $result->fetch_array(MYSQLI_ASSOC);
+    echo $row['questionNumber'].".) ";
+    echo $row['question'];
+    echo "<input type='radio' name='gender' value='Male'> Male";
+    echo "<input type='radio' name='gender' value='Female'> Female";
+    echo "<br>";
 
-        echo $demRow["questionNumber"].".) ";
-        echo $demRow["question"];
-        echo "<input type='radio' ";
-        echo "name='gender' ";
-        echo "value='Male'> Male";
-        echo "<input type='radio' ";
-        echo "name='gender' ";
-        echo "value='Female'> Female";
-        echo "<br>";
+    $row = $result->fetch_array(MYSQLI_ASSOC);
+    echo $row['questionNumber'].".) ";
+    echo $row['question'];
+    echo "<input type='number name='age' min='1' max='100'>";
+    echo "<br>";
 
+    $row = $result->fetch_array(MYSQLI_ASSOC);
+    echo $row['questionNumber'].".) ";
+    echo $row['question'];
+    echo "<br>";
 
-      }
-      else
-      {
-        echo "Oops, should't get multiple rows!";
-      }
-    }
-    else
-    {
-      echo "<p>";
-      echo "Query Error: " .$mysqli->error;
-      echo "<p>";
-    }
-  //}
+    $row = $result->fetch_array(MYSQLI_ASSOC);
+    echo $row['questionNumber'].".) ";
+    echo $row['question'];
+    echo "<br>";
 
+    $row = $result->fetch_array(MYSQLI_ASSOC);
+    echo $row['questionNumber'].".) ";
+    echo $row['question'];
+    echo "<br>";
+
+    $row = $result->fetch_array(MYSQLI_ASSOC);
+    echo $row['questionNumber'].".) ";
+    echo $row['question'];
+    echo "<br>";
+
+    $row = $result->fetch_array(MYSQLI_ASSOC);
+    echo $row['questionNumber'].".) ";
+    echo $row['question'];
+    echo "<br>";
+
+    $row = $result->fetch_array(MYSQLI_ASSOC);
+    echo $row['questionNumber'].".) ";
+    echo $row['question'];
+    echo "<br>";
+
+    $row = $result->fetch_array(MYSQLI_ASSOC);
+    echo $row['questionNumber'].".) ";
+    echo $row['question'];
+    echo "<br>";
+
+    $row = $result->fetch_array(MYSQLI_ASSOC);
+    echo $row['questionNumber'].".) ";
+    echo $row['question'];
+    echo "<br>";
+
+    $row = $result->fetch_array(MYSQLI_ASSOC);
+    echo $row['questionNumber'].".) ";
+    echo $row['question'];
+    echo "<br>";
+
+    $row = $result->fetch_array(MYSQLI_ASSOC);
+    echo $row['questionNumber'].".) ";
+    echo $row['question'];
+    echo "<br>";
+
+    $row = $result->fetch_array(MYSQLI_ASSOC);
+    echo $row['questionNumber'].".) ";
+    echo $row['question'];
+    echo "<br>";
+
+    $row = $result->fetch_array(MYSQLI_ASSOC);
+    echo $row['questionNumber'].".) ";
+    echo $row['question'];
+    echo "<br>";
+
+  }
+  else
+  {
+    echo "<p>";
+    echo "Query Error: " .$mysqli->error;
+    echo "<p>";
+  }
+
+//-----------------------------------------------------------------------------
 
   echo "<h3>5-Point Scale Questions</h3>";
   echo "<p>For the following questions, please answer with a number between 1 and 5.<br>
@@ -95,22 +142,12 @@ else
         echo $row["questionNumber"].".) ";
         echo $row["question"];
         echo "<br>";
-        echo "<input type='radio' ";
-        echo "name='".$questionNumber."' ";
-        echo "value='1'> 1";
-        echo "<input type='radio' ";
-        echo "name='".$questionNumber."' ";
-        echo "value='2'> 2";
-        echo "<input type='radio' ";
-        echo "name='".$questionNumber."' ";
-        echo "value='3'> 3";
-        echo "<input type='radio' ";
-        echo "name='".$questionNumber."' ";
-        echo "value='4'> 4";
-        echo "<input type='radio' ";
-        echo "name='".$questionNumber."' ";
-        echo "value='5'> 5<br>";
-
+        echo "<input type='radio' name='".$questionNumber."' value='1'> 1";
+        echo "<input type='radio' name='".$questionNumber."' value='2'> 2";
+        echo "<input type='radio' name='".$questionNumber."' value='3'> 3";
+        echo "<input type='radio' name='".$questionNumber."' value='4'> 4";
+        echo "<input type='radio' name='".$questionNumber."' value='5'> 5";
+        echo "<br>";
       }
       else
       {
