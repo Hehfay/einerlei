@@ -3,7 +3,7 @@
            Approach to Conquering Stage Fright"
 */
 
-use imeisner;
+use Quiz;
 
 drop table if exists Question;
 create table Question( questionNumber char(5)

@@ -1,4 +1,5 @@
-/* USE DATABASE performace_anxiety; */
+USE Quiz;
+
 DROP TABLE if EXISTS answers;
 
 CREATE TABLE answers(
