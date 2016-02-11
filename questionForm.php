@@ -5,22 +5,14 @@
 </head>
 <body>
 <h1>Performance Anxiety Diagnostic Questionnaire</h1>
-<h3>5-Point Scale Questions</h3>
-<p>For the following questions, please answer with a number between 1 and 5.<br>
-  1 meaning “strongly disagree,”<br> 
-  2 meaning “disagree,”<br> 
-  3 meaning “undecided” or “neutral,”<br> 
-  4 meaning “agree,” and<br> 
-  5 meaning “strongly agree.”<br>  
-  Select the appropriate number.<br>
-</p>
 
 <?php
+
 
 $host = "";
 $username = "imeisner";
 $password = "imeisner";
-$database = "imeisner";
+$database = "Quiz";
 
 $mysqli = new mysqli($host, $username, $password, $database);
 
@@ -32,11 +24,64 @@ if ( mysqli_connect_errno())
 }
 else
 {
+  echo "<h3>Demographics Information</h3>";
+
   echo "<form action='./questionSubmit.php'>";
   echo "<table>";
-  for($i = 1; $i<=100; $i++)
+
+  $i = 1;
+  //while($i <=14)
+  //{
+    $demQuery = "select * from Question where questionNumber='".$i."a'"; 
+    $demResult = $mysqli->query($demQuery);
+
+    if($demResult)
+    {
+      $num_demRows = $demResult->num_rows;
+      if($num_demRows == 1)
+      {
+        $num_demCols = $demResult->field_count;
+        $demRow = $demResult->fetch_assoc();
+
+        echo $demRow["questionNumber"].".) ";
+        echo $demRow["question"];
+        echo "<input type='radio' ";
+        echo "name='gender' ";
+        echo "value='Male'> Male";
+        echo "<input type='radio' ";
+        echo "name='gender' ";
+        echo "value='Female'> Female";
+        echo "<br>";
+
+
+      }
+      else
+      {
+        echo "Oops, should't get multiple rows!";
+      }
+    }
+    else
+    {
+      echo "<p>";
+      echo "Query Error: " .$mysqli->error;
+      echo "<p>";
+    }
+  //}
+
+
+  echo "<h3>5-Point Scale Questions</h3>";
+  echo "<p>For the following questions, please answer with a number between 1 and 5.<br>
+    1 meaning “strongly disagree,”<br> 
+    2 meaning “disagree,”<br> 
+    3 meaning “undecided” or “neutral,”<br> 
+    4 meaning “agree,” and<br> 
+    5 meaning “strongly agree.”<br>  
+    Select the appropriate number.<br>
+  </p>";
+
+  for($j = 1; $j<=100; $j++)
   {
-    $query = "select * from Question where questionNumber='".$i."b';";
+    $query = "select * from Question where questionNumber='".$j."b';";
     $result = $mysqli->query($query);
 
     if($result)
@@ -52,19 +97,19 @@ else
         echo "<br>";
         echo "<input type='radio' ";
         echo "name='".$questionNumber."' ";
-        echo "value='1'> 1<br>";
+        echo "value='1'> 1";
         echo "<input type='radio' ";
         echo "name='".$questionNumber."' ";
-        echo "value='2'> 2<br>";
+        echo "value='2'> 2";
         echo "<input type='radio' ";
         echo "name='".$questionNumber."' ";
-        echo "value='3'> 3<br>";
+        echo "value='3'> 3";
         echo "<input type='radio' ";
         echo "name='".$questionNumber."' ";
-        echo "value='4'> 4<br>";
+        echo "value='4'> 4";
         echo "<input type='radio' ";
         echo "name='".$questionNumber."' ";
-        echo "value='5'> 5<br><br>";
+        echo "value='5'> 5<br>";
 
       }
       else
