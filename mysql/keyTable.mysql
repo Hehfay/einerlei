@@ -1,10 +1,10 @@
+/* use performance_anxiety; */
 
-use performance_anxiety;
+DROP TABLE if EXISTS license;
 
-drop table if exists License;
-
-create table License( id int primary key auto_increment
-                    , licenseKey varchar(255)
-                    , active bool 
-                    );
-
+CREATE TABLE license(
+  id         INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  licenseKey VARCHAR(255) NOT NULL UNIQUE,
+  active     BOOL NOT NULL,
+  PRIMARY KEY(id)
+);
