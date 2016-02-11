@@ -2,22 +2,51 @@ USE Quiz;
 
 DROP TABLE if EXISTS answers;
 
+CREATE TABLE input(
+  i TINYINT UNSIGNED NOT NULL,
+  PRIMARY KEY(i)
+);
+INSERT INTO input VALUES(1, 2, 3, 4, 5);
+
 CREATE TABLE answers(
+
   id      VARCHAR(255) FOREIGN KEY(id) REFERENCES license(id),
-  1a      TINYINT,
-  2a      INT,
-  3a      INT,
-  4a      INT,
-  5a      INT,
-  6a      INT, /* Not sure about this one */
-  7a      VARCHAR(100),
-  8a      INT,
-  9a      INT,
-  10a     VARCHAR(100),
-  11a     INT,
-  12a     VARCHAR(100),
+
+  /* Demographic Data */
+  1a      TINYINT UNSIGNED, /* Gender male = 0 female = 1 */
+  2a      TINYINT UNSIGNED, /* Age */
+  3a      TINYINT UNSIGNED, /* Number of year studying primary instrument */
+  4a      TINYINT UNSIGNED, /* Age when started musical instruction of any kind */
+  5a      TINYINT UNSIGNED, /* Age when started musical instruction of primary voice instrument */
+  6a      ENUM( 'High school student uncertain of future role of music in life'
+              , 'High school student looking toward career as a musician'
+              , 'Undergraduate music minor'
+              , 'Undergraduate music major'
+              , 'Master music student'
+              , 'Doctoral music student'
+              , 'Amateur adult musician'
+              , 'Part-time professional musician'
+              , 'Full-time professional musician in early career stage'
+              , 'Full-time professional musician for at least ten years'
+             ),
+  7a      ENUM( 'Woodwind'
+              , 'Brass'
+              , 'Strings'
+              , 'Percussion'
+              , 'Keyboard'
+              , 'Vocalist'
+              , 'Conductor'
+             ),
+  8a      INT UNSIGNED,
+  9a      INT UNSIGNED,
+  10a     BOOL,
+  11a     TINYINT UNSIGNED,
+  12a     BOOL,
   13a     BOOL,
   14a     VARCHAR(100),
+  /* End Demographic Data */
+
+  /* Likert Scale */
   1b      TINYINT,
   2b      TINYINT,
   3b      TINYINT,
@@ -176,4 +205,5 @@ CREATE TABLE answers(
   156b    TINYINT,
   157b    TINYINT,
   158b    TINYINT
+  /* End Likert Scale */
 );
