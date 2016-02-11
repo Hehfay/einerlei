@@ -1,0 +1,10 @@
+
+use performance_anxiety;
+
+drop table if exists License;
+
+create table License( id int primary key auto_increment
+                    , licenseKey varchar(255)
+                    , active bool 
+                    );
+
