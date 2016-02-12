@@ -1,5 +1,4 @@
 USE Quiz;
-
 DROP TABLE if EXISTS license;
 
 CREATE TABLE license(
