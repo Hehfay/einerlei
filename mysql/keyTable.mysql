@@ -1,7 +1,7 @@
 USE Quiz;
-DROP TABLE if EXISTS license;
+DROP TABLE if EXISTS License;
 
-CREATE TABLE license(
+CREATE TABLE License(
   id         INT UNSIGNED NOT NULL AUTO_INCREMENT,
   licenseKey VARCHAR(255) NOT NULL UNIQUE,
   active     BOOL NOT NULL,

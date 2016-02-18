@@ -1,0 +1,19 @@
+/* DONT RUN THIS FILE !*/
+/* ONLY HERE FOR BACKUP PURPOSES */
+
+USE Quiz;
+
+INSERT INTO DemographicQuestion(question, answer_type) VALUES("Gender:", "Char");
+INSERT INTO DemographicQuestion(question, answer_type) VALUES("Age:", "Int");
+INSERT INTO DemographicQuestion(question, answer_type) VALUES("Number of years studying primary voice/instrument:", "Int");
+INSERT INTO DemographicQuestion(question, answer_type) VALUES("Age when starting musical instruction of any kind:", "Int");
+INSERT INTO DemographicQuestion(question, answer_type) VALUES("Age when starting musical study of primary instrument:", "Int"); 
+INSERT INTO DemographicQuestion(question, answer_type) VALUES("Are you currently (select one):", "Char");
+INSERT INTO DemographicQuestion(question, answer_type) VALUES("Primary voice type or instrument (select broad category, then fill in specific instrument/voice type):", "Char");
+INSERT INTO DemographicQuestion(question, answer_type) VALUES("Number of professional performances given (approximate):", "Int");
+INSERT INTO DemographicQuestion(question, answer_type) VALUES("Number of total performances given (approximate):", "Int");
+INSERT INTO DemographicQuestion(question, answer_type) VALUES("Do you have medical conditions impacting your ability to sing/play (long-term injury, asthma, TMJD, etc.) Please specify", "Bool");
+INSERT INTO DemographicQuestion(question, answer_type) VALUES("Number of alcoholic drinks per month:", "Int");
+INSERT INTO DemographicQuestion(question, answer_type) VALUES("Use of any recreational drugs:", "Bool");
+INSERT INTO DemographicQuestion(question, answer_type) VALUES("Do you take any blood pressure or anxiety medication(s):", "Bool");
+INSERT INTO DemographicQuestion(question, answer_type) VALUES("Professional plan/career goals:", "Char");

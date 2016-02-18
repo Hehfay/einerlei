@@ -1,0 +1,16 @@
+USE Quiz;
+
+CREATE TABLE LikertQuestion(
+  question VARCHAR(255),
+  id       INT UNSIGNED NOT NULL AUTO_INCREMENT, PRIMARY KEY(id)
+);
+
+CREATE TABLE LikertValue(
+  input TINYINT UNSIGNED NOT NULL, PRIMARY KEY(input)
+);
+
+CREATE TABLE LikertAnswer(
+  license_id  INT UNSIGNED NOT NULL, FOREIGN KEY(license_id) REFERENCES license(id),
+  question_id INT UNSIGNED NOT NULL, FOREIGN KEY(question_id) REFERENCES LikertQuestion(id),
+  answer      TINYINT UNSIGNED NOT NULL FOREIGN KEY(answer) REFERENCES LikertValue(input)
+);
