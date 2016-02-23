@@ -14,10 +14,15 @@ function keygen(){
 
 // echo keygen();
 
+
+$licKey =keygen();
+
+echo $licKey;
+
 $host = "";
-$username = " ";
-$password = " ";
-$database = "performance_anxiety";
+$username = "tbroadus";
+$password = "tbroadus";
+$database = "Quiz";
 
 $mysqli = new mysqli($host, $username, $password, $database);
 
