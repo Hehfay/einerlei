@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Performance Anxiety Diagostic Questionnaire</title>
+</head>
+<body>
+
+<script>
+window.onload = function()
+{
+  var question = "question";
+  for (i = 1; i<=158; i++)
+  {
+    document.getElementById("likert").innerHTML += "<p id='" + question + i + "'>";
+  }
+
+  var likertScale_req = new XMLHttpRequest();
+  likertScale_req.onreadystatechange = function()
+  {
+    if(likertScale_req.readyState == 4 && likertScale_req.status == 200)
+    {
+      var jsonText = likertScale_req.responseText;
+      var obj = JSON.parse(jsonText);
+      for (i=1; i<=158; i++){
+        document.getElementById(question+i).innerHTML += obj[question+i];
+        document.getElementById(question+i).innerHTML += "<br>";
+        for(j = 1; j<=5; j++)
+        {
+          document.getElementById(question+i).innerHTML +=
+          "<input type = 'radio' name='" + question + i+ "' value='"+j+"'>"+j; 
+        }
+      }
+    }
+  }
+  likertScale_req.open("GET","likertScaleQuestions.json", true);
+  likertScale_req.send();
+  
+}
+
+</script>
+
+<h1>Likert Scale Questions</h1>
+<h4>For the following questions, please answer with a number between 1 and 5.</h4>
+<br>
+<h4>1 meaning “strongly disagree,” 2 meaning “disagree,” 3 meaning “undecided” or “neutral,” 4 meaning “agree,” and 5 meaning “strongly agree.”  Select the appropriate number.  
+</h4>
+
+<p id=likert>
+
+<form action='./questionSubmit.php'>
+<table>
+
+  <input type='submit'>
+</table>
+</form>
+
+</body>
+</html>
