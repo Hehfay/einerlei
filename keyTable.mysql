@@ -6,10 +6,7 @@ drop table if exists License;
 create table License( id int primary key auto_increment
                     , email varchar(255)
                     , licenseKey varchar(255)
-                    , active bool 
+                    , active bool
                     );
-
-
-
-
+                    
 insert into License values (0, test@gmail.com, TEST999, true);

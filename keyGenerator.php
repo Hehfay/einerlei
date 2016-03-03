@@ -1,6 +1,8 @@
 
 <?php
 function keygen(){
+
+  $email = $_POST["email"];
   $key = ' ';
   $length = 10;
 
@@ -12,10 +14,7 @@ function keygen(){
   return $key;
 }
 
-// echo keygen();
-
-
-$licKey =keygen();
+$licKey = keygen();
 
 echo $licKey;
 
@@ -32,18 +31,51 @@ if(mysqli_connect_errno()){
   echo "</p>";
 }
 else{
-  $query = " ";
+  $query = " Select licenseKey from License where licenseKey = ".$licKey;
   $result = $mysqli->query($query);
 
   if($result){
-  
+    while (result != null){
+        $licKey = keygen();
+        $query = "Select licenseKey from License where licenseKey = ".$licKey;
+        $result = $mysqli->query($query);
+
+        if($result){
+          echo "<p>";
+          echo "Successfully queried database";
+          echo "</p>";
+        }
+        else{
+          echo "<p>";
+          echo "Error: ".$mysqli->error;
+          echo "</p>";
+        }
+    }
+
+    $insert = "insert into License (id, email, licenseKey, active) values (";
+    $insert = $insert."0";
+    $insert = $insert.", ".$email
+    $insert = $insert.", ".$licKey;
+    $insert = $insert.", true )";
+
+    $result = mysqli->query($insert);
+
+    if($result){
+      echo "<p>";
+      echo "Successfully queried database";
+      echo "</p>";
+    }
+    else{
+      echo "<p>";
+      echo "Error: ".$mysqli->error;
+      echo "</p>";
+    }
   }
   else{
     echo "<p>";
     echo "Query Error: ".$mysqli->error;
     echo "</p>";
   }
-
-// put mysqli stuff in keygen() function
+  $myqli->close();
 }
 ?>
