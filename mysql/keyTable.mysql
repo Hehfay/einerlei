@@ -6,4 +6,4 @@ CREATE TABLE License(
   licenseKey VARCHAR(255) NOT NULL UNIQUE,
   active     BOOL NOT NULL,
   PRIMARY KEY(id)
-);
+) ENGINE = INNODB;

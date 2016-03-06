@@ -1,0 +1,286 @@
+-- MySQL dump 10.11
+--
+-- Host: localhost    Database: Quiz
+-- ------------------------------------------------------
+-- Server version	5.0.95
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Current Database: `Quiz`
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `Quiz` /*!40100 DEFAULT CHARACTER SET latin1 */;
+
+USE `Quiz`;
+
+--
+-- Table structure for table `BoolDemographicAnswer`
+--
+
+DROP TABLE IF EXISTS `BoolDemographicAnswer`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `BoolDemographicAnswer` (
+  `license_id` int(10) unsigned NOT NULL,
+  `question_id` int(10) unsigned NOT NULL,
+  `answer` tinyint(1) NOT NULL,
+  KEY `license_id` (`license_id`),
+  KEY `question_id` (`question_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `BoolDemographicAnswer`
+--
+
+LOCK TABLES `BoolDemographicAnswer` WRITE;
+/*!40000 ALTER TABLE `BoolDemographicAnswer` DISABLE KEYS */;
+/*!40000 ALTER TABLE `BoolDemographicAnswer` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `CharDemographicAnswer`
+--
+
+DROP TABLE IF EXISTS `CharDemographicAnswer`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `CharDemographicAnswer` (
+  `license_id` int(10) unsigned NOT NULL,
+  `question_id` int(10) unsigned NOT NULL,
+  `answer` varchar(255) NOT NULL,
+  KEY `license_id` (`license_id`),
+  KEY `question_id` (`question_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `CharDemographicAnswer`
+--
+
+LOCK TABLES `CharDemographicAnswer` WRITE;
+/*!40000 ALTER TABLE `CharDemographicAnswer` DISABLE KEYS */;
+/*!40000 ALTER TABLE `CharDemographicAnswer` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `DemographicQuestion`
+--
+
+DROP TABLE IF EXISTS `DemographicQuestion`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `DemographicQuestion` (
+  `question` varchar(255) default NULL,
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `answer_type` enum('Bool','Int','Char') default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `DemographicQuestion`
+--
+
+LOCK TABLES `DemographicQuestion` WRITE;
+/*!40000 ALTER TABLE `DemographicQuestion` DISABLE KEYS */;
+INSERT INTO `DemographicQuestion` VALUES ('Gender:',1,'Char'),('Age:',2,'Int'),('Number of years studying primary voice/instrument:',3,'Int'),('Age when starting musical instruction of any kind:',4,'Int'),('Age when starting musical study of primary instrument:',5,'Int'),('Are you currently (select one):',6,'Char'),('Primary voice type or instrument (select broad category, then fill in specific instrument/voice type):',7,'Char'),('Number of professional performances given (approximate):',8,'Int'),('Number of total performances given (approximate):',9,'Int'),('Do you have medical conditions impacting your ability to sing/play (long-term injury, asthma, TMJD, etc.) Please specify',10,'Bool'),('Number of alcoholic drinks per month:',11,'Int'),('Use of any recreational drugs:',12,'Bool'),('Do you take any blood pressure or anxiety medication(s):',13,'Bool'),('Professional plan/career goals:',14,'Char');
+/*!40000 ALTER TABLE `DemographicQuestion` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `IntDemographicAnswer`
+--
+
+DROP TABLE IF EXISTS `IntDemographicAnswer`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `IntDemographicAnswer` (
+  `license_id` int(10) unsigned NOT NULL,
+  `question_id` int(10) unsigned NOT NULL,
+  `answer` int(10) unsigned NOT NULL,
+  KEY `license_id` (`license_id`),
+  KEY `question_id` (`question_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `IntDemographicAnswer`
+--
+
+LOCK TABLES `IntDemographicAnswer` WRITE;
+/*!40000 ALTER TABLE `IntDemographicAnswer` DISABLE KEYS */;
+/*!40000 ALTER TABLE `IntDemographicAnswer` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `License`
+--
+
+DROP TABLE IF EXISTS `License`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `License` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `licenseKey` varchar(255) NOT NULL,
+  `active` tinyint(1) NOT NULL,
+  PRIMARY KEY  (`id`),
+  UNIQUE KEY `licenseKey` (`licenseKey`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `License`
+--
+
+LOCK TABLES `License` WRITE;
+/*!40000 ALTER TABLE `License` DISABLE KEYS */;
+/*!40000 ALTER TABLE `License` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `LikertAnswer`
+--
+
+DROP TABLE IF EXISTS `LikertAnswer`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `LikertAnswer` (
+  `license_id` int(10) unsigned NOT NULL,
+  `question_id` int(10) unsigned NOT NULL,
+  `answer` tinyint(3) unsigned NOT NULL,
+  KEY `license_id` (`license_id`),
+  KEY `question_id` (`question_id`),
+  KEY `answer` (`answer`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `LikertAnswer`
+--
+
+LOCK TABLES `LikertAnswer` WRITE;
+/*!40000 ALTER TABLE `LikertAnswer` DISABLE KEYS */;
+/*!40000 ALTER TABLE `LikertAnswer` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `LikertAnswerBroadCatagory`
+--
+
+DROP TABLE IF EXISTS `LikertAnswerBroadCatagory`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `LikertAnswerBroadCatagory` (
+  `catagory` varchar(255) NOT NULL,
+  PRIMARY KEY  (`catagory`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `LikertAnswerBroadCatagory`
+--
+
+LOCK TABLES `LikertAnswerBroadCatagory` WRITE;
+/*!40000 ALTER TABLE `LikertAnswerBroadCatagory` DISABLE KEYS */;
+INSERT INTO `LikertAnswerBroadCatagory` VALUES ('Contributing Factors'),('Symptomatology');
+/*!40000 ALTER TABLE `LikertAnswerBroadCatagory` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `LikertAnswerSubCatagory`
+--
+
+DROP TABLE IF EXISTS `LikertAnswerSubCatagory`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `LikertAnswerSubCatagory` (
+  `catagory` varchar(255) NOT NULL,
+  PRIMARY KEY  (`catagory`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `LikertAnswerSubCatagory`
+--
+
+LOCK TABLES `LikertAnswerSubCatagory` WRITE;
+/*!40000 ALTER TABLE `LikertAnswerSubCatagory` DISABLE KEYS */;
+INSERT INTO `LikertAnswerSubCatagory` VALUES ('Behavioral Symptoms'),('Cognitive Symptoms'),('Conflict Resolution Inclination'),('Controlling Personality and Competitiveness'),('Feelings of Being Out-of-Control'),('General Negativity'),('Generalized Anxiety and Stress'),('Introversion'),('Perfectionism and Self-Criticism'),('Personal Drive/Motivation'),('Personal Support Structure in People and Activities'),('Physical and Emotional Health'),('Physical Symptoms'),('Security, Happiness and Support in Romantic Relationshiips'),('Self-Concept of Anxiety'),('Self-Concept of Focus'),('Self-Concept of Long-Term Stakes'),('Self-Concept of Musical and/or Performance Preparation'),('Self-Concept of Performance Ability and Confidence'),('Self-Esteem'),('Sense of Belonging at School/Career'),('Spiritual and/or Religious Support System and/or Beliefs'),('Student-Teacher Relationship'),('The Audition Factor');
+/*!40000 ALTER TABLE `LikertAnswerSubCatagory` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `LikertQuestion`
+--
+
+DROP TABLE IF EXISTS `LikertQuestion`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `LikertQuestion` (
+  `question` varchar(255) default NULL,
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `broad_catagory` varchar(255) NOT NULL,
+  `sub_catagory1` varchar(255) NOT NULL,
+  `score_inversely` tinyint(1) NOT NULL,
+  `sub_catagory2` varchar(255) default NULL,
+  PRIMARY KEY  (`id`),
+  KEY `broad_catagory` (`broad_catagory`),
+  KEY `sub_catagory` (`sub_catagory1`),
+  KEY `sub_catagory2` (`sub_catagory2`)
+) ENGINE=InnoDB AUTO_INCREMENT=157 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `LikertQuestion`
+--
+
+LOCK TABLES `LikertQuestion` WRITE;
+/*!40000 ALTER TABLE `LikertQuestion` DISABLE KEYS */;
+INSERT INTO `LikertQuestion` VALUES ('I have perfect / absolute pitch.',1,'Contributing Factors','Self-Concept of Focus',0,NULL),('I have strong relative pitch.',2,'Contributing Factors','Self-Concept of Focus',0,NULL),('I consider myself to be a good musician.',3,'Contributing Factors','Self-Concept of Focus',0,NULL),('I learn music easily.',4,'Contributing Factors','Self-Concept of Focus',0,NULL),('I memorize music easily.',5,'Contributing Factors','Self-Concept of Focus',0,NULL),('My voice/instrument teacher and I have a good relationship.',6,'Contributing Factors','Student-Teacher Relationship',0,'Sense of Belonging at School/Career'),('I am critical of myself in my lessons, or was critical of myself in lessons when I took lessons.',7,'Contributing Factors','Perfectionism and Self-Criticism',1,NULL),('I am critical of myself in my practicing.',8,'Contributing Factors','Perfectionism and Self-Criticism',1,NULL),('I tend to get sick near a performance.',9,'Symptomatolgy','Physical Symptoms',1,NULL),('I am a generally healthy person.',10,'Contributing Factors','Physical and Emotional Health',0,NULL),('My diet is healthy.',11,'Contributing Factors','Physical and Emotional Health',0,NULL),('I get enough sleep on a regular basis.',12,'Contributing Factors','Physical and Emotional Health',0,NULL),('I exercise regularly.',13,'Contributing Factors','Physical and Emotional Health',0,NULL),('I regularly hydrate well enough to support my body and vocal/instrument endeavors.',14,'Contributing Factors','Physical and Emotional Health',0,NULL),('I deal with stress well.',15,'Contributing Factors','Generalized Anxiety and Stress',0,NULL),('I am stressed more often than I should be.',16,'Contributing Factors','Generalized Anxiety and Stress',1,NULL),('I am a generally anxious person.',17,'Contributing Factors','Generalized Anxiety and Stress',1,NULL),('People who know me would say I am an anxious or stressed person.',18,'Contributing Factors','Generalized Anxiety and Stress',1,NULL),('I feel like I belong at this school/in this career/avocation (related to music).',19,'Contributing Factors','Sense of Belonging at School/Career',0,NULL),('I feel like I belong in my teacher\'s studio of students.',20,'Contributing Factors','Student-Teacher Relationship',0,NULL),('I feel comfortable in my teacher\'s studio.',21,'Contributing Factors','Student-Teacher Relationship',0,NULL),('I feel comfortable performing in front of my musical colleagues.',22,'Contributing Factors','Sense of Belonging at School/Career',0,'Sense of Belonging at School/Career'),('My teacher believes in me and my vocal/instrumental ability.',23,'Contributing Factors','Student-Teacher Relationship',0,NULL),('My family believes in me and my vocal/instrumental ability.',24,'Contributing Factors','Personal Support Structure in People and Activities',0,NULL),('I believe in myself and my vocal/instrumental ability.',25,'Contributing Factors','Self-Concept of Performance Ability and Confidence',0,NULL),('My teacher understands my musical goals.',26,'Contributing Factors','Student-Teacher Relationship',0,NULL),('My teacher understands who I am as a person.',27,'Contributing Factors','Student-Teacher Relationship',0,NULL),('I am a confident singer/player.',28,'Contributing Factors','Self-Concept of Performance Ability and Confidence',0,NULL),('I am a confident performer.',29,'Contributing Factors','Self-Concept of Performance Ability and Confidence',0,NULL),('I am easily distractible.',30,'Contributing Factors','Self-Concept of Focus',0,NULL),('I maintain my focus easily when singing/playing.',31,'Contributing Factors','Self-Concept of Focus',1,NULL),('I maintain my focus easily when practicing.',32,'Contributing Factors','Self-Concept of Focus',1,NULL),('I maintain my focus easily when performing.',33,'Contributing Factors','Self-Concept of Focus',1,NULL),('Staying focused during a performance can be a struggle.',34,'Contributing Factors','Self-Concept of Focus',0,NULL),('I believe I will have good audience turnout for my performances.',35,'Contributing Factors','Self-Concept of Long-Term Stakes',1,NULL),('As a child, I was a natural performer.',36,'Contributing Factors','Self-Concept of Performance Ability and Confidence',0,NULL),('I consider myself to be a natural performer.',37,'Contributing Factors','Self-Concept of Performance Ability and Confidence',0,NULL),('Those who know me would consider me to be a natural performer.',38,'Contributing Factors','Self-Concept of Performance Ability and Confidence',0,NULL),('I am sometimes down or depressed.',39,'Contributing Factors','Self-Esteem',1,NULL),('I am often down or depressed.',40,'Contributing Factors','Self-Esteem',1,NULL),('I like who I am as a person.',41,'Contributing Factors','Self-Esteem',1,NULL),('I like who I am as a singer/player.',42,'Contributing Factors','Self-Concept of Focus',0,NULL),('I am a good singer/player.',43,'Contributing Factors','Self-Concept of Focus',0,NULL),('I am a physically attractive person.',44,'Contributing Factors','Self-Esteem',1,NULL),('Others consider me to be a physically attractive person.',45,'Contributing Factors','Self-Esteem',1,NULL),('I have a good relationship with my family.',46,'Contributing Factors','Personal Support Structure in People and Activities',0,NULL),('I have good relationships with my friends.',47,'Contributing Factors','Personal Support Structure in People and Activities',0,NULL),('If I am in one, I am happy in my romantic relationship.',48,'Contributing Factors','Security, Happiness, and Support in Romantic Relationships',0,NULL),('I am content with the frequency of my dating.',49,'Contributing Factors','Security, Happiness, and Support in Romantic Relationships',0,NULL),('I have a good relationship with my romantic partner',50,'Contributing Factors','Security, Happiness, and Support in Romantic Relationships',0,NULL),('My romantic partner believes in me and my vocal/instrumental ability.',51,'Contributing Factors','Security, Happiness, and Support in Romantic Relationships',0,NULL),('My romantic partner understands my musical goals.',52,'Contributing Factors','Security, Happiness, and Support in Romantic Relationships',0,NULL),('My romantic partner understands who I am as a person.',53,'Contributing Factors','Security, Happiness, and Support in Romantic Relationships',0,NULL),('My romantic partner supports me in my performances.',54,'Contributing Factors','Security, Happiness, and Support in Romantic Relationships',0,NULL),('My romantic partner wants me to succeed with my voice/instrument.',55,'Contributing Factors','Security, Happiness, and Support in Romantic Relationships',0,NULL),('I sometimes feel my success with my voice/instrument is intentionally sabotaged by my romantic partner.',56,'Contributing Factors','Security, Happiness, and Support in Romantic Relationships',1,NULL),('I sometimes feel my success with my voice/instrument is unintentionally sabotaged by my romantic partner.',57,'Contributing Factors','Security, Happiness, and Support in Romantic Relationships',1,NULL),('I sometimes have low self-esteem.',58,'Contributing Factors','Self-Esteem',1,NULL),('I often have low self-esteem.',59,'Contributing Factors','Self-Esteem',1,NULL),('I have other activities I take part in and enjoy besides singing/playing.',60,'Contributing Factors','Personal Support Structure in People and Activities',0,NULL),('A career as a professional musician is important to me.',61,'Contributing Factors','Self- Concept of Long-Term Stakes',1,NULL),('Performing music is very important to me.',62,'Contributing Factors','Self- Concept of Long-Term Stakes',1,NULL),('I prefer performances to auditions.',63,'Contributing Factors','The Audition Factor',1,NULL),('Auditions make me nervous.',64,'Contributing Factors','The Audition Factor',1,NULL),('I consider myself to be a perfectionist.',65,'Contributing Factors','Perfectionism and Self-Criticism',1,NULL),('Those who know me well would consider me to be a perfectionist.',66,'Contributing Factors','Perfectionism and Self-Criticism',1,NULL),('I am a competitive person by nature.',67,'Contributing Factors','Controlling Personality and Competitiveness',1,NULL),('I am a competitive person because of my musical/performance plans.',68,'Contributing Factors','Controlling Personality and Competitiveness',1,NULL),('I enjoy a challenge.',69,'Contributing Factors','Controlling Personality and Competitiveness',1,NULL),('I enjoy a competition.',70,'Contributing Factors','Controlling Personality and Competitiveness',1,NULL),('I tend to have anxiety about performances.',71,'Contributing Factors','Self-Concept of Anxiety',1,NULL),('I tend to have anxiety about auditions.',72,'Contributing Factors','Self-Concept of Anxiety',1,'The Audition Factor'),('My teacher understands my performance anxiety fully.',73,'Contributing Factors','Student-Teacher Relationship',0,NULL),('My romantic partner understands my performance anxiety fully.',74,'Contributing Factors','Security, Happiness, and Support in Romantic Relationships',0,NULL),('Only a small percentage of singers/instrumentalists will actually sing/play for a living.',75,'Contributing Factors','Feelings of Being Out-Of-Control',1,NULL),('I am disheartened by the odds for success as a singer/instrumentalist.',76,'Contributing Factors','Feelings of Being Out-Of-Control',1,NULL),('I believe that, even if I don\'t sing/play for a living, I will be happy.',77,'Contributing Factors','Self-Concept of Long-Term Stakes',0,NULL),('Singing/playing is my top priority.',78,'Contributing Factors','Self- Concept of Long-Term Stakes',1,NULL),('I consider myself to be a religious or spiritual person.',79,'Contributing Factors','Spiritual and/or Religious Support System and/or Beliefs',0,NULL),('I regularly attend religious services.',80,'Contributing Factors','Spiritual and/or Religious Support System and/or Beliefs',0,NULL),('I believe that a higher power is looking out for me.',81,'Contributing Factors','Spiritual and/or Religious Support System and/or Beliefs',0,NULL),('I believe that things happen for a reason.',82,'Contributing Factors','Feelings of Being Out-Of-Control',0,NULL),('I believe that I choose what happens in my own life.',83,'Contributing Factors','Feelings of Being Out-Of-Control',0,NULL),('I believe that much of my life has already been decided for me.',84,'Contributing Factors','Feelings of Being Out-Of-Control',1,NULL),('I have complete control over the course my musical career takes.',85,'Contributing Factors','Feelings of Being Out-Of-Control',0,NULL),('I have too little control over the course my musical career takes.',86,'Contributing Factors','Feelings of Being Out-Of-Control',1,NULL),('I like to be in control.',87,'Contributing Factors','Feelings of Being Out-Of-Control',1,NULL),('I feel uncomfortable if I don\'t have enough control.',88,'Contributing Factors','Feelings of Being Out-Of-Control',1,NULL),('I feel uncomfortable if I have too much control.',89,'Contributing Factors','Feelings of Being Out-Of-Control',0,NULL),('I deal well with conflicts.',90,'Contributing Factors','Conflict Resolution Inclination',0,NULL),('I am a non-confrontational person.',91,'Contributing Factors','Conflict Resolution Inclination',0,NULL),('My family and friends come to support me in my performances.',92,'Contributing Factors','Personal Support Structure in People and Activities',0,NULL),('I have a good support system in my family and/or friends.',93,'Contributing Factors','Personal Support Structure in People and Activities',0,NULL),('My friends and family want me to succeed with my voice/instrument.',94,'Contributing Factors','Personal Support Structure in People and Activities',0,NULL),('My friends and family understand my performance anxiety fully.',95,'Contributing Factors','Personal Support Structure in People and Activities',1,NULL),('I sometimes feel my success with my voice/instrument is intentionally sabotaged by my friends/family.',96,'Contributing Factors','Personal Support Structure in People and Activities',1,NULL),('I sometimes feel my success with my voice/instrument is unintentionally sabotaged by my friends/family.',97,'Contributing Factors','Personal Support Structure in People and Activities',1,NULL),('There is a person or there are people who care about me succeeding as much as I do.',98,'Contributing Factors','Personal Support Structure in People and Activities',0,NULL),('I have a plan for combating any performance anxiety I might experience.',99,'Contributing Factors','Self-Concept of Anxiety',0,NULL),('I have a method for coping with stress that works.',100,'Contributing Factors','Self-Concept of Anxiety',0,NULL),('I plan too much for myself.',101,'Contributing Factors','Generalized Anxiety and Stress',1,NULL),('I am good about setting boundaries and not taking on too much.',102,'Contributing Factors','Generalized Anxiety and Stress',0,NULL),('I have personally experienced performance anxiety in my life.',103,'Contributing Factors','Self-Concept of Anxiety',1,NULL),('I have personally experienced performance anxiety in the recent past.',104,'Contributing Factors','Self-Concept of Anxiety',1,NULL),('I used to get nervous, but don\'t tend to do that anymore.',105,'Contributing Factors','Self-Concept of Anxiety',0,NULL),('I am an introverted individual.',106,'Contributing Factors','Introversion',1,NULL),('I am an extroverted individual.',107,'Contributing Factors','Introversion',0,NULL),('I fear the future.',108,'Contributing Factors','Feelings of Being Out-Of-Control',0,NULL),('I am a positive thinker.',109,'Contributing Factors','General Negativity',0,NULL),('I\'m often negative.',110,'Contributing Factors','General Negativity',1,NULL),('Important people will be at my performances.',111,'Contributing Factors','Self-Concept of Long-Term Stakes',1,NULL),('I am embarrassed by my nervousness.',112,'Symptomatology','Cognitive Symptoms',1,NULL),('My heart is races when I perform.',113,'Symptomatology','Physical Symptoms',1,NULL),('I breathe faster than normal when I perform.',114,'Symptomatology','Physical Symptoms',1,NULL),('I sweat because of anxiety when I perform.',115,'Symptomatology','Physical Symptoms',1,NULL),('I get cold because of anxiety when I perform.',116,'Symptomatology','Physical Symptoms',1,NULL),('I can\'t get motivated for performances.',117,'Symptomatology','Cognitive Symptoms',1,NULL),('I am more critical of myself than usual when a performance is imminent.',118,'Symptomatology','Cognitive Symptoms',1,NULL),('I have trouble staying focused when anticipating a performance.',119,'Symptomatology','Cognitive Symptoms',1,NULL),('I make more mistakes than I should when anticipating a performance.',120,'Symptomatology','Cognitive Symptoms',1,NULL),('I imagine the worst when anticipating a performance.',121,'Symptomatology','Cognitive Symptoms',1,NULL),('My voice is affected by my nervousness during a performance.',122,'Symptomatology','Physical Symptoms',1,NULL),('My teacher doesn\'t think I perform as well as I should.',123,'Symptomatology','Cognitive Symptoms',1,NULL),('My peers don\'t think I perform as well as I should.',124,'Symptomatology','Cognitive Symptoms',1,NULL),('My family/friends don\'t think I perform as well as I should.',125,'Symptomatology','Cognitive Symptoms',1,NULL),('My romantic partner doesn\'t think I perform as well as I should.',126,'Symptomatology','Cognitive Symptoms',1,NULL),('My stomach gets upset when I perform.',127,'Symptomatology','Physical Symptoms',1,NULL),('I feel jittery when I perform.',128,'Symptomatology','Physical Symptoms',1,NULL),('I feel uneasy when I perform.',129,'Symptomatology','Physical Symptoms',1,NULL),('During performances I am concerned about the outcome of that performance.',130,'Symptomatology','Cognitive Symptoms',1,NULL),('I have memory slips because of anxiety when I perform.',131,'Symptomatology','Cognitive Symptoms',1,NULL),('I have trouble sleeping when anticipating a performance.',132,'Symptomatology','Behavioral Symptoms',1,NULL),('My eating habits change because of anxiety when anticipating a performance.',133,'Symptomatology','Behavioral Symptoms',1,NULL),('Anxiety affects the amount of practicing I do.',134,'Symptomatology','Behavioral Symptoms',1,NULL),('Anxiety affects the quality of my practicing.',135,'Symptomatology','Behavioral Symptoms',1,NULL),('My sleep habits are affected by anxiety.',136,'Symptomatology','Behavioral Symptoms',1,NULL),('I become irritable because of anxiety.',137,'Symptomatology','Behavioral Symptoms',1,NULL),('I drink more alcohol because of anxiety.',138,'Symptomatology','Behavioral Symptoms',1,NULL),('I use recreational drugs because of anxiety.',139,'Symptomatology','Behavioral Symptoms',1,NULL),('I procrastinate because of anxiety.',140,'Symptomatology','Behavioral Symptoms',1,NULL),('My relationships are affected by my anxiety.',141,'Symptomatology','Behavioral Symptoms',1,NULL),('My general activity level is affected by anxiety.',142,'Symptomatology','Behavioral Symptoms',1,NULL),('My throat gets dry because of anxiety during performances.',143,'Symptomatology','Physical Symptoms',1,NULL),('I often want to cancel or reschedule my performances because of anxiety.',144,'Symptomatology','Behavioral Symptoms',1,NULL),('I\'d rather be singing/playing in a practice room than in front of people.',145,'Symptomatology','Cognitive Symptoms',1,'Behavioral Symptoms'),('Nervousness is negatively affecting my musical progress.',146,'Contributing Factors','Self-Concept of Anxiety',1,NULL),('I am driven to do my best.',147,'Contributing Factors','Personal Drive/Motivation',0,NULL),('My quality of performing/singing/playing is consistent.',148,'Contributing Factors','Self-Concept of Focus',0,NULL),('I start new projects with lots of energy.',149,'Contributing Factors','Personal Drive/Motivation',0,NULL),('I fear success.',150,'Contributing Factors','Feelings of Being Out-Of-Control',0,NULL),('I function well at a high energy level.',151,'Contributing Factors','Generalized Anxiety and Stress',0,'Self-Concept of Anxiety'),('I am able to quiet mental chatter.',152,'Contributing Factors','Generalized Anxiety and Stress',0,'Self-Concept of Focus'),('I frequently imagine the worst.',153,'Contributing Factors','Feelings of Being Out-Of-Control',0,NULL),('I need to learn how to relax.',154,'Contributing Factors','Generalized Anxiety and Stress',1,NULL),('No matter how much I prepare, something always goes wrong.',155,'Contributing Factors','General Negativity',1,NULL),('I am mentally tough enough for my musical/performance plans.',156,'Contributing Factors','Personal Drive/Motivation',0,NULL);
+/*!40000 ALTER TABLE `LikertQuestion` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `LikertValue`
+--
+
+DROP TABLE IF EXISTS `LikertValue`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `LikertValue` (
+  `input` tinyint(3) unsigned NOT NULL,
+  PRIMARY KEY  (`input`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `LikertValue`
+--
+
+LOCK TABLES `LikertValue` WRITE;
+/*!40000 ALTER TABLE `LikertValue` DISABLE KEYS */;
+INSERT INTO `LikertValue` VALUES (0),(6),(25),(50),(75),(100);
+/*!40000 ALTER TABLE `LikertValue` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2016-03-03 15:53:10
