@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Performance Anxiety Diagostic Questionnaire</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
 <?php
 if(isset($_POST))
 {
@@ -93,7 +100,7 @@ if(isset($_POST))
         }
       }
       $query1 = "insert into LikertAnswer(license_id, question_id, answer) values(1, ".$result['id'].", ".$answers[$i].");";
-      echo "$query1"."<br>";
+      echo "$query1"."<br><br>";
     }
     $result->free();
     $mysqli->close();
@@ -104,3 +111,5 @@ else
   echo "DAMN!";
 }
 ?>
+</body>
+</html>
