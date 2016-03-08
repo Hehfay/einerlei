@@ -1,1 +1,38 @@
 @import url("reset.css");
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 1%;
+}
+
+p {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+h4 {
+  font-size: 1.1rem;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+input {
+  margin: .5%;
+}
+
+#confirm {
+  margin-bottom: 5%;
+}
