@@ -68,10 +68,8 @@ else{
 */
 
 //Demonstration Mateiral
-echo "<br>"
-echo "<form action= "./licenseAcceptance.html">
-        <input type = "submit" value = "Continue">
-</form>";
+echo "<br>";
+echo "<form action= './licenseAcceptance.html'> <input type = 'submit' value = 'Continue'> </form>";
 
 function keygen(){
 
