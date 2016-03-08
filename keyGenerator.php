@@ -1,4 +1,3 @@
-
 <?php
 function keygen(){
 
@@ -54,7 +53,7 @@ else{
 
     $insert = "insert into License (id, email, licenseKey, active) values (";
     $insert = $insert."0";
-    $insert = $insert.", ".$email
+    $insert = $insert.", ".$email;
     $insert = $insert.", ".$licKey;
     $insert = $insert.", true )";
 
