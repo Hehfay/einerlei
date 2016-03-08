@@ -50,11 +50,13 @@ var submitAnswers = function(counter)
     for(j=1; j<=5; j++)
     {
       var answer = "answer" + i + j;
+      var idname = document.getElementById(answer).getAttribute("name");
+      //console.log(idname);
       if(document.getElementById(answer).checked)
       {
         console.log(answer);
-        args += answer + "=" + document.getElementById(answer).value;
-        console.log(document.getElementById(answer).value);
+        args += idname + "=" + document.getElementById(answer).value;
+        //console.log(document.getElementById(answer).value);
         //args += question + "=" + document.getElementById(obj[question]).value;
       }
     }
