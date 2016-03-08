@@ -6,9 +6,19 @@
 </head>
 <body>
 <?php
+$fname = "output.txt";
+$mode = "a+";
+$filehandle = fopen($fname, $mode);
+if($filehandle == false)
+{
+  echo "FUCK EVERYTHING";
+}
+else
+{
+  echo "Output written to output.txt"."<br>";
+}
 if(isset($_POST))
 {
-  $lines = file('identifiers.txt');
   $i = 0;
   foreach($_POST as $item => $value)
   {
@@ -34,15 +44,15 @@ if(isset($_POST))
   $mysqli = new mysqli("", "jhartma0", "jhartma0", "Quiz");
   if($mysqli->connect_errno)
   {
-    echo "FUCK!!!"."<br>";
+    fwrite($filehandle, "Mysqli connect error.\n");
   }
   else
   {
-    echo "CONNECTED OKAY"."<br>";
+    fwrite($filehandle, "Connected okay.\n");
     for($i = 0; $i < count($answers); $i++)
     {
       $query = "select id, score_inversely from LikertQuestion where question=".$variable[$i].";";
-      echo "$query"."<br>";
+      fwrite($filehandle, $query."\n");
       $result = $mysqli->query($query);
       $result = $result->fetch_assoc();
       if($result['score_inversely'])
@@ -100,15 +110,18 @@ if(isset($_POST))
         }
       }
       $query1 = "insert into LikertAnswer(license_id, question_id, answer) values(1, ".$result['id'].", ".$answers[$i].");";
-      echo "$query1"."<br><br>";
+      fwrite($filehandle, $query1."\n");
     }
+    echo "<script>";
+    echo "";
+    echo "</script>";
     $result->free();
     $mysqli->close();
   }
 }
 else
 {
-  echo "DAMN!";
+  fwrite($filehandle, "POST array not set.\n");
 }
 ?>
 </body>
