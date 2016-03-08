@@ -11,7 +11,7 @@ window.onload = function()
 {
   document.getElementById("likert").innerHTML += "<form id='quiz' method='post'>";
   var question = "question";
-  for (i = 1; i<=15; i++)
+  for (i = 1; i<=10; i++)
   {
     document.getElementById("quiz").innerHTML += "<p id='" + question + i + "'>";
   }
@@ -22,18 +22,18 @@ window.onload = function()
     {
       var jsonText = likertScale_req.responseText;
       var obj = JSON.parse(jsonText);
-      for (i=1; i<=15; i++){
+      for (i=1; i<=10; i++){
         document.getElementById(question+i).innerHTML += obj[question+i];
         document.getElementById(question+i).innerHTML += "<br>";
         for(j = 1; j<=5; j++)
         {
           document.getElementById(question+i).innerHTML += "<label for='answer" + i + "." + j + "'>"+j+"</label>";
-          document.getElementById(question+i).innerHTML += "<input type='radio' id='answer" + i + "." + j + "' name='" + obj[question + i] + "' value='" + j +"'>"; 
+          document.getElementById(question+i).innerHTML += "<input type='radio' id='answer" + i + "." + j + "' name='" + obj[question + i] + "' value='" + j +"'required>"; 
           //"<input type='radio' id='answer" + i + "." + j + "' name='" + obj[question + i] + "' value='" + j +"'>"+j; 
         }
         document.getElementById(question+i).innerHTML += "</div>";
       }
-      document.getElementById("quiz").innerHTML += "<button id='confirm' type='button' value='submit' onclick='submitAnswers(i-15)'>Submit</button>";
+      document.getElementById("quiz").innerHTML += "<button id='confirm' type='button' value='submit' onclick='submitAnswers(i-10)'>Next</button>";
     }
   }
   likertScale_req.open("GET","likertScaleQuestions.json", true);
@@ -46,13 +46,13 @@ window.onload = function()
 var submitAnswers = function(counter)
 {
   var args = "";
-  for(i=counter; i<=counter+14; i++)
+  for(i=counter; i<=counter+9; i++)
   {
     for(j=1; j<=5; j++)
     {
-      var answer = "answer" + i + j;
+      var answer = "answer" + i;
       var answerWithVal = "answer" + i + "." + j;
-      var idname = document.getElementById(answer).getAttribute("name");
+      var idname = document.getElementById(answerWithVal).getAttribute("name");
       //console.log(idname);
       if(document.getElementById(answerWithVal).checked)
       {
@@ -62,7 +62,7 @@ var submitAnswers = function(counter)
         //args += question + "=" + document.getElementById(obj[question]).value;
       }
     }
-    if(i != counter+14) 
+    if(i != counter+9) 
       args += "&";
   }
 
@@ -87,7 +87,7 @@ var nextPage = function(counter)
 {
   document.getElementById("likert").innerHTML = "<form id='quiz' method='post'>";
   var question = "question";
-  for (i = counter; i<=counter+14; i++)
+  for (i = counter; i<=counter+9; i++)
   {
     document.getElementById("quiz").innerHTML += "<p id='" + question + i + "'>";
   }
@@ -99,7 +99,7 @@ var nextPage = function(counter)
     {
       var jsonText = nextPage_req.responseText;
       var obj = JSON.parse(jsonText);
-      for (i=counter; i<=counter+14; i++){
+      for (i=counter; i<=counter+9; i++){
         document.getElementById(question+i).innerHTML += obj[question+i];
         document.getElementById(question+i).innerHTML += "<br>";
         for(j = 1; j<=5; j++)
@@ -109,12 +109,12 @@ var nextPage = function(counter)
           //"<input type = 'radio' id='answer" + i + "." + j + "' name='" + obj[question + i] + "' value='"+j+"'>"+j; 
           "<label for='answer" + i + "." + j + "'>"+j+"</label>";
           document.getElementById(question+i).innerHTML +=
-          "<input type = 'radio' id='answer" + i + "." + j + "' name='" + obj[question + i] + "' value='"+j+"'>"; 
+          "<input type='radio' id='answer" + i + "." + j + "' name='" + obj[question + i] + "' value='"+j+"' required>"; 
         }
       }
     }
   }
-  document.getElementById("quiz").innerHTML += "<button id='confirm' type='button' value='submit' onclick='submitAnswers(i-15)'>Submit</button>";
+  document.getElementById("quiz").innerHTML += "<button id='confirm' type='button' value='submit' onclick='submitAnswers(i-10)'>Next</button>";
   nextPage_req.open("GET","likertScaleQuestions.json", true);
   nextPage_req.send();
   document.getElementById("quiz").innerHTML += "</form>";
