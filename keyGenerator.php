@@ -10,6 +10,7 @@ function keygen(){
   for($i=0; $i<$length; $i++){
     $key .= $inputs{ mt_rand(0,61) };
   }
+  echo "Key".$key;
   return $key;
 }
 
@@ -17,6 +18,7 @@ $licKey = keygen();
 
 echo $licKey;
 
+/*
 $host = "";
 $username = "tbroadus";
 $password = "tbroadus";
@@ -42,7 +44,7 @@ else{
         if($result){
           echo "<p>";
           echo "Successfully queried database";
-          echo "</p>";
+          echo "</p>">;
         }
         else{
           echo "<p>";
@@ -77,4 +79,5 @@ else{
   }
   $myqli->close();
 }
+*/
 ?>
