@@ -27,13 +27,15 @@ window.onload = function()
         document.getElementById(question+i).innerHTML += "<br>";
         for(j = 1; j<=5; j++)
         {
-          document.getElementById(question+i).innerHTML +=
-          "<input type='radio' id='answer" + i + j + "' name='" + obj[question + i] + "' value='" + j +"'>"+j; 
+          document.getElementById(question+i).innerHTML += "<label for='answer" + i + "." + j + "'>"+j+"</label>";
+          document.getElementById(question+i).innerHTML += "<input type='radio' id='answer" + i + "." + j + "' name='" + obj[question + i] + "' value='" + j +"'>"; 
+          //"<input type='radio' id='answer" + i + "." + j + "' name='" + obj[question + i] + "' value='" + j +"'>"+j; 
         }
+        document.getElementById(question+i).innerHTML += "</div>";
       }
+      document.getElementById("quiz").innerHTML += "<button id='confirm' type='button' value='submit' onclick='submitAnswers(i-15)'>Submit</button>";
     }
   }
-  document.getElementById("quiz").innerHTML += "<button id='confirm' type='button' value='submit' onclick='submitAnswers(i-15)'>Submit</button>";
   likertScale_req.open("GET","likertScaleQuestions.json", true);
   likertScale_req.send();
   document.getElementById("quiz").innerHTML += "</form>";
@@ -43,19 +45,18 @@ window.onload = function()
 
 var submitAnswers = function(counter)
 {
-  console.log(document.getElementById("answer45").checked);
   var args = "";
   for(i=counter; i<=counter+14; i++)
   {
     for(j=1; j<=5; j++)
     {
-      var answer = "answer" + i + j;
-      if(document.getElementById(answer).checked)
+      var answer = "answer" + i;
+      var answerWithVal = "answer" + i + "." + j;
+      if(document.getElementById(answerWithVal).checked)
       {
         console.log(answer);
-        args += answer + "=" + document.getElementById(answer).value;
-        console.log(document.getElementById(answer).value);
-        //args += question + "=" + document.getElementById(obj[question]).value;
+        args += answer + "=" + document.getElementById(answerWithVal).value;
+        console.log(document.getElementById(answerWithVal).value);
       }
     }
     if(i != counter+14) 
@@ -102,7 +103,10 @@ var nextPage = function(counter)
         {
           document.getElementById(question+i).innerHTML +=
           //"<input type = 'radio' name='" + obj[question + i] + "' value='"+j+"'required>"+j; 
-          "<input type = 'radio' id='answer" + i + "' name='" + obj[question + i] + "' value='"+j+"'>"+j; 
+          //"<input type = 'radio' id='answer" + i + "." + j + "' name='" + obj[question + i] + "' value='"+j+"'>"+j; 
+          "<label for='answer" + i + "." + j + "'>"+j+"</label>";
+          document.getElementById(question+i).innerHTML +=
+          "<input type = 'radio' id='answer" + i + "." + j + "' name='" + obj[question + i] + "' value='"+j+"'>"; 
         }
       }
     }
