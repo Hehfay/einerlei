@@ -1,7 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Your Key:</h1>
+
+
 <?php
 $licKey = keygen();
 
-echo $licKey;
 
 
 /*
@@ -69,7 +77,7 @@ else{
 
 //Demonstration Mateiral
 echo "<br>";
-echo "<form action= './licenseAcceptance.html'> <input type = 'submit' value = 'Continue'> </form>";
+echo "<form action= './licenseAcceptance.php' method='post'> <input type = 'submit' value = 'continue'> <input type = 'hidden' name='key' value = '$licKey'> </form>";
 
 function keygen(){
 
@@ -82,7 +90,7 @@ function keygen(){
   for($i=0; $i<$length; $i++){
     $key .= $inputs{ mt_rand(0,61) };
   }
-  echo "Key".$key;
+  echo "<br>"."<br>"."<h4>".$key."</h4>";
   echo "<br>";
   echo "<br>";
   return $key;

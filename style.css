@@ -1,4 +1,5 @@
 @import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow|Satisfy");
 
 html {
   font-size: 100%;
@@ -13,20 +14,23 @@ body {
 }
 
 p {
-  margin-top: 2%;
-  margin-bottom: 2%;
+  font-size: 1.3rem;
+  margin-top: 3%;
+  margin-bottom: 1%;
 }
 
 h1 {
-  font-size: 1.8rem;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  font-family: 'Satisfy', serif;
+  font-size: 4.8rem;
+  margin-top: 4%;
+  margin-bottom: 2%;
 }
 
 h4 {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   margin-top: 1%;
   margin-bottom: 1%;
+  font-family: 'Archivo Narrow', sans-serif;
 }
 
 input {
@@ -35,4 +39,34 @@ input {
 
 #confirm {
   margin-bottom: 5%;
+}
+
+#bottom {
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+
+ul {
+  list-style-type: circle;
+  margin-left: 3%;
+  font-size: 1.1rem;
+}
+li {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-size: 1.1rem;
+}
+
+#lickert {
+
+}
+
+.checkboxgroup {
+  display: inline-block;
+  text-align: center;
+  margin-top: 1%;
+}
+
+.checkboxgroup label {
+  font-size: .9rem;
 }
