@@ -58,7 +58,6 @@ li {
 }
 
 #lickert {
-
 }
 
 .checkboxgroup {
@@ -69,4 +68,36 @@ li {
 
 .checkboxgroup label {
   font-size: .9rem;
+}
+
+#introduction {
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-left: 20%;
+  width: 67%;
+  line-height: 2.2em;
+}
+
+#introduction p {
+  text-indent: 2.5rem;
+  margin-bottom: 6%;
+  font-size: 1.56rem;
+}
+
+#button {
+  margin: 0 auto;
+  margin-bottom: 40%;
+  margin-top: 11%;
+  display: block;
+  background-color: purple;
+  font-size: 2rem;
+  border-radius: 1rem;
+  padding-left: 14%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#button a {
+  text-decoration: none;
+  color: white;
 }

@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="style.css">
+  <title>Key Display</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <h1>Your Key:</h1>
 
+<ul>
+<li>This sample unique key would be emailed to the user who purchased it.</li>
+<li>The user will use this key to activate the start of the quiz.</li>
+<ul>
+
 
 <?php
 $licKey = keygen();
+
 
 
 
@@ -77,7 +84,7 @@ else{
 
 //Demonstration Mateiral
 echo "<br>";
-echo "<form action= './licenseAcceptance.php' method='post'> <input type = 'submit' value = 'continue'> <input type = 'hidden' name='key' value = '$licKey'> </form>";
+echo "<form action= '../redeem-code/' method='post'> <input type = 'submit' value = 'continue'> <input type = 'hidden' name='key' value = '$licKey'> </form>";
 
 function keygen(){
 
