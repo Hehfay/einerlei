@@ -1,10 +1,10 @@
 <?php
 
-$username = $_POST["username"];
-$passwrod = $_POST["password"];
+$logUsername = $_POST["username"];
+$logPassword = $_POST["password"];
 
-echo $username;
-echo $password;
+echo $logUsername;
+echo $logPassword;
 
 $host = "";
 $username = "tbroadus";
@@ -19,11 +19,11 @@ if(mysqli_connect_errno()){
   echo "</p>";
 }
 else{
-  $query = " Select password from admins where username = ".$username;
+  $query = " Select password from admins where username = ".$logUsername;
   $result = $mysqli->query($query);
 
   if($result){
-      if($result != null && $result == hash("md5",$password)){
+      if($result != null && $result == hash("md5",$logPassword)){
         $correctPass = true;
       }
   }
