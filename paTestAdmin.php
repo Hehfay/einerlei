@@ -80,28 +80,13 @@
 
          <?php
             $msg = '';
-
-            if (isset($_POST['login']) && !empty($_POST['username'])
-               && !empty($_POST['password'])) {
-
-               if ($_POST['username'] == 'testAdmin' &&
-                  $_POST['password'] == 'example') {
-                  $_SESSION['valid'] = true;
-                  $_SESSION['timeout'] = time();
-                  $_SESSION['username'] = 'testAdmin';
-
-                  echo 'You have entered valid use name and password';
-               }else {
-                  $msg = 'Wrong username or password';
-               }
-            }
          ?>
       </div> <!-- /container -->
 
       <div class = "container">
 
          <form class = "form-signin" role = "form"
-            action = "./paQuiz.php"
+            action = "./paQuizInfo.php"
              method = "post">
 
             <h4 class = "form-signin-heading"><?php echo $msg; ?></h4>
