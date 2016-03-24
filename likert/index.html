@@ -42,7 +42,10 @@ window.onload = function()
 
 var submitAnswers = function(counter)
 {
+  var qa_count = 0;
   var args = "";
+  var question_key = "q";
+  var answer_key = "a";
   for(i=counter; i<=counter+9; i++)
   {
     for(j=1; j<=5; j++)
@@ -54,9 +57,11 @@ var submitAnswers = function(counter)
       if(document.getElementById(answerWithVal).checked)
       {
         console.log(answer);
-        args += idname + "=" + document.getElementById(answerWithVal).value;
+        args += question_key + qa_count + "=" + idname + "&";
+        args += answer_key + qa_count + "=" + document.getElementById(answerWithVal).value;
         //console.log(document.getElementById(answer).value);
         //args += question + "=" + document.getElementById(obj[question]).value;
+        qa_count++;
       }
     }
     if(i != counter+9) 
@@ -138,6 +143,7 @@ var nextPage = function(counter)
 <h4 id="bottom">Select the appropriate number.  </h4>
 
 <div id="likert">
+
 
 </body>
 </html>

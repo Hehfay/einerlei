@@ -1,0 +1,68 @@
+/* Connected okay. */
+POST / 2 is 0
+/* Connected okay. */
+POST / 2 is 0
+q0 I feel like I belong in my teacher's studio of students.
+a0 5
+q1 I feel comfortable in my teacher's studio.
+a1 5
+/* Connected okay. */
+POST / 2 is 2
+5
+5
+select id, score_inversely from LikertQuestion where question='I feel like I belong in my teacher\'s studio of students.';
+insert into LikertAnswer(license_id, question_id, answer) values(1, 1110, 100);
+select id, score_inversely from LikertQuestion where question='I feel comfortable in my teacher\'s studio.';
+insert into LikertAnswer(license_id, question_id, answer) values(1, 1111, 100);
+q0 I have perfect/absolute pitch.
+a0 1
+q1 I have strong relative pitch.
+a1 1
+q2 I consider myself to be a good musician.
+a2 1
+q3 I learn music easily.
+a3 1
+q4 I memorize music easily.
+a4 1
+q5 My voice/instrument teacher and I have a good relationship.
+a5 1
+q6 I am critical of myself in my lessons, or was critical of myself in lessons when I took lessons.
+a6 1
+q7 I am critical of myself in my practicing.
+a7 1
+q8 I enjoy performing more than most activities.
+a8 1
+q9 I tend to get sick near a performance.
+a9 1
+/* Connected okay. */
+POST / 2 is 10
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+select id, score_inversely from LikertQuestion where question='I have perfect/absolute pitch.';
+insert into LikertAnswer(license_id, question_id, answer) values(1, 1091, 0);
+select id, score_inversely from LikertQuestion where question='I have strong relative pitch.';
+insert into LikertAnswer(license_id, question_id, answer) values(1, 1092, 0);
+select id, score_inversely from LikertQuestion where question='I consider myself to be a good musician.';
+insert into LikertAnswer(license_id, question_id, answer) values(1, 1093, 0);
+select id, score_inversely from LikertQuestion where question='I learn music easily.';
+insert into LikertAnswer(license_id, question_id, answer) values(1, 1094, 0);
+select id, score_inversely from LikertQuestion where question='I memorize music easily.';
+insert into LikertAnswer(license_id, question_id, answer) values(1, 1095, 0);
+select id, score_inversely from LikertQuestion where question='My voice/instrument teacher and I have a good relationship.';
+insert into LikertAnswer(license_id, question_id, answer) values(1, 1096, 0);
+select id, score_inversely from LikertQuestion where question='I am critical of myself in my lessons, or was critical of myself in lessons when I took lessons.';
+insert into LikertAnswer(license_id, question_id, answer) values(1, 1097, 100);
+select id, score_inversely from LikertQuestion where question='I am critical of myself in my practicing.';
+insert into LikertAnswer(license_id, question_id, answer) values(1, 1098, 100);
+select id, score_inversely from LikertQuestion where question='I enjoy performing more than most activities.';
+insert into LikertAnswer(license_id, question_id, answer) values(1, , 0);
+select id, score_inversely from LikertQuestion where question='I tend to get sick near a performance.';
+insert into LikertAnswer(license_id, question_id, answer) values(1, 1099, 100);
