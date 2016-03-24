@@ -6,7 +6,7 @@ $passwrod = $_POST["password"];
 echo $username;
 echo $password;
 
-$host = " ";
+$host = "";
 $username = "tbroadus";
 $password = "tbroadus";
 $database = "Quiz";
