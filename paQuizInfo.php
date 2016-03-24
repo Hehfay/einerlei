@@ -19,7 +19,7 @@ if(mysqli_connect_errno()){
   echo "</p>";
 }
 else{
-  $query = " Select password from adminUser where username = ".$username;
+  $query = " Select password from admins where username = ".$username;
   $result = $mysqli->query($query);
 
   if($result){
@@ -33,5 +33,8 @@ else{
     echo "</p>";
   }
       $myqli->close();
+}
+if ($correctPass == true){
+  echo "Hellll YEAH";
 }
 ?>
