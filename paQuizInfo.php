@@ -23,6 +23,11 @@ else{
   $query = $query."'";
   $result = $mysqli->query($query);
 
+    echo "<p>";
+    echo "Password Entered:  ".$logPassword;
+    echo "Password Database: ".$result;
+    echo "</p>";
+
   if($result){
       if($result != null && $result == hash("md5",$logPassword)){
         $correctPass = true;
@@ -36,6 +41,8 @@ else{
       $myqli->close();
 }
 if ($correctPass == true){
+  echo "<p>";
   echo "Hellll YEAH";
+  echo "</p>";
 }
 ?>
