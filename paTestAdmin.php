@@ -11,7 +11,7 @@
 <html lang = "en">
 
    <head>
-      <title>Test Admin Page</title>
+      <title>Performanc Anxiety Admin Page</title>
       <link href = "css/bootstrap.min.css" rel = "stylesheet">
 
       <style>
@@ -101,8 +101,9 @@
       <div class = "container">
 
          <form class = "form-signin" role = "form"
-            action = "<?php echo htmlspecialchars($_SERVER['PHP_SELF']);
-            ?>" method = "post">
+            action = "./paQuiz.php"
+             method = "post">
+
             <h4 class = "form-signin-heading"><?php echo $msg; ?></h4>
             <input type = "text" class = "form-control"
                name = "username" placeholder = "username"
@@ -112,8 +113,6 @@
             <button class = "btn btn-lg btn-primary btn-block" type = "submit"
                name = "login">Login</button>
          </form>
-
-         Click here to clean <a href = "logout.php" tite = "Logout">Session.
 
       </div>
 
