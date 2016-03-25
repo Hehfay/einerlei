@@ -5,6 +5,7 @@ $logPassword = $_POST["password"];
 
 echo $logUsername;
 echo $logPassword;
+echo $hashedPwd = hash("md5",$logPassword);
 
 $host = "";
 $username = "tbroadus";
@@ -25,6 +26,9 @@ else{
 
     echo "<p>";
     echo "Password Entered:  ".$logPassword;
+    echo "<br>";
+    echo "Password Hashed:   ".$hashedPwd;
+    echo "<br>";
     echo "Password Database: ".$result;
     echo "</p>";
 
