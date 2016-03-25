@@ -9,4 +9,4 @@ create table admins(
                        , password varchar(255)
                     );
 
-insert into admins values (0, 'user1','098F6BCD4621D373CADE4E832627B4F');
+insert into admins values (0, 'user1','098f6bcd4621d373cade4e832627b4f6');

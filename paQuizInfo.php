@@ -4,8 +4,8 @@ $logUsername = $_POST["username"];
 $logPassword = $_POST["password"];
 
 echo $logUsername;
+echo "<br>";
 echo $logPassword;
-echo $hashedPwd = hash("md5",$logPassword);
 
 $host = "";
 $username = "tbroadus";
