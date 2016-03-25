@@ -37,6 +37,9 @@ else{
       if($result != null && $result == hash("md5",$logPassword)){
         $correctPass = true;
       }
+      else{
+        echo "here";
+      }
   }
   else{
     echo "<p>";
