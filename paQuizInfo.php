@@ -23,7 +23,7 @@ if(mysqli_connect_errno()){
 else{
   $query = " Select password from admins where username = '".$logUsername;
   $query = $query."'";
-  $result = $mysqli->query($query);
+  $result = mysql_fetch_assoc($mysqli->query($query));
 
     echo "<p>";
     echo "Password Entered:  ".$logPassword;
