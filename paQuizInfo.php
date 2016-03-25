@@ -25,10 +25,8 @@ else{
   $query = $query."'";
   $result = $mysqli->query($query);
   $row = mysql_fetch_assoc($result);
-  $dataPass = $row["password"];
+  echo $dataPass = $row["password"];
 
-  echo $dataPass;
-    
     echo "<p>";
     echo "Password Entered:  ".$logPassword;
     echo "<br>";
