@@ -24,18 +24,23 @@ else{
   $query = " Select password from admins where username = '".$logUsername;
   $query = $query."'";
   $result = $mysqli->query($query);
+  $row = mysql_fetch_assoc($result);
+  $dataPass = $row["password"];
 
+  echo $dataPass;
+    
     echo "<p>";
     echo "Password Entered:  ".$logPassword;
     echo "<br>";
     echo "Password Hashed:   ".$hashedPwd;
     echo "<br>";
-    echo "Password Database: ".$result;
+    echo "Password Database: ".$dataPass;
     echo "</p>";
 
   if($result){
-      if($result != null && $result == hash("md5",$logPassword)){
+      if( $dataPass == $hashedPwd)){
         $correctPass = true;
+        echo "IT WORKED BY GOD";
       }
       else{
         echo "here";
