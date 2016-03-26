@@ -1,3 +1,13 @@
+<?php
+  session_start();
+  /* Get hash value from login. */
+  $hash = $_POST['hash'];
+  $query = "select userid from users where licenseid = $hash";
+  /* result stuff, set session['id'] to the answer from this query*/
+  /* I think at this point we call session_write_close() */
+  /* then start the session again on the next page */
+  /* really this stuff needs to go on the demographics page, because it is first. */
+?>
 <!DOCTYPE html>
 <html>
 <head>
