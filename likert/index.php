@@ -1,12 +1,7 @@
 <?php
   session_start();
-  /* Get hash value from login. */
-  $hash = $_POST['hash'];
-  $query = "select userid from users where licenseid = $hash";
-  /* result stuff, set session['id'] to the answer from this query*/
-  /* I think at this point we call session_write_close() */
-  /* then start the session again on the next page */
-  /* really this stuff needs to go on the demographics page, because it is first. */
+  /* $_SESSION["userid"] will be set in TJ's stuff, but I have it here for testing. */
+  $_SESSION["userid"] = time();
 ?>
 <!DOCTYPE html>
 <html>
@@ -144,11 +139,11 @@ var nextPage = function(counter)
 <h1>Likert Scale Questions</h1>
 <h4>For the following questions, please answer with a number between 1 and 5.</h4>
 <ul>
-  <li>1 “Strongly Disagree”</li>
-  <li>2 “Disagree” </li>
-  <li>3 “Undecided” or “Neutral”</li>
-  <li>4 “Agree” </li>
-  <li>5 “Strongly Agree” </li>
+  <li>1 "Strongly Disagree"</li>
+  <li>2 "Disagree"</li>
+  <li>3 "Undecided" or "Neutral"</li>
+  <li>4 "Agree"</li>
+  <li>5 "Strongly Agree"</li>
 </ul>
 <h4 id="bottom">Select the appropriate number.  </h4>
 

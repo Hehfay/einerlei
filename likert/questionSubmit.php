@@ -1,4 +1,5 @@
 <?php
+session_start();
 $fname = 'output.mysql';
 $mode = 'a';
 $filehandle = fopen($fname, $mode);
@@ -10,10 +11,6 @@ else
 {
   if(isset($_POST))
   {
-    foreach($_POST as $item => $value)
-    {
-      fwrite($filehandle, "$item $value\n");
-    }
     $mysqli = new mysqli("", "jhartma0", "jhartma0", "Quiz");
     if($mysqli->connect_errno)
     {
@@ -23,11 +20,9 @@ else
     {
       $size = count($_POST) / 2;
       fwrite($filehandle, "/* Connected okay. */\n");
-      fwrite($filehandle, "POST / 2 is $size\n");
       for($i = 0; $i < $size; $i++)
       {
         $answers[$i] = $_POST["a$i"];
-        fwrite($filehandle, "$answers[$i]\n");
       }
       for($i = 0; $i < $size; $i++)
       {
@@ -93,7 +88,7 @@ else
             $answers[$i] = 0;
           }
         }
-        $query1 = "insert into LikertAnswer(license_id, question_id, answer) values(1, ".$result['id'].", ".$answers[$i].");";
+        $query1 = "insert into LikertAnswer(license_id, question_id, answer) values(".$_SESSION['userid'].", ".$result['id'].", ".$answers[$i].");";
         fwrite($filehandle, $query1."\n");
       }
       echo "<script>";
@@ -107,5 +102,7 @@ else
   {
     fwrite($filehandle, "/* POST array not set. */\n");
   }
+  fwrite($filehandle, "===========================================================\n");
   fclose($filehandle);
 }
+?>
