@@ -1,5 +1,4 @@
 <?php
-session_start();
 $fname = 'output.mysql';
 $mode = 'a';
 $filehandle = fopen($fname, $mode);
@@ -9,8 +8,13 @@ if($filehandle == false)
 }
 else
 {
+  fwrite($handle, $_SESSION["userid"]."\n");
   if(isset($_POST))
   {
+    foreach($_POST as $key => $value)
+    {
+      fwrite($filehandle, "key: $key value: $value\n");
+    }
     $mysqli = new mysqli("", "jhartma0", "jhartma0", "Quiz");
     if($mysqli->connect_errno)
     {
@@ -88,12 +92,9 @@ else
             $answers[$i] = 0;
           }
         }
-        $query1 = "insert into LikertAnswer(license_id, question_id, answer) values(".$_SESSION['userid'].", ".$result['id'].", ".$answers[$i].");";
+        $query1 = "insert into LikertAnswer(license_id, question_id, answer) values(".$_SESSION["userid"].", ".$result["id"].", ".$answers[$i].");";
         fwrite($filehandle, $query1."\n");
       }
-      echo "<script>";
-      echo "";
-      echo "</script>";
       $result->free();
       $mysqli->close();
     }

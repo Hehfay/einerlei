@@ -1,9 +1,10 @@
 <?php
-header("Location: ../likert/likertScaleFormJSON.html");
+header("Location: ../likert/");
+session_start();
+$handle = fopen("output.mysql", "a");
+fwrite($handle, "Session ID: ".$_SESSION["userid"]."\n");
 foreach($_POST as $item => $value)
 {
-  echo "$item => $value";
-  echo "<br>";
+  fwrite($handle, "$item => $value\n");
 }
-
-?>
+fwrite($handle, "====================================================\n");

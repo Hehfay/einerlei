@@ -1,7 +1,5 @@
 <?php
-  session_start();
-  /* $_SESSION["userid"] will be set in TJ's stuff, but I have it here for testing. */
-  $_SESSION["userid"] = time();
+session_start();
 ?>
 <!DOCTYPE html>
 <html>
