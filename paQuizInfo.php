@@ -21,7 +21,6 @@ if(mysqli_connect_errno()){
   echo "</p>";
 }
 else{
-  //$query = "Select password from admins where username ='".$logUsername."' ;";
   $query = "SELECT password FROM admins WHERE username='".$logUsername."';";
 
   echo "<br>".$query;
@@ -37,14 +36,14 @@ else{
     echo "<br>";
     echo "Password Database:_".$dataPass;
     echo "</p>";
-/*
+
   if($result){
       if( $dataPass == $hashedPwd)){
         $correctPass = true;
-        echo "IT WORKED BY GOD";
+        echo "<br> IT WORKED BY GOD";
       }
       else{
-        echo "here";
+        echo "<br> here";
       }
   }
   else{
@@ -52,14 +51,14 @@ else{
     echo "Query Error: ".$mysqli->error;
     echo "</p>";
   }
-      $myqli->close();
-*/
+
+  $myqli->close();
+
+  if ($correctPass == true){
+    echo "<p>";
+    echo "Hellll YEAH";
+    echo "</p>";
+  }
 }
-/*
-if ($correctPass == true){
-  echo "<p>";
-  echo "Hellll YEAH";
-  echo "</p>";
-}
-*/
+
 ?>
