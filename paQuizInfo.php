@@ -36,9 +36,9 @@ else{
     echo "<br>";
     echo "Password Database:_".$dataPass;
     echo "</p>";
-  if($result){
+  if($result != NULL){
       if( $dataPass == $hashedPwd)){
-        $correctPass = true;
+        $correctPass = TRUE;
         echo "<br> IT WORKED BY GOD";
       }
       else{
