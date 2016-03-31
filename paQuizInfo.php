@@ -50,7 +50,7 @@ else{
       //}
   }
 
-/*
+
   else{
     echo "<p>";
     echo "Query Error: ".$mysqli->error;
@@ -65,7 +65,7 @@ else{
     echo "</p>";
   }
 
-*/
+
 }
 
 ?>
