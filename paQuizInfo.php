@@ -14,7 +14,9 @@ $password = "tbroadus";
 $database = "Quiz";
 
 $mysqli = new mysqli($host, $username, $password, $database);
+
 $correctPass = false;
+
 if(mysqli_connect_errno()){
   echo "<p>";
   echo "Connect Error; ".mysqli_connect_errno();
@@ -36,14 +38,16 @@ else{
     echo "<br>";
     echo "Password Database:_".$dataPass;
     echo "</p>";
-  if($result != NULL){
-      if( $dataPass == $hashedPwd)){
+
+  if(/*$result*/4<5){
+    //  if( $dataPass == $hashedPwd)){
+
         $correctPass = TRUE;
         echo "<br> IT WORKED BY GOD";
-      }
-      else{
+      //}
+      //else{
         echo "<br> here";
-      }
+      //}
   }
 
 /*
