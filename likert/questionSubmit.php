@@ -1,20 +1,16 @@
 <?php
+session_start();
 $fname = 'output.mysql';
 $mode = 'a';
 $filehandle = fopen($fname, $mode);
 if($filehandle == false)
 {
-  echo "Error: File could not be written to.";
+  echo "Error: File could not be written to.\n";
 }
 else
 {
-  fwrite($handle, $_SESSION["userid"]."\n");
   if(isset($_POST))
   {
-    foreach($_POST as $key => $value)
-    {
-      fwrite($filehandle, "key: $key value: $value\n");
-    }
     $mysqli = new mysqli("", "jhartma0", "jhartma0", "Quiz");
     if($mysqli->connect_errno)
     {
