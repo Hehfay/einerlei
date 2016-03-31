@@ -1,7 +1,12 @@
+<?php
+session_start();
+$_SESSION['userid'] = time();
+?>
 <!DOCTYPE html>
 <html>
 <head>
 <title>Performance Anxiety Diagostic Questionnaire</title>
+<link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
