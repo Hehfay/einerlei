@@ -27,16 +27,15 @@ else{
   echo "<br>".$query;
   $result = $mysqli->query($query);
 
-  echo "<br>".$result;
   $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-  echo $dataPass=$row['password'];
+  $dataPass=$row['password'];
 
     echo "<p>";
     echo "Password Entered:  ".$logPassword;
     echo "<br>";
-    echo "Password Hashed:   ".$hashedPwd;
+    echo "Password Hashed:___".$hashedPwd;
     echo "<br>";
-    echo "Password Database: ".$dataPass;
+    echo "Password Database:_".$dataPass;
     echo "</p>";
 /*
   if($result){
