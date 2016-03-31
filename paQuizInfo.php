@@ -21,7 +21,8 @@ if(mysqli_connect_errno()){
   echo "</p>";
 }
 else{
-  $query = "Select password from admins where username = '".$logUsername."';";
+  //$query = "Select password from admins where username = '".$logUsername."' ;";
+  $query = "Select * from admins ;";
   echo "<br>".$query;
   $result = $mysqli->query($query);
 
