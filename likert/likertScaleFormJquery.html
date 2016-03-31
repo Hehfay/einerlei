@@ -1,0 +1,101 @@
+<!--
+
+Team Einerlei
+File Written by: Isaac Meisner
+
+This file generate the likert scale section of the questionaire.
+There are currently 158 questions that each have a 1-5 button.
+Ten questions are displayed on a page and the next button submits
+the answers and the next ten questions appear asynchronously.
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Performance Anxiety Diagostic Questionnaire</title>
+<link rel="stylesheet" href="../style.css">
+<script src="jquery-1.12.2.min.js"></script>
+</head>
+<body>
+<script>
+
+
+// JQUERY
+//---------------------
+
+var totalNumOfQs = 158;
+var qPerPage = 10;
+var question = "question";
+var totalPageNum = 16;
+var pageNum = 1;
+var counter = 1;
+
+$(document).ready(function(){
+  loadPage(pageNumber, counter);
+});
+
+function loadPage(pageNum, counter){
+  $("#likert").append("<form id='quiz' method='post'>");
+  $.getJSON("likertScaleQuestions.json", function(data){
+    var obj = data;
+    for(i=counter; i<=qPerPage; i++){
+      var question = obj["question"+i];
+      console.log(question);
+      $("#quiz").append("<p id='" + question + "'>" + question + "<br></p>");
+      for(j=1; j<=5; j++){
+        $("[id='"+question+"']").append("<div class='checkboxgroup'>"
+            + "<input type='radio' required id='answer"+i+"."+j+"'"
+            + "name='"+question+"' value='"+j+"'/>"
+            + "<label for='answer"+i+"."+j+"'>"+j
+            + "</label></div>");
+      }
+    }
+    $("#quiz").append("<button id='confirm' type='submit' value='submit'>Next</button>")
+    $("#quiz").append("<progress max='"+totalPageNum+"' value='"
+                                       +pageNum+"'>(Step 1)</progress>")
+    $("#confirm").click(submitAnswers(i-qPerPage, qPerPage, pageNum));
+    $("#likert").append("</form>");
+  });
+}
+
+function submitAnswers(counter, numOfQs, pageNum){
+  var args = "";
+  for(i=counter; i<=counter+numOfQs; i++)
+  {
+    for(j=1; j<=5; j++)
+    {
+      var ansWithVal = "answer"+i+"."+j;
+      console.log(ansWithVal);
+      var idName = $("#ansWithVal").attr("name");
+      if($("#ansWithVal").is(':checked'))
+      {
+        args += idName + "=" + $("#ansWithVal").val(); 
+      }
+    }
+    if(i != counter+(qPerPage-1))
+    {
+      args += "&";
+    }
+    $.post("questionSubmit.php", args);
+    loadPage(pageNum+1, i)
+}
+
+</script>
+
+<h1>Likert Scale Questions</h1>
+<h4>For the following questions, please answer with a number between 1 and 5.</h4>
+<ul>
+  <li>1 “Strongly Disagree”</li>
+  <li>2 “Disagree” </li>
+  <li>3 “Undecided” or “Neutral”</li>
+  <li>4 “Agree” </li>
+  <li>5 “Strongly Agree” </li>
+</ul>
+<h4 id="bottom">Select the appropriate number.  </h4>
+
+<div id="likert">
+</div>
+
+</body>
+</html>
