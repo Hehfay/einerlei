@@ -22,13 +22,13 @@ if(mysqli_connect_errno()){
 }
 else{
   //$query = "Select password from admins where username ='".$logUsername."' ;";
-  $query = "SELECT password from admins WHERE username='user1';";
+  $query = "SELECT password FROM admins WHERE username='user1';";
 
   echo "<br>".$query;
   $result = $mysqli->query($query);
 
   echo "<br>".$result;
-  $row = mysql_fetch_assoc($result);
+  $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
   echo $dataPass=$row['password'];
 
     echo "<p>";
