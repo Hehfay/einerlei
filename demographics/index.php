@@ -1,6 +1,13 @@
 <?php
+$mysqli = new mysqli("", "jhartma0", "jhartma0", "Quiz");
+$me = time();
+$query = "insert into License(licenseKey, active) values(".$me.", TRUE);";
+$result = $mysqli->query($query);
+$query = "select id from License where licenseKey = $me;";
+$result = $mysqli->query($query);
+$result = $result->fetch_assoc();
 session_start();
-$_SESSION['userid'] = time();
+$_SESSION['userid'] = $result["id"];
 ?>
 <!DOCTYPE html>
 <html>
@@ -109,7 +116,7 @@ function specificConditions(ans)
     <option value='4-5'>4-5</option>   
     <option value='6-7'>6-7</option>   
     <option value='8-9'>8-9</option>   
-    <option value='10-1l'>10-11</option>   
+    <option value='10-11'>10-11</option>   
     <option value='12-13'>12-13</option>   
     <option value='14-15'>14-15</option>   
     <option value='16-17'>16-17</option>   
