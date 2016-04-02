@@ -1,160 +1,314 @@
-{
-"question1":"I have perfect / absolute pitch." ,
-"question2":"I have strong relative pitch." ,
-"question3":"I consider myself to be a good musician." ,
-"question4":"I learn music easily." ,
-"question5":"I memorize music easily." ,
-"question6":"My voice/instrument teacher and I have a good relationship." ,
-"question7":"I am critical of myself in my lessons, or was critical of myself in lessons when I took lessons." ,
-"question8":"I am critical of myself in my practicing." ,
-"question9":"I enjoy performing more than most activities." ,
-"question10":"I tend to get sick near a performance." ,
-"question11":"I am a generally healthy person." ,
-"question12":"My diet is healthy." ,
-"question13":"I get enough sleep on a regular basis." ,
-"question14":"I exercise regularly." ,
-"question15":"I regularly hydrate well enough to support my body and vocal/instrument endeavors." ,
-"question16":"I deal with stress well." ,
-"question17":"I am stressed more often than I should be." ,
-"question18":"I am a generally anxious person." ,
-"question19":"People who know me would say I am an anxious or stressed person." ,
-"question20":"I feel like I belong at this school/in this career/avocation (related to music)." ,
-"question21":"I feel like I belong in my teacher’s studio of students.",
-"question22":"I feel comfortable in my teacher’s studio",
-"question23":"I feel comfortable performing in front of my musical colleagues." ,
-"question24":"My teacher believes in me and my vocal/instrumental ability." ,
-"question25":"My family believes in me and my vocal/instrumental ability." ,
-"question26":"I believe in myself and my vocal/instrumental ability." ,
-"question27":"My teacher understands my musical goals." ,
-"question28":"My teacher understands who I am as a person." ,
-"question29":"I am a confident singer/player." ,
-"question30":"I am a confident performer." ,
-"question31":"I am easily distractible." ,
-"question32":"I maintain my focus easily when singing/playing." ,
-"question33":"I maintain my focus easily when practicing." ,
-"question34":"I maintain my focus easily when performing." ,
-"question35":"Staying focused during a performance can be a struggle." ,
-"question36":"I believe I will have good audience turnout for my performances." ,
-"question37":"As a child, I was a natural performer." ,
-"question38":"I consider myself to be a natural performer." ,
-"question39":"Those who know me would consider me to be a natural performer." ,
-"question40":"I am sometimes down or depressed." ,
-"question41":"I am often down or depressed." ,
-"question42":"I like who I am as a person." ,
-"question43":"I like who I am as a singer/player." ,
-"question44":"I am a good singer/player." ,
-"question45":"I am a physically attractive person." ,
-"question46":"Others consider me to be a physically attractive person." ,
-"question47":"I have a good relationship with my family." ,
-"question48":"I have good relationships with my friends." ,
-"question49":"If I am in one, I am happy in my romantic relationship." ,
-"question50":"I am content with the frequency of my dating." ,
-"question51":"I have a good relationship with my romantic partner" ,
-"question52":"My romantic partner believes in me and my vocal/instrumental ability." ,
-"question53":"My romantic partner understands my musical goals." ,
-"question54":"My romantic partner understands who I am as a person." ,
-"question55":"My romantic partner supports me in my performances." ,
-"question56":"My romantic partner wants me to succeed with my voice/instrument." ,
-"question57":"I sometimes feel my success with my voice/instrument is intentionally sabotaged by my romantic partner. " ,
-"question58":"I sometimes feel my success with my voice/instrument is unintentionally sabotaged by my romantic partner. " ,
-"question59":"I sometimes have low self-esteem." ,
-"question60":"I often have low self-esteem." ,
-"question61":"I have other activities I take part in and enjoy besides singing/playing." ,
-"question62":"A career as a professional musician is important to me." ,
-"question63":"Performing music is very important to me." ,
-"question64":"I prefer performances to auditions." ,
-"question65":"Auditions make me nervous." ,
-"question66":"I consider myself to be a perfectionist." ,
-"question67":"Those who know me well would consider me to be a perfectionist." ,
-"question68":"I am a competitive person by nature." ,
-"question69":"I am a competitive person because of my musical/performance plans." ,
-"question70":"I enjoy a challenge." ,
-"question71":"I enjoy a competition." ,
-"question72":"I tend to have anxiety about performances." ,
-"question73":"I tend to have anxiety about auditions." ,
-"question74":"My teacher understands my performance anxiety fully." ,
-"question75":"My romantic partner understands my performance anxiety fully" ,
-"question76":"Only a small percentage of singers/instrumentalists will actually sing/play for a living",
-"question77":"I am disheartened by the odds for success as a singer/instrumentalist." ,
-"question78":"I believe that, even if I don’t sing/play for a living, I will be happy." ,
-"question79":"Singing/playing is my top priority." ,
-"question80":"Singing/playing is very high on my priority list." ,
-"question81":"I consider myself to be a religious or spiritual person." ,
-"question82":"I regularly attend religious services." ,
-"question83":"I believe that a higher power is looking out for me." ,
-"question84":"I believe that things happen for a reason." ,
-"question85":"I believe that I choose what happens in my own life." ,
-"question86":"I believe that much of my life has already been decided for me." ,
-"question87":"I have complete control over the course my musical career takes." ,
-"question88":"I have too little control over the course my musical career takes." ,
-"question89":"I like to be in control." ,
-"question90":"I feel uncomfortable if I don’t have enough control.",
-"question91":"I feel uncomfortable if I have too much control." ,
-"question92":"I deal well with conflicts." ,
-"question93":"I am a non-confrontational person." ,
-"question94":"My family and friends come to support me in my performances." ,
-"question95":"I have a good support system in my family and/or friends." ,
-"question96":"My friends and family want me to succeed with my voice/instrument." ,
-"question97":"My friends and family understand my performance anxiety fully." ,
-"question98":"I sometimes feel my success with my voice/instrument is intentionally sabotaged by my friends/family." ,
-"question99":"I sometimes feel my success with my voice/instrument is unintentionally sabotaged by my friends/family." ,
-"question100":"There is a person or there are people who care about me succeeding as much as I do." ,
-"question101":"I have a plan for combating any performance anxiety I might experience." ,
-"question102":"I have a method for coping with stress that works." ,
-"question103":"I plan too much for myself." ,
-"question104":"I am good about setting boundaries and not taking on too much." ,
-"question105":"I have personally experienced performance anxiety in my life." ,
-"question106":"I have personally experienced performance anxiety in the recent past." ,
-"question107":"I used to get nervous, but don’t tend to do that anymore.",
-"question108":"I am an introverted individual." ,
-"question109":"I am an extroverted individual." ,
-"question110":"I fear the future." ,
-"question111":"I am a positive thinker." ,
-"question112":"I'm often negative.",
-"question113":"Important people will be at my performances." ,
-"question114":"I am embarrassed by my nervousness." ,
-"question115":"My heart is races when I perform." ,
-"question116":"I breathe faster than normal when I perform." ,
-"question117":"I sweat because of anxiety when I perform." ,
-"question118":"I get cold because of anxiety when I perform." ,
-"question119":"I can’t get motivated for performances.",
-"question120":"I am more critical of myself than usual when a performance is imminent." ,
-"question121":"I have trouble staying focused when anticipating a performance." ,
-"question122":"I make more mistakes than I should when anticipating a performance." ,
-"question123":"I imagine the worst when anticipating a performance." ,
-"question124":"My voice is affected by my nervousness during a performance." ,
-"question125":"My teacher doesn’t think I perform as well as I should.",
-"question126":"My peers don’t think I perform as well as I should.",
-"question127":"My family/friends don’t think I perform as well as I should.",
-"question128":"My romantic partner doesn’t think I perform as well as I should." ,
-"question129":"My stomach gets upset when I perform.",
-"question130":"I feel jittery when I perform." ,
-"question131":"I feel uneasy when I perform." ,
-"question132":"During performances I am concerned about the outcome of that performance." ,
-"question133":"I have memory slips because of anxiety when I perform." ,
-"question134":"I have trouble sleeping when anticipating a performance." ,
-"question135":"My eating habits change because of anxiety when anticipating a performance." ,
-"question136":"Anxiety affects the amount of practicing I do." ,
-"question137":"Anxiety affects the quality of my practicing." ,
-"question138":"My sleep habits are affected by anxiety. " ,
-"question139":"I become irritable because of anxiety." ,
-"question140":"I drink more alcohol because of anxiety." ,
-"question141":"I use recreational drugs because of anxiety." ,
-"question142":"I procrastinate because of anxiety." ,
-"question143":"My relationships are affected by my anxiety." ,
-"question144":"My general activity level is affected by anxiety." ,
-"question145":"My throat gets dry because of anxiety during performances." ,
-"question146":"I often want to cancel or reschedule my performances because of anxiety." ,
-"question147":"I’d rather be singing/playing in a practice room than in front of people.",
-"question148":"Nervousness is negatively affecting my musical progress." ,
-"question149":"I am driven to do my best." ,
-"question150":"My quality of performing/singing/playing is consistent." ,
-"question151":"I start new projects with lots of energy." ,
-"question152":"I fear success." ,
-"question153":"I function well at a high energy level." ,
-"question154":"I am able to quiet mental chatter." ,
-"question155":"I frequently imagine the worst." ,
-"question156":"I need to learn how to relax." ,
-"question157":"No matter how much I prepare, something always goes wrong." ,
-"question158":"I am mentally tough enough for my musical/performance plans.",
-}
+1
+"I have perfect/absolute pitch."
+2
+"I have strong relative pitch." 
+3
+"I consider myself to be a good musician." 
+4
+"I learn music easily." 
+5
+"I memorize music easily." 
+6
+"My voice/instrument teacher and I have a good relationship." 
+7
+"I am critical of myself in my lessons, or was critical of myself in lessons when I took lessons." 
+8
+"I am critical of myself in my practicing." 
+9
+"I tend to get sick near a performance." 
+10
+"I am a generally healthy person." 
+11
+"My diet is healthy." 
+12
+"I get enough sleep on a regular basis." 
+13
+"I exercise regularly." 
+14
+"I regularly hydrate well enough to support my body and vocal/instrument endeavors." 
+15
+"I deal with stress well." 
+16
+"I am stressed more often than I should be." 
+17
+"I am a generally anxious person." 
+18
+"People who know me would say I am an anxious or stressed person." 
+19
+"I feel like I belong at this school/in this career/avocation (related to music)." 
+20
+"I feel like I belong in my teacher’s studio of students."
+21
+"I feel comfortable in my teacher’s studio"
+22
+"I feel comfortable performing in front of my musical colleagues." 
+23
+"My teacher believes in me and my vocal/instrumental ability." 
+24
+"My family believes in me and my vocal/instrumental ability." 
+25
+"I believe in myself and my vocal/instrumental ability." 
+26
+"My teacher understands my musical goals." 
+27
+"My teacher understands who I am as a person." 
+28
+"I am a confident singer/player." 
+29
+"I am a confident performer." 
+30
+"I am easily distractible." 
+31
+"I maintain my focus easily when singing/playing." 
+32
+"I maintain my focus easily when practicing." 
+33
+"I maintain my focus easily when performing." 
+34
+"Staying focused during a performance can be a struggle." 
+35
+"I believe I will have good audience turnout for my performances." 
+36
+"As a child, I was a natural performer." 
+37
+"I consider myself to be a natural performer." 
+38
+"Those who know me would consider me to be a natural performer." 
+39
+"I am sometimes down or depressed." 
+40
+"I am often down or depressed." 
+41
+"I like who I am as a person." 
+42
+"I like who I am as a singer/player." 
+43
+"I am a good singer/player." 
+44
+"I am a physically attractive person." 
+45
+"Others consider me to be a physically attractive person." 
+46
+"I have a good relationship with my family." 
+47
+"I have good relationships with my friends." 
+48
+"If I am in one, I am happy in my romantic relationship." 
+49
+"I am content with the frequency of my dating." 
+50
+"I have a good relationship with my romantic partner" 
+51
+"My romantic partner believes in me and my vocal/instrumental ability." 
+52
+"My romantic partner understands my musical goals." 
+53
+"My romantic partner understands who I am as a person." 
+54
+"My romantic partner supports me in my performances." 
+55
+"My romantic partner wants me to succeed with my voice/instrument." 
+56
+"I sometimes feel my success with my voice/instrument is intentionally sabotaged by my romantic partner. " 
+57
+"I sometimes feel my success with my voice/instrument is unintentionally sabotaged by my romantic partner. " 
+58
+"I sometimes have low self-esteem." 
+59
+"I often have low self-esteem." 
+60
+"I have other activities I take part in and enjoy besides singing/playing." 
+61
+"A career as a professional musician is important to me." 
+62
+"Performing music is very important to me." 
+63
+"I prefer performances to auditions." 
+64
+"Auditions make me nervous." 
+65
+"I consider myself to be a perfectionist." 
+66
+"Those who know me well would consider me to be a perfectionist." 
+67
+"I am a competitive person by nature." 
+68
+"I am a competitive person because of my musical/performance plans." 
+69
+"I enjoy a challenge." 
+70
+"I enjoy a competition." 
+71
+"I tend to have anxiety about performances." 
+72
+"I tend to have anxiety about auditions." 
+73
+"My teacher understands my performance anxiety fully." 
+74
+"My romantic partner understands my performance anxiety fully" 
+75
+"Only a small percentage of singers/instrumentalists will actually sing/play for a living"
+76
+"I am disheartened by the odds for success as a singer/instrumentalist." 
+77
+"I believe that, even if I don’t sing/play for a living, I will be happy." 
+78
+"Singing/playing is my top priority." 
+79
+"Singing/playing is very high on my priority list." 
+80
+"I consider myself to be a religious or spiritual person." 
+81
+"I regularly attend religious services." 
+82
+"I believe that a higher power is looking out for me." 
+83
+"I believe that things happen for a reason." 
+84
+"I believe that I choose what happens in my own life." 
+85
+"I believe that much of my life has already been decided for me." 
+86
+"I have complete control over the course my musical career takes." 
+87
+"I have too little control over the course my musical career takes." 
+88
+"I like to be in control." 
+89
+"I feel uncomfortable if I don’t have enough control."
+90
+"I feel uncomfortable if I have too much control." 
+91
+"I deal well with conflicts." 
+92
+"I am a non-confrontational person." 
+93
+"My family and friends come to support me in my performances." 
+94
+"I have a good support system in my family and/or friends." 
+95
+"My friends and family want me to succeed with my voice/instrument." 
+96
+"My friends and family understand my performance anxiety fully." 
+97
+"I sometimes feel my success with my voice/instrument is intentionally sabotaged by my friends/family." 
+98
+"I sometimes feel my success with my voice/instrument is unintentionally sabotaged by my friends/family." 
+99
+"There is a person or there are people who care about me succeeding as much as I do." 
+100
+"I have a plan for combating any performance anxiety I might experience." 
+101
+"I have a method for coping with stress that works." 
+102
+"I plan too much for myself." 
+103
+"I am good about setting boundaries and not taking on too much." 
+104
+"I have personally experienced performance anxiety in my life." 
+105
+"I have personally experienced performance anxiety in the recent past." 
+106
+"I used to get nervous, but don’t tend to do that anymore."
+107
+"I am an introverted individual." 
+108
+"I am an extroverted individual." 
+109
+"I fear the future." 
+110
+"I am a positive thinker." 
+111
+"I'm often negative."
+112
+"Important people will be at my performances." 
+113
+"I am embarrassed by my nervousness." 
+114
+"My heart is races when I perform." 
+115
+"I breathe faster than normal when I perform." 
+116
+"I sweat because of anxiety when I perform." 
+117
+"I get cold because of anxiety when I perform." 
+118
+"I can’t get motivated for performances."
+119
+"I am more critical of myself than usual when a performance is imminent." 
+120
+"I have trouble staying focused when anticipating a performance." 
+121
+"I make more mistakes than I should when anticipating a performance." 
+122
+"I imagine the worst when anticipating a performance." 
+123
+"My voice is affected by my nervousness during a performance." 
+124
+"My teacher doesn’t think I perform as well as I should."
+125
+"My peers don’t think I perform as well as I should."
+126
+"My family/friends don’t think I perform as well as I should."
+127
+"My romantic partner doesn’t think I perform as well as I should." 
+128
+"My stomach gets upset when I perform."
+129
+"I feel jittery when I perform." 
+130
+"I feel uneasy when I perform." 
+131
+"During performances I am concerned about the outcome of that performance." 
+132
+"I have memory slips because of anxiety when I perform." 
+133
+"I have trouble sleeping when anticipating a performance." 
+134
+"My eating habits change because of anxiety when anticipating a performance." 
+135
+"Anxiety affects the amount of practicing I do." 
+136
+"Anxiety affects the quality of my practicing." 
+137
+"My sleep habits are affected by anxiety. " 
+138
+"I become irritable because of anxiety." 
+139
+"I drink more alcohol because of anxiety." 
+140
+"I use recreational drugs because of anxiety." 
+141
+"I procrastinate because of anxiety." 
+142
+"My relationships are affected by my anxiety." 
+143
+"My general activity level is affected by anxiety." 
+144
+"My throat gets dry because of anxiety during performances." 
+145
+"I often want to cancel or reschedule my performances because of anxiety." 
+146
+"I’d rather be singing/playing in a practice room than in front of people."
+147
+"Nervousness is negatively affecting my musical progress." 
+148
+"I am driven to do my best." 
+149
+"My quality of performing/singing/playing is consistent." 
+150
+"I start new projects with lots of energy." 
+151
+"I fear success." 
+152
+"I function well at a high energy level." 
+153
+"I am able to quiet mental chatter." 
+154
+"I frequently imagine the worst." 
+155
+"I need to learn how to relax." 
+156
+"No matter how much I prepare, something always goes wrong." 
+157
+"I am mentally tough enough for my musical/performance plans."
