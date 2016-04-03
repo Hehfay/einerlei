@@ -1,13 +1,13 @@
 USE Quiz;
 
 CREATE TABLE LikertAnswerBroadCategory(
-  category VARCHAR(255) NOT NULL,
+  category VARCHAR(255) NOT NULL UNIQUE,
   id       INT UNSIGNED NOT NULL AUTO_INCREMENT,
   PRIMARY KEY(id)
 ) ENGINE = INNODB;
 
 CREATE TABLE LikertAnswerSubCategory(
-  category VARCHAR(255) NOT NULL,
+  category VARCHAR(255) NOT NULL UNIQUE,
   id       INT UNSIGNED NOT NULL AUTO_INCREMENT,
   PRIMARY KEY(id)
 ) ENGINE = INNODB;
@@ -45,7 +45,7 @@ INSERT INTO LikertAnswerSubCategory(category) VALUES("Personal Drive/Motivation"
 INSERT INTO LikertAnswerSubCategory(category) VALUES("The Audition Factor");
 
 CREATE TABLE LikertQuestion(
-  question          VARCHAR(255),
+  question          VARCHAR(255) UNIQUE,
   id                INT UNSIGNED NOT NULL AUTO_INCREMENT, PRIMARY KEY(id),
   broad_category_id INT UNSIGNED NOT NULL, FOREIGN KEY(broad_category_id) REFERENCES LikertAnswerBroadCategory(id) ON UPDATE CASCADE,
   sub_category_id1  INT UNSIGNED NOT NULL, FOREIGN KEY(sub_category_id1) REFERENCES LikertAnswerSubCategory(id) ON UPDATE CASCADE,

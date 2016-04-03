@@ -31,7 +31,7 @@ INSERT INTO LikertValue(input) VALUES(75);
 INSERT INTO LikertValue(input) VALUES(100);
 INSERT INTO LikertValue(input) VALUES(6);
 
-INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I have perfect / absolute pitch.", 2, 19, FALSE);
+INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I have perfect/absolute pitch.", 2, 19, FALSE);
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I have strong relative pitch.", 2, 19, FALSE );
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I consider myself to be a good musician.", 2, 19, FALSE );
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I learn music easily.", 2, 19, FALSE );
@@ -39,7 +39,6 @@ INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("My voice/instrument teacher and I have a good relationship.", 2, 4, FALSE );
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I am critical of myself in my lessons, or was critical of myself in lessons when I took lessons.", 2, 7, TRUE );
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I am critical of myself in my practicing.", 2, 7, TRUE );
-/* INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I enjoy performing more than most activities." ); */ /* NO BROAD OR SUB CATEGORY ASSOCIATED WITH THIS QUESTION */
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I tend to get sick near a performance.", 1, 1, TRUE );
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I am a generally healthy person.", 2, 13, FALSE );
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("My diet is healthy.", 2, 13, FALSE );
@@ -81,7 +80,7 @@ INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I have good relationships with my friends.", 2, 11, FALSE );
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("If I am in one, I am happy in my romantic relationship.", 2, 12, FALSE );
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I am content with the frequency of my dating.", 2, 12, FALSE );
-INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I have a good relationship with my romantic partner", 2, 12, FALSE );
+INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I have a good relationship with my romantic partner.", 2, 12, FALSE );
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("My romantic partner believes in me and my vocal/instrumental ability.", 2, 12, FALSE );
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("My romantic partner understands my musical goals.", 2, 12, FALSE );
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("My romantic partner understands who I am as a person.", 2, 12, FALSE );
@@ -110,7 +109,7 @@ INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I am disheartened by the odds for success as a singer/instrumentalist.", 2, 15, TRUE );
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I believe that, even if I don't sing/play for a living, I will be happy.", 2, 10, FALSE );
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("Singing/playing is my top priority.", 2, 10, TRUE );
-/* INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("Singing/playing is very high on my priority list." ); */ /* NO DATA ASSOCIATED WITH THIS QUESTION */
+INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("Singing/playing is very high on my priority list.", 2, 10, TRUE );
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I consider myself to be a religious or spiritual person.", 2, 14, FALSE );
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I regularly attend religious services.", 2, 14, FALSE );
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I believe that a higher power is looking out for me.", 2, 14, FALSE );
@@ -142,7 +141,7 @@ INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I am an extroverted individual.", 2, 21, FALSE );
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I fear the future.", 2, 15, FALSE );
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I am a positive thinker.", 2, 22, FALSE );
-INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I'm often negative.", 2, 22, TRUE);
+INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I\'m often negative.", 2, 22, TRUE);
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("Important people will be at my performances.", 2, 10, TRUE );
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("I am embarrassed by my nervousness.", 1, 2, TRUE );
 INSERT INTO LikertQuestion(question, broad_category_id, sub_category_id1, score_inversely) VALUES("My heart is races when I perform.", 1, 1, TRUE);

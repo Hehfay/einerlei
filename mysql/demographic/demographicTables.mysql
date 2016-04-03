@@ -5,7 +5,7 @@ DROP TABLE if EXISTS DemographicQuestion;
 CREATE TABLE DemographicQuestion
 (
   id          INT UNSIGNED NOT NULL AUTO_INCREMENT, PRIMARY KEY(id),
-  question    VARCHAR(255)
+  question    VARCHAR(255) UNIQUE
 ) ENGINE = INNODB;
 
 CREATE TABLE DemographicAnswer
