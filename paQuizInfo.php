@@ -39,15 +39,15 @@ else{
     echo "Password Database:_".$dataPass;
     echo "</p>";
 
-  if(/*$result*/4<5){
-    //  if( $dataPass == $hashedPwd)){
+  if(4<5){
+      if( $dataPass == $hashedPwd)){
 
         $correctPass = TRUE;
         echo "<br> IT WORKED BY GOD";
-      //}
-      //else{
+      }
+      else{
         echo "<br> here";
-      //}
+      }
   }
 
 
@@ -57,7 +57,7 @@ else{
     echo "</p>";
   }
 
-  $myqli->close();
+  $mysqli->close();
 
   if ($correctPass == true){
     echo "<p>";
