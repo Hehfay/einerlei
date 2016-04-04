@@ -14,19 +14,32 @@ else
     $mysqli = new mysqli("", "jhartma0", "jhartma0", "Quiz");
     if($mysqli->connect_errno)
     {
-      fwrite($filehandle, "Mysqli connect error $mysqli->connect_errno.\n");
+      fwrite($filehandle, "/* Mysqli connect error: $mysqli->connect_errno */\n");
     }
     else
     {
-      $size = count($_POST) / 2;
-      fwrite($filehandle, "/* Connected okay. */\n");
-      for($i = 0; $i < $size; $i++)
+      fwrite($filehandle, "/************ CONNECTED OK ************/\n");
+      $reg = 0;
+      $inv = 100;
+      for($i = 1; $i <= 5; $i++)
       {
-        $answers[$i] = $_POST["a$i"];
+        $score_reg[$i] = $reg;
+        $score_inv[$i] = $inv;
+        $reg += 25;
+        $inv -= 25;
       }
+      $size = count($_POST) / 2;
       for($i = 0; $i < $size; $i++)
       {
-        $query1 = "select id, score_inversely from LikertQuestion where question=";
+        if($_POST["a$i"] == 6)
+        {
+          $answer = 6;
+          $query1 = "select id from LikertQuestion where question=";
+        }
+        else
+        {
+          $query1 = "select id, score_inversely from LikertQuestion where question=";
+        }
         $query2 = $_POST["q$i"];
         $query2 = $mysqli->escape_string($query2);
         $query2 = "'".$query2."';";
@@ -34,62 +47,19 @@ else
         fwrite($filehandle, $query."\n");
         $result = $mysqli->query($query);
         $result = $result->fetch_assoc();
-        if($result['score_inversely'])
+        if($_POST["a$i"] != 6)
         {
-          if($answers[$i] == 1)
+          if($result['score_inversely'])
           {
-            $answers[$i] = 100;
+            $answer = $score_inv[$_POST["a$i"]];
           }
-          elseif($answers[$i] == 2)
+          else
           {
-            $answers[$i] = 75;
-          }
-          elseif($answers[$i] == 3)
-          {
-            $answers[$i] = 50;
-          }
-          elseif($answers[$i] == 4)
-          {
-            $answers[$i] = 25;
-          }
-          elseif($answers[$i] == 5)
-          {
-            $answers[$i] = 0;
-          }
-          elseif($answers[$i] == 6)
-          {
-            $answers[$i] = 0;
+            $answer = $score_reg[$_POST["a$i"]];
           }
         }
-        else
-        {
-          if($answers[$i] == 1)
-          {
-            $answers[$i] = 0;
-          }
-          elseif($answers[$i] == 2)
-          {
-            $answers[$i] = 25;
-          }
-          elseif($answers[$i] == 3)
-          {
-            $answers[$i] = 50;
-          }
-          elseif($answers[$i] == 4)
-          {
-            $answers[$i] = 75;
-          }
-          elseif($answers[$i] == 5)
-          {
-            $answers[$i] = 100;
-          }
-          elseif($answers[$i] == 6)
-          {
-            $answers[$i] = 0;
-          }
-        }
-        $query1 = "insert into LikertAnswer(license_id, question_id, answer) values(".$_SESSION["userid"].", ".$result["id"].", ".$answers[$i].");";
-        fwrite($filehandle, $query1."\n");
+        $query3 = "insert into LikertAnswer(license_id, question_id, answer) values(".$_SESSION["userid"].", ".$result["id"].", ".$answer.");";
+        fwrite($filehandle, $query3."\n");
       }
       $result->free();
       $mysqli->close();
