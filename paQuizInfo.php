@@ -40,8 +40,7 @@ else{
     echo "</p>";
 
   if(4<5){
-      if( $dataPass == $hashedPwd)){
-
+      if($dataPass == $hashedPwd){
         $correctPass = TRUE;
         echo "<br> IT WORKED BY GOD";
       }
@@ -49,8 +48,6 @@ else{
         echo "<br> here";
       }
   }
-
-
   else{
     echo "<p>";
     echo "Query Error: ".$mysqli->error;
@@ -64,8 +61,6 @@ else{
     echo "Hellll YEAH";
     echo "</p>";
   }
-
-
 }
 
 ?>
