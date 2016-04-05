@@ -24,7 +24,7 @@ the answers and the next ten questions appear asynchronously.
 // JQUERY
 //---------------------
 
-var totalNumOfQs = 158;
+var totalNumOfQs = 157;
 var qPerPage = 10;
 var question = "question";
 var totalPageNum = 16;
@@ -32,54 +32,84 @@ var pageNum = 1;
 var counter = 1;
 
 $(document).ready(function(){
-  loadPage(pageNumber, counter);
+  $("#likert").append("<form id='quiz' method='post'>");
+  loadQuestions(pageNum, counter);
+  $("#likert").append("</form>");
 });
 
-function loadPage(pageNum, counter){
-  $("#likert").append("<form id='quiz' method='post'>");
+//---------------------------------------------
+
+function loadQuestions(pageNum, counter){
+  alert("counter="+counter)
   $.getJSON("likertScaleQuestions.json", function(data){
     var obj = data;
     for(i=counter; i<=qPerPage; i++){
       var question = obj["question"+i];
-      console.log(question);
       $("#quiz").append("<p id='" + question + "'>" + question + "<br></p>");
-      for(j=1; j<=5; j++){
-        $("[id='"+question+"']").append("<div class='checkboxgroup'>"
-            + "<input type='radio' required id='answer"+i+"."+j+"'"
-            + "name='"+question+"' value='"+j+"'/>"
-            + "<label for='answer"+i+"."+j+"'>"+j
-            + "</label></div>");
+      for(j=1; j<=6; j++){
+        if(j == 6)
+        {
+          $("[id='"+question+"']").append("<div class='checkboxgroup'>"
+              + "<input type='radio' required id='answer"+i+"."+j+"'"
+              + "name='"+question+"' value='"+j+"'/>"
+              + "<label for='answer"+i+"."+j+"'>N/A</label></div>");
+        }
+        else
+        {
+          $("[id='"+question+"']").append("<div class='checkboxgroup'>"
+              + "<input type='radio' required id='answer"+i+"."+j+"'"
+              + "name='"+question+"' value='"+j+"'/>"
+              + "<label for='answer"+i+"."+j+"'>"+j
+              + "</label></div>");
+        }
       }
     }
     $("#quiz").append("<button id='confirm' type='submit' value='submit'>Next</button>")
     $("#quiz").append("<progress max='"+totalPageNum+"' value='"
-                                       +pageNum+"'>(Step 1)</progress>")
-    $("#confirm").click(submitAnswers(i-qPerPage, qPerPage, pageNum));
-    $("#likert").append("</form>");
+                                       +pageNum+"'></progress>")
+    $("#likert").submit(function (){
+      submitAnswers(i-qPerPage, qPerPage);
+      var qRemaining = totalNumOfQs % qPerPage;
+      if(i == ((totalNumOfQs - qRemaining)+1))
+      {
+        alert("Last Page!");
+      }else if(i > totalNumOfQs)
+      {
+        alert("Finished!");
+      }else
+      {
+        loadQuestions(pageNum+1, i);
+      }
+    });
   });
 }
 
-function submitAnswers(counter, numOfQs, pageNum){
+//---------------------------------------------
+
+function submitAnswers(counter, numOfQs)
+{
   var args = "";
-  for(i=counter; i<=counter+numOfQs; i++)
+  for(i=counter; i<counter+numOfQs; i++)
   {
-    for(j=1; j<=5; j++)
+    for(j=1; j<=6; j++)
     {
       var ansWithVal = "answer"+i+"."+j;
-      console.log(ansWithVal);
-      var idName = $("#ansWithVal").attr("name");
-      if($("#ansWithVal").is(':checked'))
+      var idName = $("[id='"+ansWithVal+"']").attr("name");
+      if($("[id='"+ansWithVal+"']").is(':checked'))
       {
-        args += idName + "=" + $("#ansWithVal").val(); 
+        args += idName + "=" + $("[id='"+ansWithVal+"']").val(); 
       }
     }
     if(i != counter+(qPerPage-1))
     {
       args += "&";
     }
-    $.post("questionSubmit.php", args);
-    loadPage(pageNum+1, i)
+  }
+  $.post("questionSubmit.php", args);
+  alert(args);
 }
+
+//---------------------------------------------
 
 </script>
 
