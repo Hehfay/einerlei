@@ -19,6 +19,10 @@ else
     else
     {
       fwrite($filehandle, "/************ CONNECTED OK ************/\n");
+      foreach($_POST as $key => $value)
+      {
+        fwrite($filehandle, "key: $key value: $value\n");
+      }
       $reg = 0;
       $inv = 100;
       for($i = 1; $i <= 5; $i++)

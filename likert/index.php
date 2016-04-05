@@ -28,9 +28,16 @@ window.onload = function()
       for (i=1; i<=10; i++){
         document.getElementById(question+i).innerHTML += obj[question+i];
         document.getElementById(question+i).innerHTML += "<br>";
-        for(j = 1; j<=5; j++)
+        for(j = 1; j<=6; j++)
         {
-          document.getElementById(question+i).innerHTML += "<div class='checkboxgroup'>" +   "<input type='radio' id='answer" + i + "." + j + "' name='" + obj[question + i] + "' value='" + j +"'required>" +"<label for='answer" + i + "." + j + "'>"+j+"</label>"+ "</div>";
+          if(j == 6)
+          {
+            document.getElementById(question+i).innerHTML += "<div class='checkboxgroup'>" + "<input type='radio' id='answer" + i + "." + j + "' name='" + obj[question + i] + "' value='" + j +"'required>" +"<label for='answer" + i + "." + j + "'>N/A</label>"+ "</div>";
+          }
+          else
+          {
+            document.getElementById(question+i).innerHTML += "<div class='checkboxgroup'>" + "<input type='radio' id='answer" + i + "." + j + "' name='" + obj[question + i] + "' value='" + j +"'required>" +"<label for='answer" + i + "." + j + "'>"+j+"</label>"+ "</div>";
+          }
         }
       }
       document.getElementById("quiz").innerHTML += "<button id='confirm' type='button' value='submit' onclick='submitAnswers(i-10)'>Next</button>";
@@ -51,7 +58,7 @@ var submitAnswers = function(counter)
   var answer_key = "a";
   for(i=counter; i<=counter+9; i++)
   {
-    for(j=1; j<=5; j++)
+    for(j=1; j<=6; j++)
     {
       var answer = "answer" + i;
       var answerWithVal = "answer" + i + "." + j;
@@ -112,9 +119,16 @@ var nextPage = function(counter)
         {
           document.getElementById(question+i).innerHTML += obj[question+i];
           document.getElementById(question+i).innerHTML += "<br>";
-          for(j = 1; j<=5; j++)
+          for(j = 1; j<=6; j++)
           {
-            document.getElementById(question+i).innerHTML += "<div class='checkboxgroup'>" +   "<input type='radio' id='answer" + i + "." + j + "' name='" + obj[question + i] + "' value='" + j +"'required>" +"<label for='answer" + i + "." + j + "'>"+j+"</label>"+ "</div>";
+            if(j == 6)
+            {
+              document.getElementById(question+i).innerHTML += "<div class='checkboxgroup'>" + "<input type='radio' id='answer" + i + "." + j + "' name='" + obj[question + i] + "' value='" + j +"'required>" +"<label for='answer" + i + "." + j + "'>N/A</label>"+ "</div>";
+            }
+            else
+            {
+              document.getElementById(question+i).innerHTML += "<div class='checkboxgroup'>" + "<input type='radio' id='answer" + i + "." + j + "' name='" + obj[question + i] + "' value='" + j +"'required>" +"<label for='answer" + i + "." + j + "'>"+j+"</label>"+ "</div>";
+            }
             //document.getElementById(question+i).innerHTML +=
             //"<input type = 'radio' name='" + obj[question + i] + "' value='"+j+"'required>"+j; 
             //"<input type = 'radio' id='answer" + i + "." + j + "' name='" + obj[question + i] + "' value='"+j+"'>"+j; 
