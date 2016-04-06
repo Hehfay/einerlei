@@ -1,13 +1,18 @@
 <?php
-
+/*
+  This Code compares an entered username and password to
+  a username and password stored in a database.
+*/
 $logUsername = $_POST["username"];
 $logPassword = $_POST["password"];
 
 echo $logUsername;
 echo "<br>";
 echo $logPassword;
+
 $hashedPwd = hash("md5",$logPassword);
 
+//Begin Query of Database
 $host = "";
 $username = "tbroadus";
 $password = "tbroadus";
@@ -23,12 +28,14 @@ if(mysqli_connect_errno()){
   echo "</p>";
 }
 else{
+  //MYSQL Query to database
   $query = "SELECT password FROM admins WHERE username='".$logUsername."';";
 
-  echo "<br>".$query;
   $result = $mysqli->query($query);
 
+  //convert result object to value
   $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+
   $dataPass=$row['password'];
 
     echo "<p>";
@@ -39,13 +46,24 @@ else{
     echo "Password Database:_".$dataPass;
     echo "</p>";
 
-  if(4<5){
+  if($result){
+    //Compare hashed password to entered password
       if($dataPass == $hashedPwd){
         $correctPass = TRUE;
-        echo "<br> IT WORKED BY GOD";
+        echo "
+        <input id="spinner" />
+          <script>
+            $(function() {
+              $('#spinner').spinner({
+              min: 1,
+              max: 1000,
+              step: 1
+              });
+            });
+          </script>";
       }
       else{
-        echo "<br> here";
+        echo "WRONG PASSWORD ENTERED";
       }
   }
   else{
@@ -53,14 +71,6 @@ else{
     echo "Query Error: ".$mysqli->error;
     echo "</p>";
   }
-
   $mysqli->close();
-
-  if ($correctPass == true){
-    echo "<p>";
-    echo "Hellll YEAH";
-    echo "</p>";
-  }
 }
-
 ?>
