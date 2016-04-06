@@ -50,17 +50,7 @@ else{
     //Compare hashed password to entered password
       if($dataPass == $hashedPwd){
         $correctPass = TRUE;
-        echo "
-        <input id="spinner" />
-          <script>
-            $(function() {
-              $('#spinner').spinner({
-              min: 1,
-              max: 1000,
-              step: 1
-              });
-            });
-          </script>";
+        echo "<input type="number" min="0" max="20" step="2" value="10" name="some-name"/>";
       }
       else{
         echo "WRONG PASSWORD ENTERED";
