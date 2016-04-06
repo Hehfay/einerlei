@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!isset($_SESSION['id']))
+{
+  header('Location: ../please-login/');
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,8 +20,7 @@
   <p><strong>You must complete the questionnaire in one sitting: you cannot save progress a partially complete questionnaire.</strong>  Most people find half an hour to be enough time to thoughtfully complete it.</p>
   <p>Taking this diagnostic questionnaire is voluntary and you may choose to disengage at any time. Your unique code will not be unusable again until you click the final submit at the end of the questionnaire.</p>
   <div id="button">
-    <a href="../likert/">Click Here To Begin Questionnaire</a>
+    <a href="../demographics/">Click Here To Begin Questionnaire</a>
   </div>
-</div>
 </body>
 </html>

@@ -1,13 +1,9 @@
 <?php
-$mysqli = new mysqli("", "jhartma0", "jhartma0", "Quiz");
-$me = time();
-$query = "insert into License(licenseKey, active) values(".$me.", TRUE);";
-$result = $mysqli->query($query);
-$query = "select id from License where licenseKey = $me;";
-$result = $mysqli->query($query);
-$result = $result->fetch_assoc();
 session_start();
-$_SESSION['userid'] = $result["id"];
+if(!isset($_SESSION['id']))
+{
+  header('Location: ../please-login/');
+}
 ?>
 <!DOCTYPE html>
 <html>
