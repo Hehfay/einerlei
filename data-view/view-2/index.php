@@ -89,6 +89,52 @@ if(!isset($_SESSION["loggedin"]))
   <td nowrap>etc.</td>
 </tr>
 </table>
+
+<?php
+$fname = 'View2.csv';
+$mode = 'w';
+$filehandle = fopen($fname, $mode);
+if($filehandle == false)
+{
+  echo "Error: File could not be written to.\n";
+}
+else
+{
+  fwrite($filehandle, "User, Question, Answer\n");
+  $mysqli = new mysqli("", "jhartma0", "jhartma0", "Quiz");
+  if($mysqli->connect_errno)
+  {
+    fwrite($filehandle, "/* Mysqli connect error: $mysqli->connect_errno */\n");
+    exit();
+  }
+  else
+  {
+    $query = "select id from License where active = false;";
+    $result = $mysqli->query($query);
+    while($license_id = $result->fetch_row())
+    {
+      $query = "select DemographicAnswer.license_id, DemographicQuestion.question, DemographicAnswer.answer from DemographicQuestion join DemographicAnswer on DemographicQuestion.id = DemographicAnswer.demographic_question_id and license_id = $license_id[0];";
+      $result1 = $mysqli->query($query);
+      while($answer = $result1->fetch_assoc())
+      {
+        $answer["question"] = str_replace(",", " ", $answer["question"]);
+        fwrite($filehandle, $answer["license_id"].",".$answer["question"].",".$answer["answer"]."\n");
+      }
+
+      $query = "select LikertAnswer.license_id, LikertQuestion.question, LikertAnswer.answer from LikertQuestion join LikertAnswer on LikertQuestion.id = LikertAnswer.question_id and license_id = $license_id[0];";
+      $result1 = $mysqli->query($query);
+      while($answer = $result1->fetch_assoc())
+      {
+        $answer["question"] = str_replace(",", " ", $answer["question"]);
+        fwrite($filehandle, $answer["license_id"].",".$answer["question"].",".$answer["answer"]."\n");
+      }
+    }
+    $mysqli->close();
+  }
+  fclose($filehandle);
+}
+echo "<p>Click <a href='$fname' download>here</a> to download the latest data in this view.</p>";
+?>
 <ol>
   <li><a href="../">Go Back</a></li>
 </ol>

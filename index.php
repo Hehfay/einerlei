@@ -18,7 +18,7 @@ session_start();
   <?php
   if(isset($_SESSION['errmsg']))
   {
-    echo "<p id='errmsg'>".$_SESSION['errmsg']."</p>";
+    echo "<p id='errmsg'><strong>".$_SESSION['errmsg']."</strong></p>";
     unset($_SESSION['errmsg']);
     session_write_close();
   }
