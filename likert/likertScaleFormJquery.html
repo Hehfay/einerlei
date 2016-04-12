@@ -4,9 +4,10 @@ Team Einerlei
 File Written by: Isaac Meisner
 
 This file generate the likert scale section of the questionaire.
-There are currently 158 questions that each have a 1-5 button.
-Ten questions are displayed on a page and the next button submits
-the answers and the next ten questions appear asynchronously.
+There are currently 157 questions that each have 1-5 radio buttons
+with a N/A option. Ten questions are displayed on a page and 
+the next button submits the answers and the next ten questions 
+appear asynchronously.
 
 -->
 
@@ -24,83 +25,115 @@ the answers and the next ten questions appear asynchronously.
 // JQUERY
 //---------------------
 
-var totalNumOfQs = 157;
-var qPerPage = 10;
-var question = "question";
-var totalPageNum = 16;
+var totalQues = 157;
+var quesPerPage = 10;
+var quesTxt = "question";
+var totalPageNum = Math.ceil(totalQues / quesPerPage);
 var pageNum = 1;
-var counter = 1;
+var obj;
+var jsonFlag;
 
 $(document).ready(function(){
   $("#likert").append("<form id='quiz' method='post'>");
-  loadQuestions(pageNum, counter);
+  loadQuestions(pageNum, 1);
   $("#likert").append("</form>");
 });
 
-//---------------------------------------------
+//-------------------------------------------------------
+// This function loads up the questions from the 
+// json file.
+// Parameters:
+//    -pageNum: the current page number for the status bar
+//    -firstQues: the first question number on the page
+//
+//-------------------------------------------------------
 
-function loadQuestions(pageNum, counter){
-  alert("counter="+counter)
-  $.getJSON("likertScaleQuestions.json", function(data){
-    var obj = data;
-    for(i=counter; i<=qPerPage; i++){
-      var question = obj["question"+i];
-      $("#quiz").append("<p id='" + question + "'>" + question + "<br></p>");
-      for(j=1; j<=6; j++){
-        if(j == 6)
-        {
-          $("[id='"+question+"']").append("<div class='checkboxgroup'>"
-              + "<input type='radio' required id='answer"+i+"."+j+"'"
-              + "name='"+question+"' value='"+j+"'/>"
-              + "<label for='answer"+i+"."+j+"'>N/A</label></div>");
-        }
-        else
-        {
-          $("[id='"+question+"']").append("<div class='checkboxgroup'>"
-              + "<input type='radio' required id='answer"+i+"."+j+"'"
-              + "name='"+question+"' value='"+j+"'/>"
-              + "<label for='answer"+i+"."+j+"'>"+j
-              + "</label></div>");
-        }
-      }
-    }
-    $("#quiz").append("<button id='confirm' type='submit' value='submit'>Next</button>")
-    $("#quiz").append("<progress max='"+totalPageNum+"' value='"
-                                       +pageNum+"'></progress>")
-    $("#likert").submit(function (){
-      submitAnswers(i-qPerPage, qPerPage);
-      var qRemaining = totalNumOfQs % qPerPage;
-      if(i == ((totalNumOfQs - qRemaining)+1))
-      {
-        alert("Last Page!");
-      }else if(i > totalNumOfQs)
-      {
-        alert("Finished!");
-      }else
-      {
-        loadQuestions(pageNum+1, i);
-      }
-    });
+function loadQuestions(pageNum, firstQues){
+  $.getJSON("likertScaleQuestions.json", function(data)
+  {
+    obj = data;
+    outputQuestions(obj, pageNum, firstQues);
   });
 }
 
-//---------------------------------------------
+//-------------------------------------------------------
 
-function submitAnswers(counter, numOfQs)
+function outputQuestions(obj, pageNum, firstQues)
+{
+  alert("firstQues="+firstQues);
+  for(quesNum=firstQues; quesNum<quesPerPage+firstQues; quesNum++)
+  {
+    var quesTxt = obj["question"+quesNum];
+    $("#quiz").append("<p id='" + quesTxt + "'>" + quesTxt + "<br></p>");
+    for(option=1; option<=6; option++)
+    {
+      if(option == 6)
+      {
+        $("[id='"+quesTxt+"']").append("<div class='checkboxgroup'>"
+            + "<input type='radio' required id='answer"+quesNum+"."+option+"'"
+            + "name='"+quesTxt+"' value='"+option+"'/>"
+            + "<label for='answer"+quesNum+"."+option+"'>N/A</label></div>");
+      }
+      else
+      {
+        $("[id='"+quesTxt+"']").append("<div class='checkboxgroup'>"
+            + "<input type='radio' required id='answer"+quesNum+"."+option+"'"
+            + "name='"+quesTxt+"' value='"+option+"'/>"
+            + "<label for='answer"+quesNum+"."+option+"'>"+option
+            + "</label></div>");
+      }
+    }
+  }
+  $("#quiz").append("<button id='confirm' type='submit' value='submit'>Next</button>")
+  $("#quiz").append("<progress max='"+totalPageNum+"' value='"
+                                     +pageNum+"'></progress>")
+  $("#quiz").on("submit", function()
+  {
+    event.preventDefault();
+    alert("quesNum"+quesNum);
+    submitAnswers(quesNum-quesPerPage, quesPerPage);
+    $("#quiz").empty();
+    outputQuestions(obj, pageNum+1, quesNum);
+    var quesRemain = totalQues % quesPerPage;
+    /*
+    if(quesNum == ((totalQues - quesRemain)+1))
+    {
+      alert("Last Page!");
+    }else if(quesNum > totalQues)
+    {
+      alert("Finished!");
+    }else
+    {
+      alert(quesNum);
+    }
+    */
+  });
+}
+
+//-------------------------------------------------------
+// This function submits the answers from the previous
+// 10 questions to the questionSubmit.php file 
+// Parameters:
+//    -firstQues: the first question number
+//    -numOfQs: how many questions are on the page 
+//
+//-------------------------------------------------------
+
+function submitAnswers(firstQues, numOfQs)
 {
   var args = "";
-  for(i=counter; i<counter+numOfQs; i++)
+  for(quesNum=firstQues; quesNum<firstQues+numOfQs; quesNum++)
   {
-    for(j=1; j<=6; j++)
+    for(option=1; option<=6; option++)
     {
-      var ansWithVal = "answer"+i+"."+j;
+      var ansWithVal = "answer"+quesNum+"."+option;
       var idName = $("[id='"+ansWithVal+"']").attr("name");
       if($("[id='"+ansWithVal+"']").is(':checked'))
       {
         args += idName + "=" + $("[id='"+ansWithVal+"']").val(); 
       }
     }
-    if(i != counter+(qPerPage-1))
+    if(quesNum != firstQues+(quesPerPage-1))
     {
       args += "&";
     }
