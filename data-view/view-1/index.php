@@ -130,7 +130,7 @@ else
         $query = "select answer from DemographicAnswer where license_id = $license_id[0] and demographic_question_id = $demo_id[$i];";
         $result1 = $mysqli->query($query);
         $answer = $result1->fetch_assoc();
-        fwrite($filehandle, $answer["answer"].",");
+        fwrite($filehandle, "'".$answer["answer"].",");
       }
       for($i = 0; $i < $likert_id_count; $i++)
       {

@@ -118,7 +118,7 @@ else
       while($answer = $result1->fetch_assoc())
       {
         $answer["question"] = str_replace(",", " ", $answer["question"]);
-        fwrite($filehandle, $answer["license_id"].",".$answer["question"].",".$answer["answer"]."\n");
+        fwrite($filehandle, $answer["license_id"].",".$answer["question"].","."'".$answer["answer"]."\n");
       }
 
       $query = "select LikertAnswer.license_id, LikertQuestion.question, LikertAnswer.answer from LikertQuestion join LikertAnswer on LikertQuestion.id = LikertAnswer.question_id and license_id = $license_id[0];";
