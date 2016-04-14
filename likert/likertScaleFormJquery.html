@@ -35,28 +35,22 @@ var jsonFlag;
 
 $(document).ready(function(){
   $("#likert").append("<form id='quiz' method='post'>");
-  loadQuestions(pageNum, 1);
-  $("#likert").append("</form>");
-});
 
-//-------------------------------------------------------
-// This function loads up the questions from the 
-// json file.
-// Parameters:
-//    -pageNum: the current page number for the status bar
-//    -firstQues: the first question number on the page
-//
-//-------------------------------------------------------
-
-function loadQuestions(pageNum, firstQues){
+  //Loads Questions from json file into obj
   $.getJSON("likertScaleQuestions.json", function(data)
   {
     obj = data;
-    outputQuestions(obj, pageNum, firstQues);
+    outputQuestions(obj, pageNum, 1);
+    $("#quiz").on("submit", function()
+    {
+      event.preventDefault();
+      onSubmit(obj);
+    }); 
   });
-}
 
-//-------------------------------------------------------
+  $("#likert").append("</form>");
+});
+
 
 function outputQuestions(obj, pageNum, firstQues)
 {
@@ -87,15 +81,11 @@ function outputQuestions(obj, pageNum, firstQues)
   $("#quiz").append("<button id='confirm' type='submit' value='submit'>Next</button>")
   $("#quiz").append("<progress max='"+totalPageNum+"' value='"
                                      +pageNum+"'></progress>")
-  $("#quiz").on("submit", function()
-  {
-    event.preventDefault();
+      /*
     alert("quesNum"+quesNum);
     submitAnswers(quesNum-quesPerPage, quesPerPage);
-    $("#quiz").empty();
     outputQuestions(obj, pageNum+1, quesNum);
     var quesRemain = totalQues % quesPerPage;
-    /*
     if(quesNum == ((totalQues - quesRemain)+1))
     {
       alert("Last Page!");
@@ -107,7 +97,56 @@ function outputQuestions(obj, pageNum, firstQues)
       alert(quesNum);
     }
     */
-  });
+}
+
+function onSubmit(obj)
+{
+  if(typeof onSubmit.counter == 'undefined')
+  {
+    onSubmit.counter = 11;
+  }
+
+  if(typeof onSubmit.pageNum == 'undefined')
+  {
+    onSubmit.pageNum = 2;
+  }
+
+  submitAnswers(quesNum-quesPerPage, quesPerPage);
+
+  // delete question currently displayed
+  $("#quiz").empty();
+
+  for(quesNum = onSubmit.counter; quesNum < onSubmit.counter + 10; quesNum++)
+  {
+    // display question obj[]
+    var quesTxt = obj["question"+quesNum];
+    $("#quiz").append("<p id='" + quesTxt + "'>" + quesTxt + "<br></p>");
+    for(option=1; option<=6; option++)
+    {
+      if(option == 6)
+      {
+        $("[id='"+quesTxt+"']").append("<div class='checkboxgroup'>"
+            + "<input type='radio' required id='answer"+quesNum+"."+option+"'"
+            + "name='"+quesTxt+"' value='"+option+"'/>"
+            + "<label for='answer"+quesNum+"."+option+"'>N/A</label></div>");
+      }
+      else
+      {
+        $("[id='"+quesTxt+"']").append("<div class='checkboxgroup'>"
+            + "<input type='radio' required id='answer"+quesNum+"."+option+"'"
+            + "name='"+quesTxt+"' value='"+option+"'/>"
+            + "<label for='answer"+quesNum+"."+option+"'>"+option
+            + "</label></div>");
+      }
+    }
+  }
+
+  $("#quiz").append("<button id='confirm' type='submit' value='submit'>Next</button>")
+  $("#quiz").append("<progress max='"+totalPageNum+"' value='"
+                                     +onSubmit.pageNum+"'></progress>")
+
+  onSubmit.counter += 10;
+  onSubmit.pageNum ++;
 }
 
 //-------------------------------------------------------
