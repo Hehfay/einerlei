@@ -1,15 +1,3 @@
-<!--
-
-Team Einerlei
-File Written by: Isaac Meisner
-
-This file generate the likert scale section of the questionaire.
-There are currently 158 questions that each have a 1-5 button.
-Ten questions are displayed on a page and the next button submits
-the answers and the next ten questions appear asynchronously.
-
--->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,25 +32,24 @@ window.onload = function()
         for(j = 1; j<=5; j++)
         {
           document.getElementById(question+i).innerHTML += "<div class='checkboxgroup'>"
-                   +"<input type='radio' required id='answer"+ i + "." + j 
-                   + "' name='" + obj[question + i] 
-                   + "' value='" + j +"'/>" 
-                   +"<label for='answer" + i + "." + j + "'>"+j
-                   +"</label>"+ "</div>";
+                  +"<input type='radio' required id='answer" + i + "." + j 
+                  +"' name='" + obj[question+i]
+                  +"' value='"+j+"'/>" 
+                  +"<label for='answer" + i + "." + j + "'>"+j
+                  +"</label>"+ "</div>";
         }
       }
       document.getElementById("quiz").innerHTML += "<button id='confirm' type='submit'"
-                  +" value='submit' onclick='submitAnswers(i-qPerPage, qPerPage)'>"
+                  +"value='submit' onclick='submitAnswers(i-qPerPage, qPerPage)'>"
                   +"Next</button>";
-      //document.getElementById("quiz").innerHTML += "<input id='confirm' type='submit' value='Next' onclick='return submitAnswers(i-qPerPage, qPerPage)'/>";
       document.getElementById("likert").innerHTML += "</form>";
     }
   }
-  likertScale_req.open("GET","likertScaleQuestions.json", true);
+  likertScale_req.open("GET", "likertScaleQuestions.json", true);
   likertScale_req.send();
 }
 
-//-------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------
 
 var submitAnswers = function(counter, numOfQs)
 {
@@ -81,7 +68,7 @@ var submitAnswers = function(counter, numOfQs)
       }
     }
     if(i != counter+(qPerPage-1)) 
-      args += "&";
+       args += "&";
   }
 
   var submitAnswers_req = new XMLHttpRequest();
@@ -89,7 +76,7 @@ var submitAnswers = function(counter, numOfQs)
   {
     if(submitAnswers_req.readystate == 4 && submitAnswers_req.status == 200)
     {
-      document.getElementById("console").innerHTML = submitAnswers_req.responsetext;
+       document.getElementById("console").innerHTML = submitAnswers_req.responsetext;
     }
   }
   console.log(args);
@@ -103,11 +90,11 @@ var submitAnswers = function(counter, numOfQs)
   }else if(i > totalNumOfQs){
     finished();
   }else{
-    nextPage(i);
+   nextPage(i);
   }
 }
 
-//-------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------
 
 var nextPage = function(counter)
 {
@@ -117,7 +104,6 @@ var nextPage = function(counter)
   {
     document.getElementById("quiz").innerHTML += "<p id='" + question + i + "'>";
   }
-
   var nextPage_req = new XMLHttpRequest();
   nextPage_req.onreadystatechange = function()
   {
@@ -142,57 +128,10 @@ var nextPage = function(counter)
     }
   }
   document.getElementById("quiz").innerHTML += "<button id='confirm' type='submit' value='submit' onclick='submitAnswers(i-qPerPage, qPerPage)'>Next</button>";
-  //document.getElementById("quiz").innerHTML += "<input id='confirm' type='submit' value='Next' onclick='return submitAnswers(i-qPerPage, qPerPage)'>";
+ //document.getElementById("quiz").innerHTML += "<input id='confirm' type='submit' value='Next' onclick='return submitAnswers(i-qPerPage, qPerPage)'>";
   nextPage_req.open("GET","likertScaleQuestions.json", true);
   nextPage_req.send();
   document.getElementById("quiz").innerHTML += "</form>";
-}
-
-
-//-------------------------------------------------------------------------------------------------
-
-var lastPage = function(counter, qRemaining){
-
-  document.getElementById("likert").innerHTML = "<form id='quiz' method='post'>";
-  var question = "question";
-  for (i = counter; i<counter+qRemaining; i++)
-  {
-    document.getElementById("quiz").innerHTML += "<p id='" + question + i + "'>";
-  }
-
-  var lastPage_req = new XMLHttpRequest();
-  lastPage_req.onreadystatechange = function()
-  {
-    if(lastPage_req.readyState == 4 && lastPage_req.status == 200)
-    {
-      var jsonText = lastPage_req.responseText;
-      var obj = JSON.parse(jsonText);
-      for (i=counter; i<counter+qRemaining; i++){
-        if(!obj[question+i])
-        {
-        }
-        else
-        {
-          document.getElementById(question+i).innerHTML += obj[question+i];
-          document.getElementById(question+i).innerHTML += "<br>";
-          for(j = 1; j<=5; j++)
-          {
-            document.getElementById(question+i).innerHTML += "<div class='checkboxgroup'>"+"<input type='radio' required id='answer"+i+"."+j+"' name='"+obj[question + i]+"' value='"+j+"'/>"+"<label for='answer"+i+"."+j+"'>"+j+"</label>"+"</div>";
-          }
-        }
-      }
-    }
-  }
-  document.getElementById("quiz").innerHTML += "<button id='confirm' type='submit' value='submit' onclick='submitAnswers(i-(totalNumOfQs%qPerPage), totalNumOfQs%qPerPage)'>Submit</button>";
-  //document.getElementById("quiz").innerHTML += "<input id='confirm' type='submit' value='Submit' onclick='return submitAnswers(i-(totalNumOfQs%qPerPage), totalNumOfQs%qPerPage)'/>";
-  lastPage_req.open("GET","likertScaleQuestions.json", true);
-  lastPage_req.send();
-  document.getElementById("quiz").innerHTML += "</form>";
-}
-
-var finished = function()
-{
-  window.location = "finishedQuizPage.html";
 }
 
 </script>

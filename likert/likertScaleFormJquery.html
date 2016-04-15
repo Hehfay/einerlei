@@ -11,19 +11,12 @@ appear asynchronously.
 
 -->
 
-<?php
-session_start();
-if(!isset($_SESSION['id']))
-{
-  header('Location: ../please-login/');
-}
-?>
 <!DOCTYPE html>
 <html>
 <head>
 <title>Performance Anxiety Diagostic Questionnaire</title>
 <link rel="stylesheet" href="../style.css">
-<script src="../src/jquery-1.12.2.min.js"></script>
+<script src="jquery-1.12.2.min.js"></script>
 </head>
 <body>
 <script>
@@ -38,6 +31,7 @@ var quesTxt = "question";
 var totalPageNum = Math.ceil(totalQues / quesPerPage);
 var pageNum = 1;
 var obj;
+var jsonFlag;
 
 //-------------------------------------------------------
 
@@ -45,7 +39,7 @@ $(document).ready(function(){
   $("#likert").append("<form id='quiz' method='post'>");
 
   //Loads Questions from json file into obj
-  $.getJSON("likertQuestions.json", function(data)
+  $.getJSON("likertScaleQuestions.json", function(data)
   {
     obj = data;
     outputQuestions(obj, pageNum, 1, quesPerPage);
@@ -127,7 +121,7 @@ function onSubmit(obj)
   {
     alert("Finished!");
     submitAnswers(quesNum-quesOnLast, quesOnLast);
-    window.location = "../finish/";
+    window.location = "finishedQuizPage.html";
   }else
   {
     quesOnPage = quesPerPage;
@@ -181,17 +175,16 @@ function submitAnswers(firstQues, numOfQs)
 <h1>Likert Scale Questions</h1>
 <h4>For the following questions, please answer with a number between 1 and 5.</h4>
 <ul>
-  <li>1 "Strongly Disagree"</li>
-  <li>2 "Disagree"</li>
-  <li>3 "Undecided" or "Neutral"</li>
-  <li>4 "Agree"</li>
-  <li>5 "Strongly Agree"</li>
+  <li>1 “Strongly Disagree”</li>
+  <li>2 “Disagree” </li>
+  <li>3 “Undecided” or “Neutral”</li>
+  <li>4 “Agree” </li>
+  <li>5 “Strongly Agree” </li>
 </ul>
 <h4 id="bottom">Select the appropriate number.  </h4>
 
 <div id="likert">
 </div>
-
 
 </body>
 </html>
