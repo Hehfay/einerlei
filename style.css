@@ -130,3 +130,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+#einerlei-link {
+  color: purple;
+}
