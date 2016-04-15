@@ -10,3 +10,4 @@ foreach($_POST as $item => $value)
 }
 fwrite($handle, "====================================================\n");
 fclose();
+$_SESSION['demo_complete'] = true;

@@ -1,7 +1,12 @@
+<?php
+/* Set license active = false */
+/* Display results */
+?>
 <!DOCTYPE html>
 <html>
 <head>
-<title>Finished with Quiz!</title>
+  <title>Results</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <h1>Quiz Completed!</h1>

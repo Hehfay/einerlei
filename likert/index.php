@@ -17,6 +17,10 @@ if(!isset($_SESSION['id']))
 {
   header('Location: ../please-login/');
 }
+if(!isset($_SESSION['demo_complete']))
+{
+  header('Location: ../demographics/');
+}
 ?>
 <!DOCTYPE html>
 <html>

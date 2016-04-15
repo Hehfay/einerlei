@@ -1,17 +1,15 @@
 <?php
-/*
 session_start();
 if(!isset($_SESSION["loggedin"]))
 {
   header('Location: ../../');
 }
- */
 ?>
 <!DOCTYPE html>
 <html>
 <head>
   <title>Data View</title>
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../../../style.css">
 </head>
 <body>
 <h1>Data Views</h1>
@@ -19,6 +17,7 @@ if(!isset($_SESSION["loggedin"]))
 <ol>
   <li><a href="view-1/">View 1</a></li>
   <li><a href="view-2/">View 2</a></li>
+  <li><a href="../">Dashboard</a></li>
 </ol>
 </body>
 </html>

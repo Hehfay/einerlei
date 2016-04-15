@@ -1,12 +1,12 @@
 @import url("reset.css");
-@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow|Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow|Satisfy|Open+Sans:400,700,400italic");
 
 html {
   font-size: 100%;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   margin-left: 10%;
   margin-right: 10%;
@@ -35,8 +35,6 @@ h4 {
 
 input {
   margin: .5%;
-  width: 3.75em;
-  height: 1.5em;
 }
 
 #confirm {
@@ -69,7 +67,7 @@ li {
 }
 
 .checkboxgroup label {
-  font-size: .99em;
+  font-size: .9rem;
 }
 
 #introduction {
@@ -102,4 +100,33 @@ li {
 #button a {
   text-decoration: none;
   color: white;
+}
+
+#errmsg {
+  color: red;
+}
+
+table {
+  border: 1px solid black;
+}
+
+tr {
+  padding: 2%;
+}
+
+th {
+  padding: .9%;
+  font-weight: bold;
+}
+
+td {
+  padding: .9%;
+}
+
+a {
+  color: red;
+}
+
+a:hover {
+  text-decoration: underline;
 }

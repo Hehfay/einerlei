@@ -52,3 +52,6 @@ iframe {
 .clear {
 	clear: both;
 }
+a:visited {
+  color: inherit;
+}

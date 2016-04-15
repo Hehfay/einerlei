@@ -8,9 +8,8 @@ session_start();
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to Dr. Hunnicut's performance anxiety questionnaire.</h1>
-  <p>A questionnaire to guide readers through the book <em>Take Charge of Your Performance Anxiety</em> written by Dr. Heather Hunnicut.</p>
-  <p>Enter your key below to start the quiz.</p>
+  <p>Welcome to the home of the MPADQ, the companion assessment questionnaire for <em>Take Charge of Your Performance Anxiety: A Personalized Approach to Conquering Stage Fright</em> by Dr. Heather Nicole Winter.</p>
+  <p>Enter your key below to start your assessment. Your key is the ten-digit code found on the insert of your print copy or sent to you via email after the purchase of your ebook or audio book format of <em>Take Charge of Your Performance Anxiety</em>.</p>
   <form action="keySubmit.php" method="post">
     <input type="text" name="key" required>
     <input type="submit">

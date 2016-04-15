@@ -11,7 +11,7 @@ if(!isset($_SESSION["loggedin"]))
 <html>
 <head>
   <title>View 2</title>
-  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../../../../style.css">
 </head>
 <body>
 <h1>View 2</h1>
@@ -137,6 +137,7 @@ echo "<p>Click <a href='$fname' download>here</a> to download the latest data in
 ?>
 <ol>
   <li><a href="../">Go Back</a></li>
+  <li><a href="../../">Dashboard</a></li>
 </ol>
 </body>
 </html>
