@@ -3,6 +3,27 @@ session_start();
 if(!isset($_SESSION['id']))
 {
   header('Location: ../please-login/');
+  exit();
+}
+$mysqli = new mysqli("", "jhartma0", "jhartma0", "Quiz");
+if($mysqli)
+{
+  $query = "select id from DemographicQuestion;";
+  $result = $mysqli->($query);
+  while($id = $result->fetch_row())
+  {
+    $query1 = "insert into DemographicAnswer(license_id, demographic_question_id, answer) values($_SESSION['id'], $id[0], NULL);";
+  }
+  $query = "select id from LikertQuestion;";
+  $result = $mysqli->($query);
+  while($id = $result->fetch_row())
+  {
+    $query1 = "insert into LikertAnswer(license_id, question_id, answer) values($_SESSION['id'], $id[0], 6);";
+  }
+}
+else
+{
+  header('Location: ../please-login/');
 }
 ?>
 <!DOCTYPE html>

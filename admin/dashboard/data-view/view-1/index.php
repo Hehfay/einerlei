@@ -43,6 +43,7 @@ if(!isset($_SESSION["loggedin"]))
 <?php
 $fname = 'View1.csv';
 $mode = 'w';
+chmod($fname, 0777);
 $filehandle = fopen($fname, $mode);
 if($filehandle == false)
 {

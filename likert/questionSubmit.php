@@ -62,7 +62,8 @@ else
             $answer = $score_reg[$_POST["a$i"]];
           }
         }
-        $query3 = "insert into LikertAnswer(license_id, question_id, answer) values(".$_SESSION["id"].", ".$result["id"].", ".$answer.");";
+        $query3 = "update LikertAnswer set answer = $answer where license_id = $_SESSION['id'] and question_id = $result['id'];";
+//        $query3 = "insert into LikertAnswer(license_id, question_id, answer) values(".$_SESSION["id"].", ".$result["id"].", ".$answer.");";
         fwrite($filehandle, $query3."\n");
       }
       $result->free();

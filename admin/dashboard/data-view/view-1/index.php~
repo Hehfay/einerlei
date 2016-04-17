@@ -1,11 +1,9 @@
 <?php
-/*
 session_start();
 if(!isset($_SESSION["loggedin"]))
 {
   header('Location: ../../../');
 }
- */
 ?>
 <!DOCTYPE html>
 <html>
@@ -45,6 +43,7 @@ if(!isset($_SESSION["loggedin"]))
 <?php
 $fname = 'View1.csv';
 $mode = 'w';
+chmod($fname, 0777);
 $filehandle = fopen($fname, $mode);
 if($filehandle == false)
 {
