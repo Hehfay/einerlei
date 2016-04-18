@@ -48,7 +48,7 @@ else
         $query2 = $mysqli->escape_string($query2);
         $query2 = "'".$query2."';";
         $query = $query1.$query2;
-        fwrite($filehandle, $query."\n");
+        //fwrite($filehandle, $query."\n");
         $result = $mysqli->query($query);
         $result = $result->fetch_assoc();
         if($_POST["a$i"] != 6)
@@ -62,9 +62,10 @@ else
             $answer = $score_reg[$_POST["a$i"]];
           }
         }
-        $query3 = "update LikertAnswer set answer = $answer where license_id = $_SESSION['id'] and question_id = $result['id'];";
+        $query3 = "update LikertAnswer set answer = $answer where license_id = ".$_SESSION["id"]." and question_id = ".$result["id"].";";
 //        $query3 = "insert into LikertAnswer(license_id, question_id, answer) values(".$_SESSION["id"].", ".$result["id"].", ".$answer.");";
         fwrite($filehandle, $query3."\n");
+        $mysqli->query($query3);
       }
       $result->free();
       $mysqli->close();
@@ -74,7 +75,7 @@ else
   {
     fwrite($filehandle, "/* POST array not set. */\n");
   }
-  fwrite($filehandle, "===========================================================\n");
+  fwrite($filehandle, "/*===========================================================*/\n");
   fclose($filehandle);
 }
 ?>

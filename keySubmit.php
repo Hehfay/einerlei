@@ -27,21 +27,22 @@ if($mysqli)
     $query = "select active from License where licenseKey='$key'";
     $result = $mysqli->query($query);
     $is = $result->fetch_assoc();
+    $query = "select id from License where licenseKey='$key';";
+    $result = $mysqli->query($query);
+    $user = $result->fetch_assoc();
+    $_SESSION['id'] = $user['id'];
     if($is['active'])
     {
       // start the quiz
       echo "Key exists and is active!"."<br>";
       $can_start = TRUE;
-      $query = "select id from License where licenseKey='$key';";
-      $result = $mysqli->query($query);
-      $user = $result->fetch_assoc();
-      $_SESSION['id'] = $user['id'];
     }
     else
     {
       // You have already taken the quiz.
       echo "You have already taken the quiz"."<br>";
       $can_start = FALSE;
+      $view_result = TRUE;
       $errmsg = "This key has expired. Please follow the link below to purchase a key to the questionnaire.";
     }
   }
@@ -59,6 +60,12 @@ if($mysqli)
 else
 {
   $can_start = FALSE;
+}
+if($view_result)
+{
+  $_SESSION["demo_complete"] = true;
+  header('Location: finish/');
+  exit();
 }
 if($can_start)
 {

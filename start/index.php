@@ -8,23 +8,23 @@ if(!isset($_SESSION['id']))
 $mysqli = new mysqli("", "jhartma0", "jhartma0", "Quiz");
 if($mysqli)
 {
-  $query = "select id from DemographicQuestion;";
-  $result = $mysqli->($query);
-  while($id = $result->fetch_row())
+  $query1 = "delete from DemographicAnswer where license_id = ".$_SESSION["id"].";";
+  $mysqli->query($query1);
+  for($i = 1; $i <= 14; $i++)
   {
-    $query1 = "insert into DemographicAnswer(license_id, demographic_question_id, answer) values($_SESSION['id'], $id[0], NULL);";
+    $query1 = "insert into DemographicAnswer(license_id, demographic_question_id, answer) values(".$_SESSION["id"].", $i, '');";
+    $mysqli->query($query1);
   }
-  $query = "select id from LikertQuestion;";
-  $result = $mysqli->($query);
-  while($id = $result->fetch_row())
+
+  $query1 = "delete from LikertAnswer where license_id = ".$_SESSION["id"].";";
+  $mysqli->query($query1);
+  for($i = 1718; $i <= 1874; $i++)
   {
-    $query1 = "insert into LikertAnswer(license_id, question_id, answer) values($_SESSION['id'], $id[0], 6);";
+    $query1 = "insert into LikertAnswer(license_id, question_id, answer) values(".$_SESSION["id"].", $i, 6);";
+    $mysqli->query($query1);
   }
 }
-else
-{
-  header('Location: ../please-login/');
-}
+$mysqli->close();
 ?>
 <!DOCTYPE html>
 <html>

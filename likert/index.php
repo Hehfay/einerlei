@@ -120,7 +120,7 @@ function onSubmit(obj)
 
   if(quesNum == ((totalQues - quesOnLast)+1))
   {
-    alert("Last Page!");
+    //alert("Last Page!");
     quesOnPage = quesOnLast;
     submitAnswers(quesNum-quesPerPage, quesPerPage);
     $("#quiz").empty();
@@ -130,7 +130,7 @@ function onSubmit(obj)
     onSubmit.pageNum += 1;
   }else if(quesNum > totalQues)
   {
-    alert("Finished!");
+    //alert("Finished!");
     submitAnswers(quesNum-quesOnLast, quesOnLast);
     window.location = "../finish/";
   }else
@@ -157,6 +157,8 @@ function onSubmit(obj)
 
 function submitAnswers(firstQues, numOfQs)
 {
+  var myQuestionCounter = 0;
+  var myAnswerCounter = 0;
   var args = "";
   for(quesNum=firstQues; quesNum<firstQues+numOfQs; quesNum++)
   {
@@ -168,7 +170,9 @@ function submitAnswers(firstQues, numOfQs)
       var aNum = "a" + quesNum;
       if($("[id='"+ansWithVal+"']").is(':checked'))
       {
-        args += qNum + "=" + idName + "&"+ aNum + "=" + $("[id='"+ansWithVal+"']").val(); 
+        args += "q" + myQuestionCounter + "=" + idName + "&"+ "a" + myAnswerCounter + "=" + $("[id=\""+ansWithVal+"\"]").val(); 
+        myQuestionCounter++;
+        myAnswerCounter++;
       }
     }
     if(quesNum != firstQues+(quesPerPage-1))
@@ -177,7 +181,7 @@ function submitAnswers(firstQues, numOfQs)
     }
   }
   $.post("questionSubmit.php", args);
-  alert(args);
+  //alert(args);
 }
 
 //-------------------------------------------------------
