@@ -3,7 +3,28 @@ session_start();
 if(!isset($_SESSION['id']))
 {
   header('Location: ../please-login/');
+  exit();
 }
+$mysqli = new mysqli("", "jhartma0", "jhartma0", "Quiz");
+if($mysqli)
+{
+  $query1 = "delete from DemographicAnswer where license_id = ".$_SESSION["id"].";";
+  $mysqli->query($query1);
+  for($i = 1; $i <= 14; $i++)
+  {
+    $query1 = "insert into DemographicAnswer(license_id, demographic_question_id, answer) values(".$_SESSION["id"].", $i, '');";
+    $mysqli->query($query1);
+  }
+
+  $query1 = "delete from LikertAnswer where license_id = ".$_SESSION["id"].";";
+  $mysqli->query($query1);
+  for($i = 1718; $i <= 1874; $i++)
+  {
+    $query1 = "insert into LikertAnswer(license_id, question_id, answer) values(".$_SESSION["id"].", $i, 6);";
+    $mysqli->query($query1);
+  }
+}
+$mysqli->close();
 ?>
 <!DOCTYPE html>
 <html>

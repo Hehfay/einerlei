@@ -19,8 +19,8 @@ session_start();
   if(isset($_SESSION['errmsg']))
   {
     echo "<p id='errmsg'><strong>".$_SESSION['errmsg']."</strong></p>";
-    unset($_SESSION['errmsg']);
-    session_write_close();
+    session_unset();
+    session_destroy();
   }
   ?>
   <p>Don't have a key? Purchase one at <a href="http://www.einerleipublishing.com/einerlei_publishing_site_002.htm" id="einerlei-link" target="_blank">einerleipublishing.com</a></p>
