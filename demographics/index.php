@@ -14,6 +14,7 @@ if(!isset($_SESSION['id']))
 {
   header('Location: ../please-login/');
 }
+$_SESSION["time"] = time();
 ?>
 <!DOCTYPE html>
 <html>

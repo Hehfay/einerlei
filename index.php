@@ -24,6 +24,7 @@ session_start();
   }
   ?>
   <p>Don't have a key? Purchase one at <a href="http://www.einerleipublishing.com/einerlei_publishing_site_002.htm" id="einerlei-link" target="_blank">einerleipublishing.com</a></p>
+  <p>If you have already taken the quiz, enter your key to view your results again.</p>
 </div>
 </body>
 </html>

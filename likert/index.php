@@ -13,13 +13,23 @@ appear asynchronously.
 
 <?php
 session_start();
+require '../src/timeout.php';
 if(!isset($_SESSION['id']))
 {
   header('Location: ../please-login/');
+  exit();
 }
 if(!isset($_SESSION['demo_complete']))
 {
   header('Location: ../demographics/');
+  exit();
+}
+if(time() - $_SESSION["time"] > $timeout)
+{
+  session_unset();
+  session_destroy();
+  header('Location: ../please-login/');
+  exit();
 }
 ?>
 <!DOCTYPE html>
@@ -109,7 +119,6 @@ function outputQuestions(obj, pageNum, firstQues, quesOnPage)
 
 function onSubmit(obj)
 {
-  
   if(typeof onSubmit.counter == 'undefined')
   {onSubmit.counter = 11;}
 

@@ -1,5 +1,14 @@
 <?php
+//header('Content-type: application/json');
 session_start();
+require '../src/timeout.php';
+//if(time() - $_SESSION["time"] > $timeout)
+//{
+//  session_unset();
+//  session_destroy();
+//  echo json_encode(array("time"=>"timeout"));
+//  exit();
+//}
 $fname = 'output.mysql';
 $mode = 'a';
 $filehandle = fopen($fname, $mode);
