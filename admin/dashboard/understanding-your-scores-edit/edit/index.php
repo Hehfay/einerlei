@@ -41,6 +41,7 @@ if(!isset($_SESSION["loggedin"]))
   }
 ?>
 <ol>
+  <li><a href="../">Back</a></li>
   <li><a href="../../">Dashboard</a></li>
 </ol>
 </body>

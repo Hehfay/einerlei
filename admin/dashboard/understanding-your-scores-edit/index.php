@@ -21,7 +21,8 @@ if(!isset($_SESSION["loggedin"]))
     $query = "select id, category from LikertAnswerSubCategory;";
     $result = $mysqli->query($query);
     echo "<form action='edit/' method='post'>";
-    echo "<select name='id'>";
+    echo "<select name='id' required>";
+    echo "<option disabled selected value>-- select an option --</option>";
     while($li = $result->fetch_array())
     {
       echo "<option value=$li[0]>$li[1]</option>";
