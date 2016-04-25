@@ -37,7 +37,7 @@ else
       $size = count($_POST) / 2;
       for($i = 0; $i < $size; $i++)
       {
-        $query1 = "select id, score_inversely from LikertQuestion where question=";
+        $query1 = "select id, score_inversely from DemographicQuestion where question=";
         $query2 = $_POST["q$i"];
         $query2 = $mysqli->escape_string($query2);
         $query2 = "'".$query2."';";
