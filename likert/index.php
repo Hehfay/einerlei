@@ -55,7 +55,7 @@ var totalQues = 157;
 var quesPerPage = 10;
 var quesTxt = "question";
 var totalPageNum = Math.ceil(totalQues / quesPerPage);
-var pageNum = 1;
+var pageNum = 0;
 var obj;
 
 //-------------------------------------------------------
@@ -128,7 +128,7 @@ function onSubmit(obj)
   {onSubmit.counter = 11;}
 
   if(typeof onSubmit.pageNum == 'undefined')
-  {onSubmit.pageNum = 2;}
+  {onSubmit.pageNum = 1;}
 
   var quesOnLast = totalQues % quesPerPage;
 
@@ -171,8 +171,7 @@ function onSubmit(obj)
 
 function submitAnswers(firstQues, numOfQs)
 {
-  var myQuestionCounter = 0;
-  var myAnswerCounter = 0;
+  var counter = 0;
   var args = "";
   for(quesNum=firstQues; quesNum<firstQues+numOfQs; quesNum++)
   {
@@ -180,13 +179,12 @@ function submitAnswers(firstQues, numOfQs)
     {
       var ansWithVal = "answer"+quesNum+"."+option;
       var idName = $("[id='"+ansWithVal+"']").attr("name");
-      var qNum = "q" + quesNum;
-      var aNum = "a" + quesNum;
+      var qNum = "q" + counter;
+      var aNum = "a" + counter;
       if($("[id='"+ansWithVal+"']").is(':checked'))
       {
-        args += "q" + myQuestionCounter + "=" + idName + "&"+ "a" + myAnswerCounter + "=" + $("[id=\""+ansWithVal+"\"]").val(); 
-        myQuestionCounter++;
-        myAnswerCounter++;
+        args += qNum + "=" + idName + "&"+ aNum + "=" + $("[id=\""+ansWithVal+"\"]").val(); 
+        counter++;
       }
     }
     if(quesNum != firstQues+(quesPerPage-1))
