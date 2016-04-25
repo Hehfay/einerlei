@@ -1,0 +1,16 @@
+{
+"question1":"Gender:",
+"question2":"Age:" ,
+"question3":"Number of years studying primary voice/instrument:" ,
+"question4":"Age when starting musical instruction of any kind:" ,
+"question5":"Age when starting musical study of primary instrument:" ,
+"question6":"Are you currently (select one):",
+"question7":"Primary voice type or instrument:" ,
+"question8":"Number of professional performances given (approximate):" ,
+"question9":"Number of total performances given (approximate):" ,
+"question10":"Do you have medical conditions impacting your ability to sing/play (long-term injury, asthma, TMJD, etc.)" ,
+"question11":"Number of alcoholic drinks per month:" ,
+"question12":"Use of any recreational drugs:" ,
+"question13":"Do you take any blood pressure or anxiety medication(s):" ,
+"question14":"Professional plan/career goals:",
+}

@@ -1,0 +1,64 @@
+USE Quiz;
+
+CREATE TABLE LikertAnswerBroadCategory(
+  category VARCHAR(255) NOT NULL UNIQUE,
+  id       INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY(id)
+) ENGINE = INNODB;
+
+CREATE TABLE LikertAnswerSubCategory(
+  category VARCHAR(255) NOT NULL UNIQUE,
+  id       INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY(id)
+) ENGINE = INNODB;
+
+/* There are two broad catagories. */
+INSERT INTO LikertAnswerBroadCategory(category) VALUES("Symptomatology");
+INSERT INTO LikertAnswerBroadCategory(category) VALUES("Contributing Factors");
+
+/* These are the three sub-catagories under 'Symptomatology'. */
+INSERT INTO LikertAnswerSubCategory(category) VALUES("Physical Symptoms");
+INSERT INTO LikertAnswerSubCategory(category) VALUES("Cognitive Symptoms");
+INSERT INTO LikertAnswerSubCategory(category) VALUES("Behavioral Symptoms");
+
+/* These sub-catagories are under 'Contributing Factors.' */
+INSERT INTO LikertAnswerSubCategory(category) VALUES("Student-Teacher Relationship");
+INSERT INTO LikertAnswerSubCategory(category) VALUES("Sense of Belonging at School/Career");
+INSERT INTO LikertAnswerSubCategory(category) VALUES("Generalized Anxiety and Stress");
+INSERT INTO LikertAnswerSubCategory(category) VALUES("Perfectionism and Self-Criticism");
+INSERT INTO LikertAnswerSubCategory(category) VALUES("Self-Concept of Performance Ability and Confidence");
+INSERT INTO LikertAnswerSubCategory(category) VALUES("Self-Esteem");
+INSERT INTO LikertAnswerSubCategory(category) VALUES("Self-Concept of Long-Term Stakes");
+INSERT INTO LikertAnswerSubCategory(category) VALUES("Personal Support Structure in People and Activities");
+INSERT INTO LikertAnswerSubCategory(category) VALUES("Security, Happiness and Support in Romantic Relationships");
+INSERT INTO LikertAnswerSubCategory(category) VALUES("Physical and Emotional Health");
+INSERT INTO LikertAnswerSubCategory(category) VALUES("Spiritual and/or Religious Support System and/or Beliefs");
+INSERT INTO LikertAnswerSubCategory(category) VALUES("Feelings of Being Out-of-Control");
+INSERT INTO LikertAnswerSubCategory(category) VALUES("Controlling Personality and Competitiveness");
+INSERT INTO LikertAnswerSubCategory(category) VALUES("Self-Concept of Anxiety");
+INSERT INTO LikertAnswerSubCategory(category) VALUES("Self-Concept of Focus");
+INSERT INTO LikertAnswerSubCategory(category) VALUES("Self-Concept of Musical and/or Performance Preparation");
+INSERT INTO LikertAnswerSubCategory(category) VALUES("Conflict Resolution Inclination");
+INSERT INTO LikertAnswerSubCategory(category) VALUES("Introversion");
+INSERT INTO LikertAnswerSubCategory(category) VALUES("General Negativity");
+INSERT INTO LikertAnswerSubCategory(category) VALUES("Personal Drive/Motivation");
+INSERT INTO LikertAnswerSubCategory(category) VALUES("The Audition Factor");
+
+CREATE TABLE LikertQuestion(
+  question          VARCHAR(255) UNIQUE,
+  id                INT UNSIGNED NOT NULL AUTO_INCREMENT, PRIMARY KEY(id),
+  broad_category_id INT UNSIGNED NOT NULL, FOREIGN KEY(broad_category_id) REFERENCES LikertAnswerBroadCategory(id) ON UPDATE CASCADE,
+  sub_category_id1  INT UNSIGNED NOT NULL, FOREIGN KEY(sub_category_id1) REFERENCES LikertAnswerSubCategory(id) ON UPDATE CASCADE,
+  sub_category_id2  INT UNSIGNED DEFAULT NULL, FOREIGN KEY(sub_category_id2) REFERENCES LikertAnswerSubCategory(id) ON UPDATE CASCADE,
+  score_inversely   BOOL NOT NULL
+) ENGINE = INNODB;
+
+CREATE TABLE LikertValue(
+  input TINYINT UNSIGNED NOT NULL, PRIMARY KEY(input)
+) ENGINE = INNODB;
+
+CREATE TABLE LikertAnswer(
+  license_id  INT UNSIGNED NOT NULL, FOREIGN KEY(license_id) REFERENCES License(id),
+  question_id INT UNSIGNED NOT NULL, FOREIGN KEY(question_id) REFERENCES LikertQuestion(id),
+  answer      TINYINT UNSIGNED NOT NULL, FOREIGN KEY(answer) REFERENCES LikertValue(input)
+) ENGINE = INNODB;

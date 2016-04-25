@@ -1,0 +1,31 @@
+USE Quiz;
+DROP TABLE if EXISTS DemographicAnswer;
+DROP TABLE if EXISTS DemographicQuestion;
+
+CREATE TABLE DemographicQuestion
+(
+  id          INT UNSIGNED NOT NULL AUTO_INCREMENT, PRIMARY KEY(id),
+  question    VARCHAR(255) UNIQUE
+) ENGINE = INNODB;
+
+CREATE TABLE DemographicAnswer
+(
+  license_id              INT UNSIGNED NOT NULL, FOREIGN KEY(license_id) REFERENCES License(id),
+  demographic_question_id INT UNSIGNED NOT NULL, FOREIGN KEY(demographic_question_id) REFERENCES DemographicQuestion(id),
+  answer                  VARCHAR(255)
+) ENGINE = INNODB;
+
+INSERT INTO DemographicQuestion(question) VALUES("Gender:");
+INSERT INTO DemographicQuestion(question) VALUES("Age:");
+INSERT INTO DemographicQuestion(question) VALUES("Number of years studying primary voice/instrument:");
+INSERT INTO DemographicQuestion(question) VALUES("Age when starting musical instruction of any kind:");
+INSERT INTO DemographicQuestion(question) VALUES("Age when starting musical study of primary instrument:"); 
+INSERT INTO DemographicQuestion(question) VALUES("Are you currently (select one):");
+INSERT INTO DemographicQuestion(question) VALUES("Primary voice type or instrument:");
+INSERT INTO DemographicQuestion(question) VALUES("Number of professional performances given (approximate):");
+INSERT INTO DemographicQuestion(question) VALUES("Number of total performances given (approximate):");
+INSERT INTO DemographicQuestion(question) VALUES("Do you have medical conditions impacting your ability to sing/play (long-term injury, asthma, TMJD, etc.)");
+INSERT INTO DemographicQuestion(question) VALUES("Number of alcoholic drinks per month:");
+INSERT INTO DemographicQuestion(question) VALUES("Use of any recreational drugs:");
+INSERT INTO DemographicQuestion(question) VALUES("Do you take any blood pressure or anxiety medication(s):");
+INSERT INTO DemographicQuestion(question) VALUES("Professional plan/career goals:");

@@ -7,16 +7,16 @@ if( !isset($_SESSION["loggedin"]) ){
 ?>
 
 <html>
-<title>Generate Keys</title>
 <head>
-<h1>Generate Keys</h1>
+  <title>Generate Keys</title>
+  <link rel="stylesheet" href="../../../style.css">
 </head>
+<h1>Generate Keys</h1>
 <body>
 <form action = keyGenerator.php method ="post">
-Number of Keys to generate: <input type = "number" name="keycount">
-<input type="submit" value ="SUBMIT">
+  Number of Keys to generate: <input type = "number" name="keycount">
+  <input type="submit" value ="Generate">
 </form>
+<a href="../">Dashboard</a>
 </body>
 </html>
-
-

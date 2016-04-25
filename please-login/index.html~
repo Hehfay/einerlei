@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Please Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Please login to take questionnaire.</h1>
+  <p><a href="../">Login</a> to begin questionnaire.</p>
+</body>
+</html>
