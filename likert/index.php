@@ -13,13 +13,23 @@ appear asynchronously.
 
 <?php
 session_start();
+require '../src/timeout.php';
 if(!isset($_SESSION['id']))
 {
   header('Location: ../please-login/');
+  exit();
 }
 if(!isset($_SESSION['demo_complete']))
 {
   header('Location: ../demographics/');
+  exit();
+}
+if(time() - $_SESSION["time"] > $timeout)
+{
+  session_unset();
+  session_destroy();
+  header('Location: ../please-login/');
+  exit();
 }
 ?>
 <!DOCTYPE html>
@@ -30,6 +40,11 @@ if(!isset($_SESSION['demo_complete']))
 <script src="../src/jquery-1.12.2.min.js"></script>
 </head>
 <body>
+<section>
+  <img src='../images/einerlei_publishing_site001005.png'>
+</section>
+<div id="container">
+<div id="content">
 <script>
 
 
@@ -109,7 +124,6 @@ function outputQuestions(obj, pageNum, firstQues, quesOnPage)
 
 function onSubmit(obj)
 {
-  
   if(typeof onSubmit.counter == 'undefined')
   {onSubmit.counter = 11;}
 
@@ -200,7 +214,7 @@ function submitAnswers(firstQues, numOfQs)
 
 <div id="likert">
 </div>
-
-
+</div>
+</div>
 </body>
 </html>
