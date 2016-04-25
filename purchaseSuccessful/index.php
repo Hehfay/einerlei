@@ -1,8 +1,8 @@
 <html>
 
-<title>Generated Keys</title>
+<title>Purchased Key</title>
 <head>
-<h1>Generated Keys</h1>
+<h1>Purchased Key</h1>
 </head>
 <body>
 <?php
@@ -15,6 +15,10 @@
   $keysOut = $_SESSION['keyOutput'];
   $keysFileOut = $_SESSION['keyFile'];
 
+  echo "<h2>";
+  echo $keysOut;
+  echo "</h2>";
+
 ?>
 
 <textarea readonly style="resize:none" name ="listkeys" cols="12" rows="7" readonly>
@@ -23,16 +27,6 @@ echo $keysFileOut;
 ?>
 </textarea>
 
-<form action = "./downloadKeys.php">
-  <input type = "submit" value = "DOWNLOAD">
-</form>
-
-<?php
-  echo "<h2>";
-  echo $keysOut;
-  echo "</h2>";
-
-?>
 </body>
 </html>
 

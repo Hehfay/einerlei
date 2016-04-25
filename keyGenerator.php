@@ -1,10 +1,10 @@
 <?php
-$licKey = keygen();
 
-echo $licKey;
+session_start();
+if( !isset($_SESSION["loggedin"]) ){
+  header('Location: ../../');
+}
 
-
-/*
 $host = "";
 $username = "tbroadus";
 $password = "tbroadus";
@@ -13,79 +13,71 @@ $database = "Quiz";
 $mysqli = new mysqli($host, $username, $password, $database);
 
 if(mysqli_connect_errno()){
+  
   echo "<p>";
-  echo "Connect Error; ".mysqli_connect_errno();
+  echo "Connect Error: ".mysqli_connect_errno();
   echo "</p>";
 }
 else{
-  $query = " Select licenseKey from License where licenseKey = ".$licKey;
-  $result = $mysqli->query($query);
+  
+    $licKey = keygen();
+    $hashedKey = hash("md5", $licKey);
+    
+    $query = "SELECT * FROM License WHERE licenseKey = '".$hashedKey."';";
 
-  if($result){
-    while (result != null){
-        $licKey = keygen();
-        $query = "Select licenseKey from License where licenseKey = ".$licKey;
-        $result = $mysqli->query($query);
+    $result = $mysqli->query($query);
 
-        if($result){
-          echo "<p>";
-          echo "Successfully queried database";
-          echo "</p>">;
-        }
-        else{
-          echo "<p>";
-          echo "Error: ".$mysqli->error;
-          echo "</p>";
-        }
+    while( $result == ""){
+    
+      //echo "<br>".$hashedKey;
+      $licKey = keygen();
+      $hashedKey = hash("md5", $licKey);
+
+      $query = "SELECT * FROM License WHERE licenseKey ='".$hashedKey."';";
+      $result = $mysqli->query($query);
+
     }
 
-    $insert = "insert into License (id, email, licenseKey, active) values (";
-    $insert = $insert."0";
-    $insert = $insert.", ".$email;
-    $insert = $insert.", ".$licKey;
-    $insert = $insert.", true )";
+    $insert =  "INSERT into License (id, licenseKey, active) VALUES (";
+    $insert .= "0";
+    $insert .= ", '".$hashedKey."'";
+    $insert .= ", 1);";
 
-    $result = mysqli->query($insert);
+    //echo "<br>".$insert;
+
+    $result = $mysqli->query($insert);
 
     if($result){
-      echo "<p>";
-      echo "Successfully queried database";
-      echo "</p>";
+      
+      $keyFile .="\n".$licKey;
+      $keyOutput .="<br>".$licKey;
+
+      //echo "<br>successfully inserted";
+
     }
     else{
-      echo "<p>";
-      echo "Error: ".$mysqli->error;
-      echo "</p>";
-    }
-  }
-  else{
-    echo "<p>";
-    echo "Query Error: ".$mysqli->error;
-    echo "</p>";
-  }
-  $myqli->close();
-}
-*/
+    
+      echo "<br>query unsuccessful";
 
-//Demonstration Mateiral
-echo "<br>";
-echo "<form action= './licenseAcceptance.html'> <input type = 'submit' value = 'Continue'> </form>";
+    }
+
+  $_SESSION['keyOutput'] = $keyOutput;
+  $_SESSION['keyFile'] = $keyFile;
+
+  header('Location: ./purchaseSuccessful');
+}
 
 function keygen(){
 
-  $email = $_POST["email"];
   $key = ' ';
   $length = 10;
 
-  $inputs = array_merge(range("z","a"),range(0,9),range("A","Z"));
+  $inputs = array_merge( range("a","z"), range(0,9), range("A","Z") );
 
   for($i=0; $i<$length; $i++){
     $key .= $inputs{ mt_rand(0,61) };
   }
-  echo "Key".$key;
-  echo "<br>";
-  echo "<br>";
+  
   return $key;
 }
-
 ?>
