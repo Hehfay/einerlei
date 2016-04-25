@@ -11,35 +11,14 @@ if(!isset($_SESSION["loggedin"]))
   <title>View 1</title>
   <link rel="stylesheet" href="../../../../style.css">
 </head>
+<section>
+  <img src='../../../../images/einerlei_publishing_site001005.png'>
+</section>
 <body>
+<div id="container">
+<div id="content">
 <h1>View 1</h1>
 <h4>View 1 displays each question as a column and has corresponding answers as row entires.</h4>
-<p>Example:</p>
-
-<table>
-<tr>
-  <th nowrap>USER</th>
-  <th nowrap>Age when starting musical instrument of any kind:</th>
-  <th nowrap>Age when starting musical study of primary instrument:</th>
-  <th nowrap>...</th>
-  <th nowrap>I am mentally tough enough for my musical/performance plan.</th>
-</tr>
-<tr>
-  <td nowrap>34</td>
-  <td nowrap>10-11</td>
-  <td nowrap>10-11</td>
-  <td nowrap>...</td>
-  <td nowrap>75</td>
-</tr>
-<tr>
-  <td nowrap>35</td>
-  <td nowrap>16-17</td>
-  <td nowrap>18-19</td>
-  <td nowrap>...</td>
-  <td nowrap>50</td>
-</tr>
-</table>
-
 <?php
 $fname = 'View1.csv';
 $mode = 'w';
@@ -157,5 +136,7 @@ echo "<p>Click <a href='$fname' download>here</a> to download the latest data in
   <li><a href="../">Go Back</a></li>
   <li><a href="../../">Dashboard</a></li>
 </ol>
+</div>
+</div>
 </body>
 </html>

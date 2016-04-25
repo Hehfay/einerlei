@@ -90,6 +90,79 @@ for($i = 1; $i <= $num_sub_categories[0]; $i++)
     echo "<p>Error Try Later</p>";
   }
 }
+
+/* Broad Categories */
+$delete_stuff = "delete from BroadCategoryResult where license_id = ".$_SESSION["id"].";";
+$mysqli->query($delete_stuff);
+$average = 0;
+$counter = 0;
+$overall_total = 0;
+$overall_counter = 0;
+for($i = 1; $i <= 3; $i++)
+{
+  $query = "select result from SubCategoryResult where sub_category_id = $i and license_id=".$_SESSION["id"].";";
+  $result = $mysqli->query($query);
+  $score = $result->fetch_row();
+  if($score[0] != -1)
+  {
+    $overall_total += $score[0];
+    $overall_counter++;
+    $average += $score[0];
+    $counter++;
+  }
+}
+if($counter == 0)
+{
+  $average = -1;
+}
+else
+{
+  $average /= $counter;
+  $average = round($average);
+}
+$query = "insert into BroadCategoryResult(license_id, broad_category_id, result) values(".$_SESSION["id"].", 1, ".$average.");";
+$mysqli->query($query);
+
+$average = 0;
+$counter = 0;
+for($i = 4; $i <= 24; $i++)
+{
+  $query = "select result from SubCategoryResult where sub_category_id = $i and license_id=".$_SESSION["id"].";";
+  $result = $mysqli->query($query);
+  $score = $result->fetch_row();
+  if($score[0] != -1)
+  {
+    $average += $score[0];
+    $counter++;
+    $overall_total += $score[0];
+    $overall_counter++;
+  }
+}
+if($counter == 0)
+{
+  $average = -1;
+}
+else
+{
+  $average /= $counter;
+  $average = round($average);
+}
+$query = "insert into BroadCategoryResult(license_id, broad_category_id, result) values(".$_SESSION["id"].", 2, ".$average.");";
+$mysqli->query($query);
+
+/* Overall Score */
+if($overall_counter == 0)
+{
+  $overall_total = -1;
+}
+else
+{
+  $overall_total /= $overall_counter;
+  round($overall_total);
+}
+$query = "insert into BroadCategoryResult(license_id, broad_category_id, result) values(".$_SESSION["id"].", 3, ".$average.");";
+$mysqli->query($query);
+
 $mysqli1->close();
 ?>
 
@@ -100,11 +173,121 @@ $mysqli1->close();
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<div id="introduction">
+<a name='0'></a>
+<section>
+  <img src='../images/einerlei_publishing_site001005.png'>
+</section>
+<div id="container">
+<div id="content">
 <h1>Your Results</h1>
 <?php
+  // Build list
+  // Overall
+  echo "<ul id='sub-category-links'>";
+  $query = "select category from LikertAnswerBroadCategory where id = 3;";
+  $result = $mysqli->query($query);
+  $row = $result->fetch_row();
+  echo "<li id='link'><a href='#$row[0]'>$row[0]</a></li>";
+  echo "</ul>";
+
+  // Category Scoring
+  echo "<ul id='sub-category-links'>";
+  $query = "select category from LikertAnswerBroadCategory where id = 4;";
+  $result = $mysqli->query($query);
+  $row = $result->fetch_row();
+  echo "<li id='link'><a href='#$row[0]'>$row[0]</a></li>";
+  echo "</ul>";
+
+  // Symptomatology
+  echo "<ul>";
+  $query = "select category from LikertAnswerBroadCategory where id = 1;";
+  $result = $mysqli->query($query);
+  $row = $result->fetch_row();
+  echo "<li id='link'><a href='#$row[0]'>$row[0]</a></li>";
+
+  echo "<ul id='sub-category-links'>";
   /* Grab the category and the text areas */
-  for($i = 1; $i <= $_SESSION["num_sub_categories"]; $i++)
+  for($i = 1; $i <= 3; $i++)
+  {
+    $query = "select category, text_area1, text_area2 from LikertAnswerSubCategory where id = $i;";
+    $result = $mysqli->query($query);
+    while($row = $result->fetch_row())
+    {
+      echo "<li id='link'><a href='#$row[0]'>$row[0]</a></li>";
+    }
+  }
+  echo "</ul>";
+  echo "</ul>";
+
+  // Contributing factors
+  echo "<ul>";
+  $query = "select category from LikertAnswerBroadCategory where id = 2;";
+  $result = $mysqli->query($query);
+  $row = $result->fetch_row();
+  echo "<li id='link'><a href='#$row[0]'>$row[0]</a></li>";
+  echo "<ul id='sub-category-links'>";
+  /* Grab the category and the text areas */
+  for($i = 4; $i <= 24; $i++)
+  {
+    $query = "select category, text_area1, text_area2 from LikertAnswerSubCategory where id = $i;";
+    $result = $mysqli->query($query);
+    while($row = $result->fetch_row())
+    {
+      echo "<li id='link'><a href='#$row[0]'>$row[0]</a></li>";
+    }
+  }
+  echo "</ul>";
+  echo "</ul>";
+
+  $query = "select category, text_area1, text_area2 from LikertAnswerBroadCategory where id = 3;";
+  $usr_answ_query = "select result from BroadCategoryResult where broad_category_id = 3 and license_id = ".$_SESSION["id"].";";
+  $result = $mysqli->query($query);
+  $result3 = $mysqli->query($usr_answ_query);
+  $row = $result->fetch_row();
+  $answer = $result3->fetch_row();
+  if($answer[0] == -1)
+  {
+    $answer[0] = "N/A";
+  }
+  else
+  {
+    $answer[0] = $answer[0]."%";
+  }
+  echo "<a name='$row[0]'></a>";
+  echo "<h4 id='result'>".$row[0]."</h4>";
+  echo "<p>".$row[1]."</p>";
+  echo "<h4 id='result'>Your ".$row[0]." Score: ".$answer[0]."."."</h4>"."<p id='p-result'>".$row[2]."</p>";
+  echo "<a id='a-result' href='#0'>Top</a>";
+
+  $query = "select category, text_area1, text_area2 from LikertAnswerBroadCategory where id = 4;";
+  $result = $mysqli->query($query);
+  $row = $result->fetch_row();
+  echo "<a name='$row[0]'></a>";
+  echo "<h4 id='result'>".$row[0]."</h4>";
+  echo "<p>".$row[1]."</p>";
+  echo "<h4 id='result'>".$row[0]."</h4>"."<p id='p-result'>".$row[2]."</p>";
+  echo "<a id='a-result' href='#0'>Top</a>";
+
+  $query = "select category, text_area1, text_area2 from LikertAnswerBroadCategory where id = 1;";
+  $usr_answ_query = "select result from BroadCategoryResult where broad_category_id = 1 and license_id = ".$_SESSION["id"].";";
+  $result = $mysqli->query($query);
+  $result3 = $mysqli->query($usr_answ_query);
+  $row = $result->fetch_row();
+  $answer = $result3->fetch_row();
+  if($answer[0] == -1)
+  {
+    $answer[0] = "N/A";
+  }
+  else
+  {
+    $answer[0] = $answer[0]."%";
+  }
+  echo "<a name='$row[0]'></a>";
+  echo "<h4 id='result'>".$row[0]."</h4>";
+  echo "<p>".$row[1]."</p>";
+  echo "<h4 id='result'>Your Score for ".$row[0].": ".$answer[0]."."."</h4>"."<p id='p-result'>".$row[2]."</p>";
+  echo "<a id='a-result' href='#0'>Top</a>";
+  for($i = 1; $i <= 3; $i++)
   {
     $query = "select category, text_area1, text_area2 from LikertAnswerSubCategory where id = $i;";
     $usr_answ_query = "select result from SubCategoryResult where sub_category_id = $i and license_id = ".$_SESSION["id"].";";
@@ -120,10 +303,57 @@ $mysqli1->close();
     {
       $answer[0] = $answer[0]."%";
     }
-    echo "<h4>".$row[0]."</h4>";
+    echo "<a name='$row[0]'></a>";
+    echo "<h4 id='result'>".$row[0]."</h4>";
     echo "<p>".$row[1]."</p>";
-    echo "<h4>Your Score for ".$row[0].": ".$answer[0]."."."</h4>"."<p>".$row[2]."</p>";
+    echo "<h4 id='result'>Your Score for ".$row[0].": ".$answer[0]."."."</h4>"."<p id='p-result'>".$row[2]."</p>";
+    echo "<a id='a-result' href='#0'>Top</a>";
   }
+  $query = "select category, text_area1, text_area2 from LikertAnswerBroadCategory where id = 2;";
+  $usr_answ_query = "select result from BroadCategoryResult where broad_category_id = 2 and license_id = ".$_SESSION["id"].";";
+  $result = $mysqli->query($query);
+  $result3 = $mysqli->query($usr_answ_query);
+  $row = $result->fetch_row();
+  $answer = $result3->fetch_row();
+  if($answer[0] == -1)
+  {
+    $answer[0] = "N/A";
+  }
+  else
+  {
+    $answer[0] = $answer[0]."%";
+  }
+  echo "<a name='$row[0]'></a>";
+  echo "<h4 id='result'>".$row[0]."</h4>";
+  echo "<p>".$row[1]."</p>";
+  echo "<h4 id='result'>Your Score for ".$row[0].": ".$answer[0]."."."</h4>"."<p id='p-result'>".$row[2]."</p>";
+  echo "<a id='a-result' href='#0'>Top</a>";
+  for($i = 4; $i <= 24; $i++)
+  {
+    $query = "select category, text_area1, text_area2 from LikertAnswerSubCategory where id = $i;";
+    $usr_answ_query = "select result from SubCategoryResult where sub_category_id = $i and license_id = ".$_SESSION["id"].";";
+    $result = $mysqli->query($query);
+    $result3 = $mysqli->query($usr_answ_query);
+    $row = $result->fetch_row();
+    $answer = $result3->fetch_row();
+    if($answer[0] == -1)
+    {
+      $answer[0] = "N/A";
+    }
+    else
+    {
+      $answer[0] = $answer[0]."%";
+    }
+    echo "<a name='$row[0]'></a>";
+    echo "<h4 id='result'>".$row[0]."</h4>";
+    echo "<p>".$row[1]."</p>";
+    echo "<h4 id='result'>Your Score for ".$row[0].": ".$answer[0]."."."</h4>"."<p id='p-result'>".$row[2]."</p>";
+    echo "<a id='a-result' href='#0'>Top</a>";
+  }
+
+
+
+
   $query = "update License set active = false where id = ".$_SESSION["id"].";";
   $mysqli->query($query);
   $mysqli->close();
@@ -132,6 +362,7 @@ $mysqli1->close();
 ?>
 <p><a href="../" id="einerlei-link">Home</a></p>
 <p><a href="http://www.einerleipublishing.com/einerlei_publishing_site_002.htm" id="einerlei-link" target="_blank">einerleipublishing.com</a></p>
+</div>
 </div>
 </body>
 </html>

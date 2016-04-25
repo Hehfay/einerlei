@@ -5,18 +5,23 @@ html {
   font-size: 100%;
 }
 
+section {
+  margin-top: 1%;
+  margin-left: 5%;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 1%;
+  background-image: url("images/background.jpg");
 }
 
 p {
   font-size: 1.3rem;
   margin-top: 3%;
-  margin-bottom: 1%;
+}
+
+#container #p-result {
+  margin-bottom: 0%;
 }
 
 h1 {
@@ -24,6 +29,9 @@ h1 {
   font-size: 4.8rem;
   margin-top: 4%;
   margin-bottom: 2%;
+  color: rgba(204, 102, 153, 1);
+  color: purple;
+  line-height: 5rem;
 }
 
 h4 {
@@ -31,6 +39,26 @@ h4 {
   margin-top: 1%;
   margin-bottom: 1%;
   font-family: 'Archivo Narrow', sans-serif;
+  color: #cc6699;
+  color: purple;
+}
+
+#result {
+  font-size: 3rem;
+  margin-top: 15%;
+  line-height: 3.5rem;
+}
+
+#sub-category-links {
+  margin-top: 0%;
+  margin-bottom: 5%;
+}
+
+#link {
+  margin-top: .1%;
+  margin-bottom: .1%;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
 }
 
 input {
@@ -70,31 +98,44 @@ li {
   font-size: .9rem;
 }
 
-#introduction {
+#container {
   margin: 0 auto;
   margin-top: 5%;
-  margin-left: 20%;
-  width: 67%;
+  width: 100%;
   line-height: 2.2em;
+  background-color: #e7e7e2;
+  padding-bottom: 5%;
+  padding-top: 10%;
 }
 
-#introduction p {
-  text-indent: 2.5rem;
+#content {
+  background-color: white;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 75%;
+  margin-top: -11rem;
+  z-index: 2;
+  position: relative;
+  box-shadow: .1rem .1rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+#container p {
+  /*text-indent: 2.5rem;*/
   margin-bottom: 6%;
   font-size: 1.56rem;
 }
 
 #button {
   margin: 0 auto;
-  margin-bottom: 40%;
+  margin-bottom: 15%;
   margin-top: 11%;
   display: block;
   background-color: purple;
   font-size: 2rem;
   border-radius: 1rem;
-  padding-left: 14%;
   padding-top: 1%;
   padding-bottom: 1%;
+  text-align: center;
 }
 
 #button a {
@@ -125,11 +166,14 @@ td {
 
 a {
   text-decoration: none;
-  color: blue;
+  color: purple;
+  color: rgba(204, 102, 153, 1);
 }
 
 a:hover {
   text-decoration: underline;
+/*  color: rgba(204, 102, 153, .8);
+  text-shadow: 0rem 0rem 1.25rem rgba(204, 102, 153, .3); */
 }
 
 #einerlei-link {
@@ -140,4 +184,8 @@ textarea {
   width: 100%;
   height: 30%;
   margin-bottom: 10%;
+}
+
+#please-login {
+  color: white;
 }

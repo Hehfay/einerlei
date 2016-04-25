@@ -24,6 +24,11 @@ $_SESSION["time"] = time();
 <script src="../src/jquery-1.12.2.min.js"></script>
 </head>
 <body>
+<section>
+  <img src='../images/einerlei_publishing_site001005.png'>
+</section>
+<div id="container">
+<div id="content">
 <script>
 
 //JQUERY
@@ -366,5 +371,7 @@ function submitAnswers(firstQues, totalQues)
   <p id ='question15'></p>
 <input type='submit'>
 </form>
+</div>
+</div>
 </body>
 </html>

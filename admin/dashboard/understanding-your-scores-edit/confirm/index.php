@@ -13,6 +13,11 @@ if(!isset($_SESSION["loggedin"]))
   <link rel="stylesheet" href="../../../../style.css">
 </head>
 <body>
+<section>
+  <img src='../../../../images/einerlei_publishing_site001005.png'>
+</section>
+<div id="container">
+<div id="content">
 <h1>Changes Saved</h1>
 <?php
   $mysqli = new mysqli("", "jhartma0", "jhartma0", "Quiz");
@@ -28,9 +33,9 @@ if(!isset($_SESSION["loggedin"]))
     $p2 = stripslashes($p2);
     $p2 = htmlentities($p2);
     $p2 = strip_tags($p2);
-    $query = "update LikertAnswerSubCategory set text_area1 = \"".$p1."\" where id = ".$_POST['id'].";";
+    $query = "update LikertAnswer".$_POST["cat_type"]."Category set text_area1 = \"".$p1."\" where id = ".$_POST['id'].";";
     $mysqli->query($query);
-    $query = "update LikertAnswerSubCategory set text_area2 = '".$p2."' where id = ".$_POST['id'].";";
+    $query = "update LikertAnswer".$_POST["cat_type"]."Category set text_area2 = '".$p2."' where id = ".$_POST['id'].";";
     $mysqli->query($query);
     echo "<p>".$_POST["first"]."</p>";
     echo "<p>".$_POST["second"]."</p>";
@@ -45,5 +50,7 @@ if(!isset($_SESSION["loggedin"]))
   <li><a href="../">Select Category</a></li>
   <li><a href="../../">Dashboard</a></li>
 </ol>
+</div>
+</div>
 </body>
 </html>

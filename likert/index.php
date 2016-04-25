@@ -40,6 +40,11 @@ if(time() - $_SESSION["time"] > $timeout)
 <script src="../src/jquery-1.12.2.min.js"></script>
 </head>
 <body>
+<section>
+  <img src='../images/einerlei_publishing_site001005.png'>
+</section>
+<div id="container">
+<div id="content">
 <script>
 
 
@@ -211,7 +216,7 @@ function submitAnswers(firstQues, numOfQs)
 
 <div id="likert">
 </div>
-
-
+</div>
+</div>
 </body>
 </html>
