@@ -10,11 +10,10 @@ are sent to questionSubmit.php.
 
 <?php
 session_start();
-/*if(!isset($_SESSION['id']))
+if(!isset($_SESSION['id']))
 {
   header('Location: ../please-login/');
 }
-*/
 ?>
 <!DOCTYPE html>
 <html>
@@ -49,8 +48,11 @@ $(document).ready(function(){
 
     //1. Gender
     $("#question1").append(
-      "<input id='q1' type='radio' name='"+obj[questionStr+1]+"' value='Male' required> Male" +
-      "<input id='q1' type='radio' name='"+obj[questionStr+1]+"' value='Female' required> Female"
+      "<input id='q1' type='radio' name='"+obj[questionStr+1]
+      +"' value='Male' required> Male"
+      +"<br>"
+      +"<input id='q1' type='radio' name='"+obj[questionStr+1]
+      +"' value='Female' required> Female"
     );
     
     //2. Age
@@ -220,6 +222,7 @@ $(document).ready(function(){
     $("#question11").append(
       "<input id='q11' type='radio' name='"+obj[questionStr+11]+"' value='Yes' " 
       +"onchange='return specificConditions(this.value);' required> Yes"
+      +"<br>"
       +"<input id='q11' type='radio' name='"+obj[questionStr+11]+"' value='No' " 
       +"onchange='return specificConditions(this.value);' required> No"
       +"<br>"
@@ -250,6 +253,7 @@ $(document).ready(function(){
     $("#question13").append(
       "<input id='q13' type='radio' name='"+obj[questionStr+13]+"'" 
       +"value='Yes' required> Yes"
+      +"<br>"
       +"<input id='q13' type='radio' name='"+obj[questionStr+13]+"'" 
       +"value='No' required> No"
       +"<br>"
@@ -259,6 +263,7 @@ $(document).ready(function(){
     $("#question14").append(
       "<input id='q14' type='radio' name='"+obj[questionStr+14]+"'"
       +"value='Yes' required> Yes"
+      +"<br>"
       +"<input id='q14' type='radio' name='"+obj[questionStr+14]+"'"
       +"value='No' required> No"
     );
@@ -343,7 +348,8 @@ function submitAnswers(firstQues, totalQues)
     }
   }
   $.post("questionSubmit.php", args);
-  alert(args);
+  //alert(args);
+  window.location = "../likert/";
 }
 
 </script>
