@@ -10,11 +10,12 @@ are sent to questionSubmit.php.
 
 <?php
 session_start();
-if(!isset($_SESSION['id']))
+/*if(!isset($_SESSION['id']))
 {
   header('Location: ../please-login/');
 }
 $_SESSION["time"] = time();
+*/
 ?>
 <!DOCTYPE html>
 <html>
@@ -159,9 +160,14 @@ $(document).ready(function(){
         +"Other"
         +"</option>"
       +"</select>"
-      +"<p id='pleaseSpecify'></p>"
+      +"<p id='pleaseSpecify'>Please Specify:"
+        +"<input id='other' type='text' name='pleaseSpecify'>"
+      +"</p>"
     );
-    
+
+    $("#pleaseSpecify").hide();
+
+
     //7. Primary voice type or instrument:
     $("#question7").append(
       "<select id='q7' name='"+obj[questionStr+7]+"' required>"
@@ -223,8 +229,13 @@ $(document).ready(function(){
       +"<input id='q11' type='radio' name='"+obj[questionStr+11]+"' value='No' " 
       +"onchange='return specificConditions(this.value);' required> No"
       +"<br>"
-      +"<p id ='specificConditions'></p>"
+      +"<p id ='specificConditions'>Specific medical condition:"
+      +"<input id='conditions' type='text' name='specificMedical'>"
+      +"</p>"
     );
+
+    $("#specificConditions").hide();
+
 
     //12. Number of alcoholic drinks per month:
     $("#question12").append(
@@ -276,9 +287,7 @@ function specifyOther(other)
 {
   if(other == 'Other')
   {
-    $("#pleaseSpecify").append("Please Specify:"
-                              +"<input id='other' type='text' name='pleaseSpecify'"
-                              +">");
+    $("#pleaseSpecify").show();
   }
   else
   {
@@ -290,9 +299,7 @@ function specificConditions(ans)
 {
   if(ans == 'Yes')
   {
-    $("#specificConditions").append("Specific medical condition:"
-                                   +"<input id='conditions' type='text' name='specificMedical'"
-                                   +">"); 
+    $("#specificConditions").show(); 
   }
   if(ans == 'No')
   {
@@ -315,25 +322,25 @@ function submitAnswers(firstQues, totalQues)
     aNum = "a" + counter;
     quesTxt = $("#q"+quesNum).attr("name");
     quesType = $("#q"+quesNum).attr("type");
-    if(quesType == "radio")
+    quesTag = $("#q"+quesNum).prop("tagName");
+    if( quesType == "radio")
     {
       quesVal = $("input[id='q"+quesNum+"']:radio:checked").val();
       if(quesNum == 11 && quesVal == "Yes")
       {
         quesVal += " " + $("#conditions").val();
       }
-    }else if(quesType == "option")
+    }else if(quesTag == "SELECT")
     {
-      quesVal = $("input[id='q"+quesNum+"']:option:selected").text();
+      quesVal = $("#q"+quesNum+" option:selected").text();
       if(quesNum == 6 && quesVal == "Other")
       {
-        quesVal = " " + $("#other").val();
+        quesVal += " " + $("#other").val();
       }
     }else
     {
       quesVal = $("#q"+quesNum).val();;
     }
-    alert(quesVal);
     args += qNum + "=" + quesTxt + "&" + aNum + "=" + quesVal; 
     counter++;
     if(quesNum != firstQues+(totalQues-1))
@@ -344,7 +351,6 @@ function submitAnswers(firstQues, totalQues)
   $.post("questionSubmit.php", args);
   alert(args);
 }
-
 
 </script>
 
