@@ -103,9 +103,7 @@ li {
   margin: 0 auto;
   margin-top: 5%;
   width: 100%;
-  line-height: 2.2em;
   background-color: #e7e7e2;
-  padding-bottom: 5%;
   padding-top: 10%;
 }
 
@@ -114,6 +112,7 @@ li {
   margin: 0 auto;
   padding: 1rem;
   width: 75%;
+  line-height: 2.2em;
   margin-top: -11rem;
   z-index: 2;
   position: relative;
@@ -189,4 +188,24 @@ textarea {
 
 #please-login {
   color: white;
+}
+
+@media screen and (max-width: 414px) {
+
+  #content {
+    width: 80%;     
+    margin-top: -2.5rem;
+  }
+
+  #content p {
+    font-size: 1.1rem;
+    line-height: 1.5em;
+  }
+
+  img {
+    display: block;
+    margin-right: 5%;
+    margin-left: auto;
+  }
+
 }

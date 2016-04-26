@@ -1,5 +1,4 @@
 <?php
-//header('Content-type: application/json');
 session_start();
 //require '../src/timeout.php';
 /*
@@ -30,39 +29,41 @@ else
     else
     {
       fwrite($filehandle, "/************ CONNECTED OK ************/\n");
+      /*
       foreach($_POST as $key => $value)
       {
         fwrite($filehandle, "key: $key value: $value\n");
       }
+       */
       $size = count($_POST) / 2;
       for($i = 0; $i < $size; $i++)
       {
-        $query1 = "select id, score_inversely from DemographicQuestion where question=";
+        $query1 = "select id from DemographicQuestion where question=";
         $query2 = $_POST["q$i"];
         $query2 = $mysqli->escape_string($query2);
         $query2 = "'".$query2."';";
         $query = $query1.$query2;
-        fwrite($filehandle, $query."\n");
+        //fwrite($filehandle, $query."\n");
         $result = $mysqli->query($query);
         $result = $result->fetch_assoc();
-        $answer = $mysqli->real_escape_string($_POST["a$i"]);
         $answer = stripslashes($answer);
         $answer = htmlentities($answer);
         $answer = strip_tags($answer);
-      }
-        $query3 = "update DemographicAnswer set answer = $answer where license_id = ".$_SESSION["id"]." and question_id = ".$result["id"].";";
+        $answer = $mysqli->escape_string($_POST["a$i"]);
+        $query3 = "update DemographicAnswer set answer = '$answer' where license_id = ".$_SESSION["id"]." and demographic_question_id = ".$result["id"].";";
         fwrite($filehandle, $query3."\n");
-        //$mysqli->query($query3);
+        $mysqli->query($query3);
+        $_SESSION["demo_complete"] = true;
       }
-      $result->free();
-      $mysqli->close();
     }
+//    $result->free();
+    $mysqli->close();
   }
   else
   {
     fwrite($filehandle, "/* POST array not set. */\n");
   }
-  fwrite($filehandle, "/*===========================================================*/\n");
-  fclose($filehandle);
 }
-?>
+fwrite($filehandle, "/*===========================================================*/\n");
+fclose($filehandle);
+//header('Location: ../likert/');
