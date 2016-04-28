@@ -37,6 +37,32 @@ if(!isset($_SESSION["loggedin"]))
   {
     exit();
   }
+
+  $handle = fopen("../../../../demographics/demographicQuestions.json", "w");
+  if(!$handle)
+  {
+    exit();
+  }
+  $mysqli = new mysqli("", "jhartma0", "jhartma0", "Quiz");
+  if(!$mysqli)
+  {
+    exit();
+  }
+  fwrite($handle, "{\n");
+  $query = "select question from DemographicQuestion order by question_order;";
+  $result = $mysqli->query($query);
+  $max = $result->num_rows;
+  $row = $result->fetch_array();
+  for($i = 1; $i < $max; $i++)
+  {
+    fwrite($handle, "\"question$i\":\"$row[0]\",\n");
+    $row = $result->fetch_array();
+  }
+  fwrite($handle, "\"question$i\":\"$row[0]\"\n");
+  fwrite($handle, "}");
+  $mysqli->close();
+  fclose($handle);
+
 ?>
 <ol>
   <li><a href="../">Select Another Question</a></li>
