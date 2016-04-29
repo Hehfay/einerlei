@@ -21,8 +21,8 @@ if(!isset($_SESSION['id']))
 }
 if(!isset($_SESSION['demo_complete']))
 {
-  header('Location: ../demographics/');
-  exit();
+  //header('Location: ../demographics/');
+  //:exit();
 }
 if(time() - $_SESSION["time"] > $timeout)
 {

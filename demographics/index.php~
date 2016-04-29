@@ -355,7 +355,7 @@ function submitAnswers(firstQues, totalQues)
   }
   $.post("questionSubmit.php", args);
   //alert(args);
-  window.location = "../likert/index.php";
+  window.location = "../likert/";
 }
 
 </script>
