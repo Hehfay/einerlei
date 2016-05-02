@@ -20,7 +20,7 @@ if( !isset($_SESSION["loggedin"]) ){
 <div id="content">
 <h1>Generate Keys</h1>
 <form action = keyGenerator.php method ="post">
-  Number of Keys to generate: <input type = "number" name="keycount">
+  Number of Keys to generate: <input type = "number" name="keycount" max="1000">
   <input type="submit" value ="Generate">
 </form>
 <a href="../">Dashboard</a>
