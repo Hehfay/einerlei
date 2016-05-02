@@ -9,6 +9,8 @@ if( !isset($_SESSION["loggedin"]) ){
 <head>
   <title>Generate Keys</title>
   <link rel="stylesheet" href="../../../style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
 </head>
 <section>
   <img src='../../../images/einerlei_publishing_site001005.png'>
@@ -24,5 +26,9 @@ if( !isset($_SESSION["loggedin"]) ){
 <a href="../">Dashboard</a>
 </div>
 </div>
+<footer>
+  <h1>Einerlei Publishing</h1>
+  <p>general@einerleipublishing.com | <a href="http://einerleipublishing.com">EinerleiPublishing.com</a></p>
+</footer>
 </body>
 </html>

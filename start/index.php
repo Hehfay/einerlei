@@ -31,6 +31,8 @@ $mysqli->close();
 <head>
   <title>MPADQ Online Diagnostics Test</title>
   <link rel="stylesheet" href="../style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
 </head>
 <body>
 <section>
@@ -48,5 +50,10 @@ $mysqli->close();
     <a href="../demographics/">Click Here To Begin Questionnaire</a>
   </div>
   </div>
+  </div>
+<footer>
+  <h1>Einerlei Publishing</h1>
+  <p>general@einerleipublishing.com | <a href="http://einerleipublishing.com">EinerleiPublishing.com</a></p>
+</footer>
 </body>
 </html>

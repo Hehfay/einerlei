@@ -8,6 +8,8 @@ if( !isset($_SESSION["loggedin"]) ){
 <head>
   <title>Admin</title>
   <link rel="stylesheet" href="../../style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
 </head>
 <body>
 <section>
@@ -22,8 +24,13 @@ if( !isset($_SESSION["loggedin"]) ){
     <li><a href = "data-view/">Review Answers</a></li>
     <li><a href = "question-edit/">Edit Questions</a></li>
     <li><a href = "understanding-your-scores-edit/">Edit Understanding Your Scores Text</a></li>
+    <li><a href = "/">Change Admin Username / Password</a></li>
   </ul>
   </div>
   </div>
+<footer>
+  <h1>Einerlei Publishing</h1>
+  <p>general@einerleipublishing.com | <a href="http://einerleipublishing.com">EinerleiPublishing.com</a></p>
+</footer>
 </body>
 </html>

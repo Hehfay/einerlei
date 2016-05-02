@@ -19,9 +19,11 @@ $_SESSION["time"] = time();
 <!DOCTYPE html>
 <html>
 <head>
-<title>Performance Anxiety Diagostic Questionnaire</title>
-<link rel="stylesheet" href="../style.css">
-<script src="../src/jquery-1.12.2.min.js"></script>
+  <title>Performance Anxiety Diagostic Questionnaire</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="../src/jquery-1.12.2.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
 </head>
 <body>
 <section>

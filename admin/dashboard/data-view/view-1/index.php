@@ -10,6 +10,8 @@ if(!isset($_SESSION["loggedin"]))
 <head>
   <title>View 1</title>
   <link rel="stylesheet" href="../../../../style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
 </head>
 <section>
   <img src='../../../../images/einerlei_publishing_site001005.png'>
@@ -138,5 +140,9 @@ echo "<p>Click <a href='$fname' download>here</a> to download the latest data in
 </ol>
 </div>
 </div>
+<footer>
+  <h1>Einerlei Publishing</h1>
+  <p>general@einerleipublishing.com | <a href="http://einerleipublishing.com">EinerleiPublishing.com</a></p>
+</footer>
 </body>
 </html>

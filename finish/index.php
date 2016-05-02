@@ -171,6 +171,8 @@ $mysqli1->close();
 <head>
   <title>Results</title>
   <link rel="stylesheet" href="../style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
 </head>
 <body>
 <a name='0'></a>
@@ -180,6 +182,7 @@ $mysqli1->close();
 <div id="container">
 <div id="content">
 <h1>Your Results</h1>
+<h4>Note you can view your results at any time by entering your code at the home page.</h4>
 <?php
   // Build list
   // Overall
@@ -364,5 +367,9 @@ $mysqli1->close();
 <p><a href="http://www.einerleipublishing.com/einerlei_publishing_site_002.htm" id="einerlei-link" target="_blank">einerleipublishing.com</a></p>
 </div>
 </div>
+<footer>
+  <h1>Einerlei Publishing</h1>
+  <p>general@einerleipublishing.com | <a href="http://einerleipublishing.com">EinerleiPublishing.com</a></p>
+</footer>
 </body>
 </html>

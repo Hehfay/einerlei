@@ -33,5 +33,9 @@ session_start();
   <p>If you have already taken the quiz, enter your key to view your results again.</p>
 </div>
 </div>
+<footer>
+  <h1>Einerlei Publishing</h1>
+  <p>general@einerleipublishing.com | <a href="http://einerleipublishing.com">EinerleiPublishing.com</a></p>
+</footer>
 </body>
 </html>

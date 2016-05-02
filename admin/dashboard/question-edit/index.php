@@ -10,6 +10,8 @@ if(!isset($_SESSION["loggedin"]))
 <head>
   <title>Text Edit</title>
   <link rel="stylesheet" href="../../../style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
 </head>
 <body>
 <section>
@@ -58,5 +60,9 @@ if(!isset($_SESSION["loggedin"]))
 </ol>
 </div>
 </div>
+<footer>
+  <h1>Einerlei Publishing</h1>
+  <p>general@einerleipublishing.com | <a href="http://einerleipublishing.com">EinerleiPublishing.com</a></p>
+</footer>
 </body>
 </html>

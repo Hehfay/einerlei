@@ -105,6 +105,7 @@ li {
   width: 100%;
   background-color: #e7e7e2;
   padding-top: 10%;
+  padding-bottom: 5%;
 }
 
 #content {
@@ -188,6 +189,31 @@ textarea {
 
 #please-login {
   color: white;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 4%;
+}
+
+footer h1 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: -2%;
+  margin-top: 0;
+  font-family: 'Satisfy', serif;
+}
+
+footer p a {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+footer p {
+  color: white;
+  margin-top: 1%;
 }
 
 @media screen and (max-width: 414px) {
