@@ -1,0 +1,12 @@
+
+use Quiz;
+
+drop table if exists admins;
+
+create table admins(
+                       id int primary key auto_increment
+                       , username varchar(255)
+                       , password varchar(255)
+                    );
+
+insert into admins values (0, 'user1','098f6bcd4621d373cade4e832627b4f6');

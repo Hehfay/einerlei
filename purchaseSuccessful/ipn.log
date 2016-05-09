@@ -1,0 +1,1386 @@
+[2016-05-02 18:19 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 880
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A19%3A13+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AZuRXZRkuk7frhfirfxxTkj0BDJGAXNv02pB-We8cYPzjp-sOte-vxQz&payer_email=titoriano%40gmail.com&txn_id=5MV38125TD039143G&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=e0c19c7d961c6
+[2016-05-02 18:19 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:19:19 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=PUMddIdTzxaks2uxwkgpPEqdUcpPQe_2BBM3LpDMOnO7z53m3ia5RMSGSYS7IjPb6hL-eRbboyvLKA2w_FANcnrVYT2wlN3bYA4IcEmiNm28mgKeV5JQv4VjtO7jUTaVtR3rePIFtrabEEKOnHmC--YB8PPKUyfnZWqLsrM38TDwdikNDyF0pj8j7Hv4FUMCocvdR268pSnNNKy-gMGdIZq-URA_mObRVcy92n2fzUFNXpGqiH14puK-7McAb9ZeYKg_YJCLejjlQOIEVlsg6LPPyGrVJsCOwIhLdujRdzlRzNWF6Jdce6dDcvkjTkR3pTlo49bzv8CpnpfdcPbcIkXWHoN3CT9RZvGyvx3uKfOtCPehsRtkwZLytAzsYAdZL84teo0fHMhmofc4akq2EmKIO-EZUcILpOtujQi1veM6F6JoAbUaeDcgylu; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:19:20 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:19:20 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462238360014781; path=/; expires=Thu, 26-Apr-46 01:19:20 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 8c87f301f3848
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2549884759%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 01:49:20 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:19 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A19%3A13+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AZuRXZRkuk7frhfirfxxTkj0BDJGAXNv02pB-We8cYPzjp-sOte-vxQz&payer_email=titoriano%40gmail.com&txn_id=5MV38125TD039143G&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=e0c19c7d961c6 
+[2016-05-02 18:19 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 880
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A19%3A13+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AZuRXZRkuk7frhfirfxxTkj0BDJGAXNv02pB-We8cYPzjp-sOte-vxQz&payer_email=titoriano%40gmail.com&txn_id=5MV38125TD039143G&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=e0c19c7d961c6
+[2016-05-02 18:19 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:19:46 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=Nb6P5VRDk27pAB_uW8pZwOijl6o-tuWnaRngETTLs07CJudg8tqxC6lEuNG5MZ87P1J40X1f6Owp034ThMrPfQDUDWukOvvQikOYavnuCqoGQhheHgdmFpEc-_9tyCt0Qxaom5Mx7mQSbnPbdw6dakuOXm5AsGs9I4FckSavBafLahXQm_RobWuFsHWXigYOTHOpaJ9JUHHMDiyTsHXGLcWz7KDo8IpTyNK1nGxltuPYf1bTW5k--QoNxmqXablP7LhP0anoicZnaOo6N_i5_cE-YMhk1ijo6vmGB79yV9yb0YJFJ-bIYcVYeIkdRNPfc9EvquqLpdwFeReuR4gv148LUCtNu4muMgkvGZWTXPQae5qyWj8t0vYxvgvU8N-WmG6nc_jfaKbKEQdE_0ppWqTTkhyDaKE8vBW-skcAX_ep46sLRrKloekXZOK; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:19:46 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:19:46 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462238386342248; path=/; expires=Thu, 26-Apr-46 01:19:46 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 4bf863c44e488
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D3002869591%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 01:49:46 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:19 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A19%3A13+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AZuRXZRkuk7frhfirfxxTkj0BDJGAXNv02pB-We8cYPzjp-sOte-vxQz&payer_email=titoriano%40gmail.com&txn_id=5MV38125TD039143G&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=e0c19c7d961c6 
+[2016-05-02 18:20 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 880
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A19%3A13+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AZuRXZRkuk7frhfirfxxTkj0BDJGAXNv02pB-We8cYPzjp-sOte-vxQz&payer_email=titoriano%40gmail.com&txn_id=5MV38125TD039143G&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=e0c19c7d961c6
+[2016-05-02 18:20 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:20:10 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=BRBXvzxN82TQr6h6FXop7Q0hZ4HVo_zq75lLSsOLMYFaSJuieOHMBQW6jcsOTfe-G0kHD4HPDiTKZbLVpHRBtaO8CHEs3PSohV3garh68BZ6D4rGU-5bQhH4sdDlQ2bxTWnXRfZp88QWWhNU8DrkHVRUz5iiq-65paNlNvJ1L230mMYpLiCRJ__O46r689X6v3B3NbTstcMYXQPKBzXFgZO9qMYs8JOO9UOVGcCI67YyhFQR-wecjj8NOz-ZxKPovDO-k9bfkxQ09GIeDs6CuxlLXf8O3zCaKHFI_EbS_UbyOLRCQFTdCC2NKpxx8LybRqvnkgWK1lZbCswUolYwIn1YMf4Dw3rq6VDWJlW7TNpF92VzFGXYq0j8f-No2cR5lM2SDdwkaNby4k6C-z6SB8l5g2pmd31trt3cBRJnm1-SRuOCkpIYfdsXT3G; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:20:11 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:20:11 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462238410962952; path=/; expires=Thu, 26-Apr-46 01:20:10 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 84f660d2e60ff
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D3405522775%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 01:50:11 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:20 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A19%3A13+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AZuRXZRkuk7frhfirfxxTkj0BDJGAXNv02pB-We8cYPzjp-sOte-vxQz&payer_email=titoriano%40gmail.com&txn_id=5MV38125TD039143G&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=e0c19c7d961c6 
+[2016-05-02 18:21 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 880
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A19%3A13+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AZuRXZRkuk7frhfirfxxTkj0BDJGAXNv02pB-We8cYPzjp-sOte-vxQz&payer_email=titoriano%40gmail.com&txn_id=5MV38125TD039143G&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=e0c19c7d961c6
+[2016-05-02 18:21 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:21:13 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=14LErzQtaWKlo9Gui7ug8hSRBusxhMc5Rr1tGDEBFOmXOM9NjQqUaNY4aNI65LFX7v01H7SIIdIh6h3uF3zq-ibROKpT9O0DpMQN55QG5t88NNaXqQRzdqBVLSCpAIabGMlLZtN12URnbL37B9i0Buzk1wtFTmpkulelqgt6Nn0ScjLA75dHq5P8jFz_iP8JTfqRNFVtEFqxAKkwDagT5_VltyI0SFt1MmOz87gVNLDyR3M9s1vB_0j6uatYnkoLljh45AaoYFpJqzA1Lf5akzhtgYWcJB1wFzbzJv_u2iinJycpPfKg0xnfOWAWGhvHOcHsYze9y22jsEGLPi8zaDJZ3MbNRzITLBva9vKlrf8Z4RdYvWLp6MM1CchrkDXe-27GjlBZyzQopLHYX2k5dRDXyvwaSRaShjEu_tE8Nd41gWg2wYG_0fbt4JC; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:21:13 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:21:13 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462238473173771; path=/; expires=Thu, 26-Apr-46 01:21:13 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 754cbf95260aa
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D167585623%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 01:51:13 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:21 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A19%3A13+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AZuRXZRkuk7frhfirfxxTkj0BDJGAXNv02pB-We8cYPzjp-sOte-vxQz&payer_email=titoriano%40gmail.com&txn_id=5MV38125TD039143G&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=e0c19c7d961c6 
+[2016-05-02 18:22 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 880
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A22%3A15+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAndaKlhSwwLsN0EuDS3JWkQgiu3Q&payer_email=titoriano%40gmail.com&txn_id=10A93592WW303550P&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7451aa9abff58
+[2016-05-02 18:22 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:22:20 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=39PrbfBQXA11UJmjj3Lx2NARIGmti5psLch3mRlIg1H-CzZ-314jIUaadMZV-UKn5wkqKmriKZY18vSfxLDkvAOrnj4_3KwXNMJrCWjut-WWT4U2bKrE4xMDY_evykBsAnqPJBXU7U8cfIASiZPWWYzVDMO3BYPtOhvQ7yvYq9h0KgCip3olyQ5lz7U9Uoxtz8lY2Tsgk66GzoouPBiFNItFABgWz3rfKSRJXaSQnvbG4ZtI_os38Zs8TQTQ28zc7b1eTP3uKHUqBECP0d7jKbc_N7vr92AkDrQYu3tJSAhjU2jyoQPrlHfaLZbTqoIay4Z_HWED34CgUr69jsCdC1j2BroTK-owaStnMQ1EHxZjPhb4lPODibS-hE2XJOlydewT3JaSC8H_VtKf4Y5EfokM6w2Vq6UMOdx-EFdPplKJNuMjY1ojlCblNJC; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:22:20 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:22:20 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462238540543615; path=/; expires=Thu, 26-Apr-46 01:22:20 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 4a29123a80978
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D1291659095%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 01:52:20 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:22 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A22%3A15+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAndaKlhSwwLsN0EuDS3JWkQgiu3Q&payer_email=titoriano%40gmail.com&txn_id=10A93592WW303550P&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7451aa9abff58 
+[2016-05-02 18:22 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 880
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A19%3A13+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AZuRXZRkuk7frhfirfxxTkj0BDJGAXNv02pB-We8cYPzjp-sOte-vxQz&payer_email=titoriano%40gmail.com&txn_id=5MV38125TD039143G&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=e0c19c7d961c6
+[2016-05-02 18:22 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:22:38 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=-dPCVJczEwkpnsivRUrLu2Ga3RqYJ6RPhs_-3agEng_6XLNT8EZ4G9GpwvbmeaLn5mwPmkrCHCPM7vYP61SLsuJAjQv4rpOiq7p2m838RMp11kobsNpnB4RiEGoq2osRxvDpPjoEpqcgJO2G-WJ1l_tpSbfpYqHpGJcWI4LT0Lxqy4-a1AsJX4qKFXlPbcz4E6A5CsfxjSMz8UMV1_9Z9Mx_vjs0GTOyqb9Ix8DHTPqg-aCArB0emmLsZm_x4JKDyOEehCn73B-S13Kqn4Jc0SQxkbWzFwFzjo5bIOfBkEbzuaGkRznNgWcgT_JXog9oOFs0tW_pK3FrAKzj0vkSddP3RqghPedZqd_2-2OGQDb1SgHKB2nm1p4A3uXo46U24LdSb5Fsu7RU4caR3h1UgMVykHj76wC1ayE1_D4BgbFFySJG1b0cPRuZg5y; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:22:38 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:22:38 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462238558406382; path=/; expires=Thu, 26-Apr-46 01:22:38 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: be95a3235f051
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D1593648983%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 01:52:38 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:22 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A19%3A13+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AZuRXZRkuk7frhfirfxxTkj0BDJGAXNv02pB-We8cYPzjp-sOte-vxQz&payer_email=titoriano%40gmail.com&txn_id=5MV38125TD039143G&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=e0c19c7d961c6 
+[2016-05-02 18:22 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 880
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A22%3A15+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAndaKlhSwwLsN0EuDS3JWkQgiu3Q&payer_email=titoriano%40gmail.com&txn_id=10A93592WW303550P&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7451aa9abff58
+[2016-05-02 18:22 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:22:39 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=67BdUaACUicQGfhn0epQHLKoBM0HxjLuD7V07zL2QJ3jGPmc_Y4ZfnflDbcd4z0H_SaCtLOWskC6XKLfaI5erV_Mu-Mh-kPaMmpPvrM5hBJVGskuWoJEGGBZhSEGUS-Kywxi4gbdpW23wU8z7LbmakKFAUPS4aHDAcpjV9UX6hyiJkTFKCfVhbxDwKqZGP1oQqBTmH_Fv-zepai6eoU0ckBHZvTxiobFqBIUO5zqHXGCGAsnkavHgMkS4Jg8fRwrj_ZTasaHsC9B22_PYZukd8QLfFYHkrbNXdwUcxuOapRSnTuX-zT5hEcmG0WPrv5cs6Q9UopRN17EvHTk7cpBxoYkRwX3TA6CwMI9RldajQgK3iKpojgEaBUKzNb0BuSSD6PnIuo6Ft68Yrm1bkPt7Fg3pWukN7Vss_Z9lbqp_l2kFwr81_9Liy-sz6W; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:22:39 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:22:39 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462238559261004; path=/; expires=Thu, 26-Apr-46 01:22:39 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: beb8b0593c0c0
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D1610426199%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 01:52:39 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:22 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A22%3A15+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAndaKlhSwwLsN0EuDS3JWkQgiu3Q&payer_email=titoriano%40gmail.com&txn_id=10A93592WW303550P&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7451aa9abff58 
+[2016-05-02 18:23 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 880
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A22%3A15+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAndaKlhSwwLsN0EuDS3JWkQgiu3Q&payer_email=titoriano%40gmail.com&txn_id=10A93592WW303550P&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7451aa9abff58
+[2016-05-02 18:23 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:23:06 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=GwMInwhkMD7MrHzlxvXgodocuE5Ii1vpdN0ERLrXAXnBiQt3WDzoUdpbOuXf7jM9SdkpZb3qNuMONC4EfvzJl0OrxlMHIhDGgpeCN_LdV0L0QqZSnAmrR6ExfMv9B6gIR3hkGL9DYAiW91R1H4dYln913RNMbtseMxtMfSDdqEn_T1DdH3uXtq7x9GHknEx07Is2lnRhXh5Fup-QPYJbY8b1PgcsS7irJUfBnRj2nX_I75UhFachtmq4B_PN9vpUVfZFqJLdr2rpHRWurwYqq_V0JdesK6cYRk_4YAwyVD6seJqczvRBaZ5embYzhcBbidzVknGgoKFfJs-Wjc-f4RQ5RrFvN8PAuEdrZ5x0H9_XhFMUEcSUU37LWOMVCVy3U4ml0iK25GC6LbpQq6tqV2T_bJgcRh2_Ly8A8nL1biBLSOOQs00L7NZ5MJa; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:23:06 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:23:06 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462238586264055; path=/; expires=Thu, 26-Apr-46 01:23:06 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: b530520b3c9f3
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2063411031%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 01:53:06 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:23 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A22%3A15+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAndaKlhSwwLsN0EuDS3JWkQgiu3Q&payer_email=titoriano%40gmail.com&txn_id=10A93592WW303550P&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7451aa9abff58 
+[2016-05-02 18:23 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 880
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A22%3A15+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAndaKlhSwwLsN0EuDS3JWkQgiu3Q&payer_email=titoriano%40gmail.com&txn_id=10A93592WW303550P&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7451aa9abff58
+[2016-05-02 18:23 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:23:56 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=45IdOkurc2d-PpdeOZKWqv1PlMIKcOZbZuHdhgxCiwDO_-dnd3BGdmy20tNLAU1e9y8JQc31_H3Gcbj5yfKlNvLko7MAIxZpPNU9sSF5l_tP5OL9VJ6JANwzFFALpG36PfIhY2GPj_7w0pJvH9z4tEprzq1EHLZWAS4iPFWWDThEFgm2PofJQEntP37RqzKkm41VxlA-GD6mIdXJXCAJWxIa028AcDB56Xe4sH7WBVND-O1RA-AnoHVeKLIAf80g_XwvC3HWh9VAwBCLNQ-L4VxJfO1wC2rSsSoXcVgbAduB2dgLTYaun_jPGZyXnq4gs64Qjsk9TWnhjYsphfszsrzVtIIe0UcqlQ2Xj82pENvJRUvbvPvOmm1Rx1fBlMJQ4HQan8kcZ4ZVSNrerIitCEWoBMNnyLT3cmDA1kQQFg0hQGTutlK3NJGYPK4; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:23:56 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:23:56 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462238636069897; path=/; expires=Thu, 26-Apr-46 01:23:56 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 575a330dc5b4
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2902271831%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 01:53:56 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:23 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A22%3A15+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAndaKlhSwwLsN0EuDS3JWkQgiu3Q&payer_email=titoriano%40gmail.com&txn_id=10A93592WW303550P&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7451aa9abff58 
+[2016-05-02 18:25 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 880
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A19%3A13+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AZuRXZRkuk7frhfirfxxTkj0BDJGAXNv02pB-We8cYPzjp-sOte-vxQz&payer_email=titoriano%40gmail.com&txn_id=5MV38125TD039143G&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=e0c19c7d961c6
+[2016-05-02 18:25 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:25:28 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=FCPP0Kc78pBKZYue0tNRq0SrXcuoo4HLVFtVIhHxSPf1H_XoWMeyS_l0oWCEx4QuGB2iCUWGSHetdr_cv5W22vxzpVLOxf4aV658vIEWYbjisiM4yG8yvq9Jw5LcpBt1LwKkyDaGoGwiXgKj9vP5O9ulb5avVvy171h8sgYL-RwsMIK7FKVAXZojGBcEROG_o92eNEozAcc01OlxIgWsOmCAF2j1EMrEH0k4Lm2rYy8aaX7W5ezMVgecF1lrMLeUV1ZmQ41lbH2s-XFfuz00tSV6CgMOKMoA_OeAcUGi-lic53ZeszRwPyzi8eW8y85AZ2UKiy0WglsNB0ForRInKqOtj1xAv0rsoQuqPPjaZrsIlgTon0vfXbeginkVLO8wN3Equ5F1ex4efF787u-wP82ZZE-N1xVdg1EU5-6JECxD_3L90Q-dwuJeF1a; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:25:28 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:25:28 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462238728154432; path=/; expires=Thu, 26-Apr-46 01:25:28 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 1830bbfa2134e
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D150873943%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 01:55:28 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:25 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A19%3A13+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AZuRXZRkuk7frhfirfxxTkj0BDJGAXNv02pB-We8cYPzjp-sOte-vxQz&payer_email=titoriano%40gmail.com&txn_id=5MV38125TD039143G&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=e0c19c7d961c6 
+[2016-05-02 18:25 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 880
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A22%3A15+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAndaKlhSwwLsN0EuDS3JWkQgiu3Q&payer_email=titoriano%40gmail.com&txn_id=10A93592WW303550P&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7451aa9abff58
+[2016-05-02 18:25 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:25:28 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=TA8qT0pA11elnMNAgPRWHf_bRwsSr1QnnnxuUaSP2z_17VbbHLY3arHZFiEd1Zh1pr8XXTdYr37ybhJ3tiNAyP54fPEGmyOQaCI3kj7oZcoDuSimsiRuk5XHW7RYhHdAFT11RPHVmA5utsQlAfm6lgeNyR1HdOWjdoHP2d4pCHCJ1yjPJFFi-iHoi9zlf_qW7E-5v7xkzdusf_6vZctmS_goMOFl5bdc33UQsBJE4kvaa7NA_uVs5qF9nccTPgCK5fs2ztMQUXF6vOesH3fzBn8gW28HUFlHTeU8OeHzguwh_SRBH49s4v3tKzYic37dcXb_JHwkbq67XQlaux49T2KVZjraE4m-c4vAp9AcFmFzskY9PoU9iDU2zVK40rf2Ud4juav_PoViUgO-4jV1Zt1WaaW-lfDsuVKf4G; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:25:28 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:25:28 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462238728185115; path=/; expires=Thu, 26-Apr-46 01:25:28 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 38fdcaf72979f
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D150873943%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 01:55:28 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:25 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A22%3A15+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAndaKlhSwwLsN0EuDS3JWkQgiu3Q&payer_email=titoriano%40gmail.com&txn_id=10A93592WW303550P&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7451aa9abff58 
+[2016-05-02 18:28 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 880
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A22%3A15+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAndaKlhSwwLsN0EuDS3JWkQgiu3Q&payer_email=titoriano%40gmail.com&txn_id=10A93592WW303550P&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7451aa9abff58
+[2016-05-02 18:28 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:28:10 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=ulP8huSLKw0bsQ6Iu7UJBVZxPVO-9wYwIbmMUbM9KBPMd4yrzk5xLmQPd9X-ZpNGMUtRHmo0YqG3CENHnowBm9-O7mUHL-oX4yIZQALUm7_zWu_VDNaKQP50SnhC_EpSJUn4sRS9FKTf_O_ZdsfoX-tKGHpQ3McZr7_CIvts2_48A69chVe2is8mhsODF0m3lZRIiU4P1RTeYjw32sdaGoCxlosZpWLnR3LFBwQqJHR3DLyJLB5VWOAY2ZIIZmy8Vxziy0-OSotg8__R2nsEFW140UHa2QVy4MtP9NTW1B-sfBmKL2UkA6hyPtr3d1q033uIIQb5Mf44VrkAJf18USWFYAf9LhIKprY560YkIOWZCYU2c5Go02hhntT2znjwLSkG0cbwcLcCaE-pvWgnBv_g1zqL_1aCR2yvBROHoGNqftOY5FuZwlPReKi; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:28:10 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:28:10 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462238890204002; path=/; expires=Thu, 26-Apr-46 01:28:10 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: e467c2072dad5
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2868782935%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 01:58:10 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:28 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A22%3A15+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAndaKlhSwwLsN0EuDS3JWkQgiu3Q&payer_email=titoriano%40gmail.com&txn_id=10A93592WW303550P&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7451aa9abff58 
+[2016-05-02 18:31 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 880
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A19%3A13+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AZuRXZRkuk7frhfirfxxTkj0BDJGAXNv02pB-We8cYPzjp-sOte-vxQz&payer_email=titoriano%40gmail.com&txn_id=5MV38125TD039143G&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=e0c19c7d961c6
+[2016-05-02 18:31 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:31:06 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=_yytZLkPVPbKoYqa1tNyxIMisYsuXF7TSh9HCCC1qZXPmi1vVs44G7wovHmri4qzS9-_EdIC6QT61z--dU8tDvqr_s-XQdKEBeJVuWZysykrNvlmM7vVP4laRHb-a7Gersz-RFcoL_HDDeWPmJwkmXvSrxDDMCFdqYUV0-04SFEDI1Vc0sakWsH9gL6h1cN6i_RgyN-3KcEp0lh3ZQ9gv7mUvE2V3RlYLUv1dK0m5tp_rwrftS_0SykZ_1kjITAaU9VSsP9_ZM9GxMeVIJomM9xGNfzeIeQjeWFwnBj9zEiQr2qtuXAu46TTTmD4of-Rg0wJ_rG3QmJpcoyh_OZ2OWCVZOOAuVY5tWfHlKI3sFquRj-IZjALwUe4w633Gqfxb1roidkaVZ-7dz2jjjyCgnJnK7Q5y_txb4bRLm; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:31:07 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:31:07 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462239066907454; path=/; expires=Thu, 26-Apr-46 01:31:06 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: c2ccdacfd8d38
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D1526671191%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:01:07 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:31 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A19%3A13+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AZuRXZRkuk7frhfirfxxTkj0BDJGAXNv02pB-We8cYPzjp-sOte-vxQz&payer_email=titoriano%40gmail.com&txn_id=5MV38125TD039143G&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=e0c19c7d961c6 
+[2016-05-02 18:33 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A32%3A57+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AynlJ2zsmflH.74VEfIBZZJsEArxAgMVZhzCsirshXGVx5MmBEh47Bx.&payer_email=titoriano%40gmail.com&txn_id=9BN64316AV8700909&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=78bc632ebfda9
+[2016-05-02 18:33 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:33:01 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=xQ2FCiLNkB092rp6d-oOY_FtrA65ExMIZhwz_ZDpWdSZpry1psK0hULpyViWeblO8Tfy2PN8-FgNur7pmU9M9fSe2SOt9uSrFKl-thUgK1bXaxUGlxQJJDnlPyC2CGOSd7alEBetxAAsGMaDcMGLAo9gwMPgmlu9RxyzHi7S6Hmh3pQPOzJA5d6LDi5JoQdjujBOVbZ95YY_Themjis8T3PgDlZyAz_uo1wrC586TlAz6eEqfBdum_hmpRFFlHYPZnaCGtC6qvlno0E-JGAFV9bB1vHeXEzfrZSqhqlkuz-AOOD5Zd0YUSUpdFs3JX0HJDLAv_b8NxsafZ_4GCQYKNwSpKj4-Yj_VQsH7VyOphZp3n90rQTa8OTONxnt55_pjdhJCGiFRaCMIMZyzkueSN9iorti8EM83A7tOSF2M11jFo95LirlpmXYmYS; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:33:01 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:33:01 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462239181528425; path=/; expires=Thu, 26-Apr-46 01:33:01 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: d8bf0c337d12f
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D3456051031%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:03:01 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:33 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A32%3A57+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AynlJ2zsmflH.74VEfIBZZJsEArxAgMVZhzCsirshXGVx5MmBEh47Bx.&payer_email=titoriano%40gmail.com&txn_id=9BN64316AV8700909&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=78bc632ebfda9 
+[2016-05-02 18:33 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A32%3A57+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AynlJ2zsmflH.74VEfIBZZJsEArxAgMVZhzCsirshXGVx5MmBEh47Bx.&payer_email=titoriano%40gmail.com&txn_id=9BN64316AV8700909&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=78bc632ebfda9
+[2016-05-02 18:33 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:33:14 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=nheR40bTlZVi3cldIIrHW0JAIr1ztJwtInYtz5cyu43cOq_df8DDwY3k01AE2MouQOm2pz_wUNriWOO0feEQ5RZhIjHijZTtRXCJT52dmB8VjL371YiN8KUVdSAaGpdWj64uIjmN1tygFSJHXd0dfPPngwOwgVsSwK2YqOTswPliR7O9XSquItBhMPdvUQ7PGDH-iYeBS2tdAaUc8Pdx0ZFEmfDJoxUVQVQHlrVM0J5yiGynY4HLqmGCMjWIur42MIx6HK5tncFj6RxsdF6BCRe-XUVxHEWdtCECE9EfIY2E4DEDcnsqCqyFCP5rlGKw63LolkQqobpaMpPMyaMpPSW8dyb5Eg8TnF3VU9hWSMPMyCi-_2QbWlYZoyxUZLzJ0KMCqAh_ahHD3L75IhLJ5IQe6MuD-zy-4AV5bXAq9mRCBRj082Hcf8vrbHS; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:33:15 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:33:15 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462239194772207; path=/; expires=Thu, 26-Apr-46 01:33:14 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: bed14d1eb7f00
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D3674154839%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:03:15 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:33 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A32%3A57+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AynlJ2zsmflH.74VEfIBZZJsEArxAgMVZhzCsirshXGVx5MmBEh47Bx.&payer_email=titoriano%40gmail.com&txn_id=9BN64316AV8700909&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=78bc632ebfda9 
+[2016-05-02 18:33 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 880
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A22%3A15+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAndaKlhSwwLsN0EuDS3JWkQgiu3Q&payer_email=titoriano%40gmail.com&txn_id=10A93592WW303550P&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7451aa9abff58
+[2016-05-02 18:33 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:33:46 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=A8HluzLil2TNL6l_VMK6nPBjl2sg1jBkNQcFY9K8XyoYBnVDaAgquqb0FSpHCG4TvpScXU7EpwIV6Fb6nB2YBqj_qALcEUjmsbPEsq4RCBal-FipDo3YBddFKXBQLgZ7ItobTA7NDA_9EKOpW8LV7q5b-GU8Sh8vnq04KGDCJlM_oJxhG40Dgw-CpZG9kJs94qcarSHTFwEDLwoim2C8wI8-Ss6FPFA3RvaVQm8CZv52W1ui4dxDhGCG1SDhJ-he9wQqdYvi6Q7hiJvdsa8aCsRHEYqcsoAfH08bbSlOpjXDziyvnBE8fIRse2vh5kP-SBNOYX7lcGxXcOjL1LFquM0OC1W0EBEdzeu53bSNzcoLjliWlgBuxaFQCPgRw1Eeey7wkl-UwKBCRdOsGaMdrtL2T0q47OWvEfw1S7u2mGwJlkTuASm89pVwnnO; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:33:46 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:33:46 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462239226169834; path=/; expires=Thu, 26-Apr-46 01:33:46 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 1f0ff68c25987
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D4211025751%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:03:46 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:33 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A22%3A15+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAndaKlhSwwLsN0EuDS3JWkQgiu3Q&payer_email=titoriano%40gmail.com&txn_id=10A93592WW303550P&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7451aa9abff58 
+[2016-05-02 18:33 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A32%3A57+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AynlJ2zsmflH.74VEfIBZZJsEArxAgMVZhzCsirshXGVx5MmBEh47Bx.&payer_email=titoriano%40gmail.com&txn_id=9BN64316AV8700909&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=78bc632ebfda9
+[2016-05-02 18:33 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:33:47 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=gcJupvLJtIngP_GyCtJ5sSR9CAnoh7zZRDc8Ni-nK3PTEskLQqe8o-ITrF4py16mmxGyUyd32k3bEqMRDxP0fgNTXxocSsito7pZiZSQXh_z3iBenEon3V26JvB7N4nrtA8EAS8gobxnUMdDmZlKhyS3-oVK2lj4J4AyBGxVCHCRK1vl2TSqfBr0-cMbfwe3533ip-YtTyOm4gFt3J_O5lk2FGEuFk-V9d7pBhGkrJgPyUzq2uUSonY9bo9qPnSzwtNvmVAfXjDXleqoD2OHXJRLR4KLHupsuXuCsRxR7xImDUsLUH0zFXyWZVTnCkNmN5VOjl0CzbcIV_UGRdvrjFiAWj2hdAombXJ_mA_rIH9-7dZoe_6V0FnSLy95m3Tysm6qXa-2RCciNf_wl_qVoQtwpulj9MaqqkAX8yW0gKR9I2C7NHTqsOm2Jg0; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:33:47 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:33:47 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462239227409010; path=/; expires=Thu, 26-Apr-46 01:33:47 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: c1bf151f5f743
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D4227802967%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:03:47 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:33 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A32%3A57+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AynlJ2zsmflH.74VEfIBZZJsEArxAgMVZhzCsirshXGVx5MmBEh47Bx.&payer_email=titoriano%40gmail.com&txn_id=9BN64316AV8700909&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=78bc632ebfda9 
+[2016-05-02 18:34 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A32%3A57+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AynlJ2zsmflH.74VEfIBZZJsEArxAgMVZhzCsirshXGVx5MmBEh47Bx.&payer_email=titoriano%40gmail.com&txn_id=9BN64316AV8700909&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=78bc632ebfda9
+[2016-05-02 18:34 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:34:42 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=pus3frsaQSprbz6X_G4DQyKEAl0Dnvf4PFQTCpn-ClMC7uWm8Z4LP2bEfSaKaoj3J3J-E97pIWQAuFMrj9woiAVkzG1T1-MEjIKwe3BGDfa61_cWTd8FOQtDnzshVfAUVopcD7EX3FzwvcTZJiELSb7XcudvGWpXoMrsLG79FJITsaiQIyTEy-JNi50svWvUP7U858lh25NGqkZFfBQ3CWufjXsIkFt-hj4zbH4h48P2KZysYes9A0p4g4MaQIERT8--JrU6hUgYDXGBogb2yZx-C_4209Mm9Gq6-X5WVgrXeIgK-v-FDAFqSRYnI258_RPEmLu6hYkXNkf1D6cELSCcgg9pI4tBPEE-DRmGJUplcYq3Ozecbmm58cHiA0jN50BPGIoPhACyol5LGg5r34UVCR38j3IWoT8mbfIWCdcFHjcN0bgCF5VP1ke; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:34:42 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:34:42 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462239282186037; path=/; expires=Thu, 26-Apr-46 01:34:42 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: c028204c27de2
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D838871127%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:04:42 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:34 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A32%3A57+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AynlJ2zsmflH.74VEfIBZZJsEArxAgMVZhzCsirshXGVx5MmBEh47Bx.&payer_email=titoriano%40gmail.com&txn_id=9BN64316AV8700909&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=78bc632ebfda9 
+[2016-05-02 18:36 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A32%3A57+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AynlJ2zsmflH.74VEfIBZZJsEArxAgMVZhzCsirshXGVx5MmBEh47Bx.&payer_email=titoriano%40gmail.com&txn_id=9BN64316AV8700909&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=78bc632ebfda9
+[2016-05-02 18:36 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:36:11 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=SsDxCPmH-g9ku9rnK2gImbF2wYE9xRJGCE2GJ4CQp-kQ9ab9u5qMIN-bAra9xb_dVBVAhSm1ZVlYIin2LBPWuJAOPBh9DvQCHBsV3v0BJYWxXP8dBgA_sqZRBonQD8YGLU0Rmi22CJRImjOVCd3liCQw5MhsFq3HOBQcVo2JGMcCAnljFKyRUG1YV746hYBoD2thcNlEDWj3RYvoG04g8R_xBh_8GkTpNB4Tk6d3vCLzxdXuLBTo294Z9KPVu8QGtPmaakRng7EmZGsoUx3hSEehrZBLRO3-bnmhDv-nuLYOi4TZenklNOb6phqYAsD5kYjhrpHVanN9YV4LARTL5WEnexNFngtxoWiHK6bJ0jCVyfZB5GTXw1pviGGnb7Ulnc6cIm0AVp-_pYSnUQmjoabopSwxBdhD2ebLBTI33lw46MUkzvJj1jBAKGC; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:36:12 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:36:12 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462239372015016; path=/; expires=Thu, 26-Apr-46 01:36:12 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: b314ab46f25e0
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2332043351%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:06:12 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:36 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A32%3A57+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AynlJ2zsmflH.74VEfIBZZJsEArxAgMVZhzCsirshXGVx5MmBEh47Bx.&payer_email=titoriano%40gmail.com&txn_id=9BN64316AV8700909&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=78bc632ebfda9 
+[2016-05-02 18:38 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A32%3A57+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AynlJ2zsmflH.74VEfIBZZJsEArxAgMVZhzCsirshXGVx5MmBEh47Bx.&payer_email=titoriano%40gmail.com&txn_id=9BN64316AV8700909&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=78bc632ebfda9
+[2016-05-02 18:38 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:38:58 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=onVvWO38QIexYsKXtKxwzKG11jMtoD0nRgpgMn3apm2mXpk5GI7BsQ25pLhcrGkLQoTM8v2GnB1_Xnbk5o_q6tojMqHjNDaHIg-HRnB7qVpMISLH82-l-5D5xCrbBrJlOi5iMMX5vK5RdE-KYsnygnyuolLmhIsCQlwcg8YY2JBGhad0Hm0Tul7rnyYXHqwXMdR2V53E63flQ3QlIsvXsQLAJuO-37FKm9RJ6RHOls3PiHmcYuGXPivoTfECfhouoXWDz7gLqjnSMt8LP452ke-C0zijdCdc3g35Rowm9T7_ZahEsH6HWDkRHcfI4Oq1BmIPLv7OAH4k_orcfR6rVEGKciacMI4Ik1XrcONw_pCDKm2uTW-_xo0hp8NgJzKIQ06H-cXeCTLH5pgCWj9zPsUaLjX5Yx9DmyT8S-f5ZtAGztgSfl0C1IaDLXO; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:38:59 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:38:59 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462239539036007; path=/; expires=Thu, 26-Apr-46 01:38:59 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: dd1728743ac2
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D855713879%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:08:59 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:38 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A32%3A57+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AynlJ2zsmflH.74VEfIBZZJsEArxAgMVZhzCsirshXGVx5MmBEh47Bx.&payer_email=titoriano%40gmail.com&txn_id=9BN64316AV8700909&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=78bc632ebfda9 
+[2016-05-02 18:40 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A40%3A16+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=A--8MSCLabuvN8L.-MHjxC9uypBtATa2.zV.TON6MjKwEjFIDQGSR4n9&payer_email=titoriano%40gmail.com&txn_id=7GD71255TH449420L&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7ab3d18d4e814
+[2016-05-02 18:40 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:40:22 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=Qayk-PuFnX0G-8YPPo5XJP1YAALZ5TpG91cOf5PRFwNS4O1EEEiWC0hwuhWlTqc6ZWtodS7eHiKpLqyAewH8RdAN912OrnNflcSLBn18_sjgeAB2BZ-XpG25dqNZfHHki8UXsaMrC1kEAVMuLjcVoU1G1k9oe_YPVHnHRAnQOwOBg8VJdgcFShr8fRAOwO50FezK7_lCxnMjogHJx9XGBZXZblXqqk6hvIndXzplHAuz2FBYuQ0U0bKQ8k8sqLOOm43o-DlYQ1ZxBBWpuO_ycdkGM6a0GigSxJGUVGBAHzDFMzT3DxoaujY-M0njNtRwfUr0V5mbOGFgjnb5Al2oqfwUgFxQEsonzy-51YgxWETYYDHFPkLfoB6RNjBBp5CFPtjP1pZ2DMMM1bJvcRSJOj2MboNnl97VxyW5gMNAsMvNu8C5ghMMSQxjM4i; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:40:23 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:40:23 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462239622796411; path=/; expires=Thu, 26-Apr-46 01:40:22 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 89a4781cbcfc5
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2248222807%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:10:23 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:40 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A40%3A16+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=A--8MSCLabuvN8L.-MHjxC9uypBtATa2.zV.TON6MjKwEjFIDQGSR4n9&payer_email=titoriano%40gmail.com&txn_id=7GD71255TH449420L&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7ab3d18d4e814 
+[2016-05-02 18:40 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A40%3A16+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=A--8MSCLabuvN8L.-MHjxC9uypBtATa2.zV.TON6MjKwEjFIDQGSR4n9&payer_email=titoriano%40gmail.com&txn_id=7GD71255TH449420L&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7ab3d18d4e814
+[2016-05-02 18:40 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:40:45 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=0FrDbqzs7FHl8BZh2lJlZ0NFXnm2-vcU_cvDD7WJZGp_uS2glsnieoIM2Y2iHltwvhL7OKgUGp7zlaXsUiuijy099jSZsZRl2lxphmSmhIPs399ysZJEtg3t8XWN9H9ETGLv9mexFPqvg1ASH-DP--G56jHTob1ZlncOIHm-yqMY8s-d9q7px_rxXZhCNkhoCVZHHa_bgj_SxZAAyPJ51u7bzLa5OujdcZv85CjFB7p_cLz6R_zrfryifcaaweZyIbCn4cGhxplApw01rRRMtUO2WfzpzdorccDw_64lQxwjeFTzwYxpPjnag9WMw2LaqaU7G10OLhBLr7nTwE9qNy5YUn9Wqjfd2v2T3yXU0wE6eZwTW4TEkfvFP8xETnAd2WDNKsSnBMIjqilAftZoTlyGPn-KrHv_KhbsmYjSC-OMLIUx5KTk4wbBeU0; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:40:45 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:40:45 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462239645627279; path=/; expires=Thu, 26-Apr-46 01:40:45 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: e38c4fe894a27
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2634098775%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:10:45 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:40 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A40%3A16+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=A--8MSCLabuvN8L.-MHjxC9uypBtATa2.zV.TON6MjKwEjFIDQGSR4n9&payer_email=titoriano%40gmail.com&txn_id=7GD71255TH449420L&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7ab3d18d4e814 
+[2016-05-02 18:41 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A40%3A16+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=A--8MSCLabuvN8L.-MHjxC9uypBtATa2.zV.TON6MjKwEjFIDQGSR4n9&payer_email=titoriano%40gmail.com&txn_id=7GD71255TH449420L&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7ab3d18d4e814
+[2016-05-02 18:41 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:41:14 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=vu-7Rd9fJ1DvR_gzHWLkgqE4ypP0TaRkbHtxmTwtjoH-7s0spaaO01S0I0sXjrcMPVN8DDxp9YGRkR5sjaHcpSB8Gnpu-kHGUzFTx2kNVpGUoLwx03izSOnPlP-aoas5yOKepdngcbpRHsMX6S-RCDmvju4ZeJrfEywtmjhyeG-Ao1U9N1cgGmHjLfpVySC0fXkc57Yy6_TCHoQekAM6dyO133LqMcYfGUNuKOngk_UrngAeIDXq-lJfasIdTdI1GM0AVCCaYV8rx0WeEDOARRUhYuqi3xePQlQ3Kl30d1FCMhAEjzmLZOe7N3BZoovZ0YSfBcsCIql1O2MTKYbwEDAvMb8tGptqqJ-cByjkj9_lMxIJ5f_GdT57EIQAPDxClKY2en97frQ6KfDgqjWH3V4I0KM3uvoFIe0EdpSf1jWya2KoiMOyVyTTRhe; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:41:14 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:41:14 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462239674103076; path=/; expires=Thu, 26-Apr-46 01:41:14 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 1ee8d7661446b
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D3120638039%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:11:14 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:41 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A40%3A16+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=A--8MSCLabuvN8L.-MHjxC9uypBtATa2.zV.TON6MjKwEjFIDQGSR4n9&payer_email=titoriano%40gmail.com&txn_id=7GD71255TH449420L&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7ab3d18d4e814 
+[2016-05-02 18:41 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 880
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A19%3A13+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AZuRXZRkuk7frhfirfxxTkj0BDJGAXNv02pB-We8cYPzjp-sOte-vxQz&payer_email=titoriano%40gmail.com&txn_id=5MV38125TD039143G&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=e0c19c7d961c6
+[2016-05-02 18:41 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:41:54 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=q7Mx5ngJw8qNGkF8wDzv77fD-n2kSYh6_d4_0_QucwfHUlSQhwrVVlQZMHB6WNPbwz1tr5KpWKyJJayCfbGhj4Ui-B4aDjksBACEe_O2dTo1lPDlnVTri6QN_UF2-DWvx0MCJiyc5T2G3OjfjBSO2b0qXsEkTqFnNeHtLRxm0ORgfGNZJmblAuAvFWPJEuilTy5OGNQUJE6GiFrHf3-Koi_HspQT6YOcLO3gtsjTwEp97HtRcyVzgY_ze5UX0vUEAFZdsh1HbnaeWfyJwijZid9JuHpJpFzsnkglsWDW9CJgqqMB8YOTw6aWiiBWdJ1yBupev9FnIxqYSUsQ5ERoBL_nwrlAo69HO_iqjEhuTNk9nGmNK0rY8VdOB4Bxdxv5-MHZtvphw5xVq2PlhjM2dGZhQRxLV3TopnXOZM5woiTIZUKQ6nC1smbV8XK; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:41:55 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:41:55 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462239714774978; path=/; expires=Thu, 26-Apr-46 01:41:54 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 318300d0b9504
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D3791726679%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:11:55 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:41 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A19%3A13+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AZuRXZRkuk7frhfirfxxTkj0BDJGAXNv02pB-We8cYPzjp-sOte-vxQz&payer_email=titoriano%40gmail.com&txn_id=5MV38125TD039143G&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=e0c19c7d961c6 
+[2016-05-02 18:41 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A40%3A16+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=A--8MSCLabuvN8L.-MHjxC9uypBtATa2.zV.TON6MjKwEjFIDQGSR4n9&payer_email=titoriano%40gmail.com&txn_id=7GD71255TH449420L&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7ab3d18d4e814
+[2016-05-02 18:41 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:41:58 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=Hc7G8OFi_0Cd_6vwuPP1IXUQcK2-fLbRD-lxhNXzLdXzR95_serfPq4os1XuHc60RpdHn8EbzuxoDQdeTnjNY-eM1NJNvcnm0Zvr0su6Cp_OQZnmPMFejz2GyvZmLnow89E90Z-uiGqoMXqA5w1EFPddzROyZUb8mJtxsfnWhAYkGcYPMaDuUqlrKYAiX-iQFnjxF21C1uKPNPMbcYcvClST7yGcHCxzgnj1W8eOcgXUKKte1-Q9kH3wnAuoDdzHz-iDCsXX-Sm4CUlmVKP7g6-CGVozVKUSmtvp_CjfHYtKaWQTh2fJH19gJzkh-h6bC6mzZvJT614d5hbCG7WCh0RFDyb0nPNaj9tZVjK6qiiE5YmUu2Oz2YdzH6tmV_QmrlX6FNx-HHwjCXu4E0TajeiBrwgm_MD8xXTe3DZ0z4NV6POWh00XEugLCC4; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:41:59 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:41:59 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462239718921066; path=/; expires=Thu, 26-Apr-46 01:41:58 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: ec509f31dbbf2
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D3858835543%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:11:59 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:41 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A40%3A16+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=A--8MSCLabuvN8L.-MHjxC9uypBtATa2.zV.TON6MjKwEjFIDQGSR4n9&payer_email=titoriano%40gmail.com&txn_id=7GD71255TH449420L&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7ab3d18d4e814 
+[2016-05-02 18:43 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A40%3A16+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=A--8MSCLabuvN8L.-MHjxC9uypBtATa2.zV.TON6MjKwEjFIDQGSR4n9&payer_email=titoriano%40gmail.com&txn_id=7GD71255TH449420L&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7ab3d18d4e814
+[2016-05-02 18:43 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:43:35 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=yXB0eUXsrJzsdLb6npjquWgOUHUxDh002pTQO6y68wkxe8Ov_FaVxmbSn8cnmTKvG3jC6e0SiNzyoMeGgljek_UV4ussTsoKipbM7L6ffXpNDGwUVtUB2W2N7BHiINtzqhbyJfz2cS7_zYXwaP0U_lonM561sPeakXjVetBE6ufQZAoLR0wml6uifiI9c17G5U7kYVCxaROCECTQRu_TVRdd732zKGYaCVM8_bTZkDh3g27Wg7gLNB-9nZPGpLQahzxKt_RP4KUsyfPp-_KEYX7_2PgVQ4qkBOf5OKiRu_bW-yY-U7ZDPUKXYN0RCR_CL1jKAYw1DDj_SvXO2MbFpihn_pgXd5EvlyKABxPcysKigt_k_hb2g3IhHv8eWhmWmV0VfVHKpuqRc_ublSNZNiuMuiG3YsXy6QBlYvUBiHe022ICMBxDasC5cZq; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:43:36 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:43:36 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462239815765790; path=/; expires=Thu, 26-Apr-46 01:43:35 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: d3854308b71a8
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D1191323735%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:13:36 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:43 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A40%3A16+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=A--8MSCLabuvN8L.-MHjxC9uypBtATa2.zV.TON6MjKwEjFIDQGSR4n9&payer_email=titoriano%40gmail.com&txn_id=7GD71255TH449420L&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7ab3d18d4e814 
+[2016-05-02 18:44 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A32%3A57+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AynlJ2zsmflH.74VEfIBZZJsEArxAgMVZhzCsirshXGVx5MmBEh47Bx.&payer_email=titoriano%40gmail.com&txn_id=9BN64316AV8700909&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=78bc632ebfda9
+[2016-05-02 18:44 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:44:26 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=XN41kQL7kUL1JOkE_X36YQhLYG4PTVva1dLTqIvlvEoP3GAwPZmM-U7qpBEPEZszmmqRZ6REs6jNZyUNbiJNFM6XLs0MJp72FP1eGbq8WcwoO-a39W1EnGFDFxRc5wtCc9UiqBVKG3rgK-77zR2LdYWge7jGNL79oZ0Glla8VETHJ-3XQu8wmImU3_WItyftxmx8a6nmpstq4c3B8O-eHz9AWDxy7_p_s0ZyDWm3LGgwd7i3KBijiU3-qCTtrsS5-QtJPIzSr6hxZj7sIjvXkCSgfYzZMIQISfPiRkm4ZUe3inF_gmnU0x2XnYu2WqU7AKBp1TCNJaV8ifTPsD9_HJQprgznPGwFnqIvc1whbsTWk-xUodfYGlDPUrUA5k4PN9aVHGIVaP4jDdpSHcHN2tNT2h-Q0XEWF1wPPW; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:44:26 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:44:26 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462239866226538; path=/; expires=Thu, 26-Apr-46 01:44:26 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 9fdbe6b032171
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2046961751%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:14:26 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:44 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A32%3A57+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AynlJ2zsmflH.74VEfIBZZJsEArxAgMVZhzCsirshXGVx5MmBEh47Bx.&payer_email=titoriano%40gmail.com&txn_id=9BN64316AV8700909&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=78bc632ebfda9 
+[2016-05-02 18:44 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 880
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A22%3A15+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAndaKlhSwwLsN0EuDS3JWkQgiu3Q&payer_email=titoriano%40gmail.com&txn_id=10A93592WW303550P&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7451aa9abff58
+[2016-05-02 18:44 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:44:32 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=ycFfOePYSGuoAR4wjU4i85tche_xt90r_44cCKTwd57BZEw0lSmqrl6Br9uphaOrugDPCaxdr84oZPdhD4DlChj-P8diRgNrgeaRk1lcDKO0FZZfvAKUPXbhWH2t6X_tMiI9iVtUDqp7I7f_mLhcThFJ_EC9hSGrXHYVlUGSiuBLdFk0bBRY2I0H_7FtPgEfPqXhlJ_r74uIsnW2T2g9Ac3bhyfxMokofJoFatAruBvZMbSvnAfL8GfDffpmCe9MeMy5xylO742-Gn0VPUBUGmN4V1b9oXXIMtsO6zFUKFqRkfiejXdFi1WgBeGbX5eEJLYCydYVvOCEuUZOP_ud2umBpVXkVbGYyfDHGlU9Zlby5DNIkLztFzFcznavOLKzs0cGSkr426haadVjlIsAowZ_iTmRVxuspbooF1eVPeteHgU9i28CtHkVEPu; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:44:32 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:44:32 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462239872170894; path=/; expires=Thu, 26-Apr-46 01:44:32 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 6e0f4fa425cc2
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2147625047%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:14:32 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:44 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A22%3A15+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAndaKlhSwwLsN0EuDS3JWkQgiu3Q&payer_email=titoriano%40gmail.com&txn_id=10A93592WW303550P&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7451aa9abff58 
+[2016-05-02 18:46 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A40%3A16+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=A--8MSCLabuvN8L.-MHjxC9uypBtATa2.zV.TON6MjKwEjFIDQGSR4n9&payer_email=titoriano%40gmail.com&txn_id=7GD71255TH449420L&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7ab3d18d4e814
+[2016-05-02 18:46 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:46:19 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=cwXd4ATQw5rvZNGiEh353f9acgmEVQ4daKKONtTUBbf-Kl8zVmWthnU5qUbjwBTOrSKUbIr5PpxZgArzNSU-A5jZ-ALJhJoDhGXAxAnhmWck56bjV4bw7Bd2hXb50yswp8YqasW7sDQ0UweG8Jj_OwP-5oSN0sSl9z3382NANsnzLcf-IlWm3z3XEjn9k8yZZbn_NqL-KBRMMxi3yzRDqDMPV2JddbwJM-15zRgxLE6x68j99gQVJZfVFsUq069J9muaYWiA5zi_Jjttn7AKBsIJUOvzDuNtzVAUpnZorp9_mFRvcC8csochPsRMSj7KabBASeW553RXWtSTO-UiQ8Cg-eaMMORAudZQxAKp5EylvyOZx6r0VBIi-1oAAHmd6PDxabpPRXnv6ThO7l2VktnN5SfFutawUxM_0Gw4yP6V_g7kYcwgLEu8dg0; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:46:19 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:46:19 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462239979441353; path=/; expires=Thu, 26-Apr-46 01:46:19 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: dd80d36f67827
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D3942787159%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:16:19 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:46 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A40%3A16+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=A--8MSCLabuvN8L.-MHjxC9uypBtATa2.zV.TON6MjKwEjFIDQGSR4n9&payer_email=titoriano%40gmail.com&txn_id=7GD71255TH449420L&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7ab3d18d4e814 
+[2016-05-02 18:48 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A48%3A47+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AuRlNZvMOhdn8iDWY5YoMB9iRTDzAVZKPj88lsnxYgljmF7zbjA-.Y7O&payer_email=titoriano%40gmail.com&txn_id=7PS80499ED0276817&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=605a1ca9a549c
+[2016-05-02 18:48 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:48:54 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=V4GHGwpLGEYn6914wzlLmU9_fxnkN2AiwbzTmxV1awhr30tpexQpoU9xetj_UKh_SIhFsgJQ2GZ1XRTIF1IxtYndSt6Yy4umMU7BOVFbAWnNI5rkAMJ6ZbP2tQrYwjj92admnjbcdpdn_GRJvpDEwvR3PYBIJGZO7XojDSMtOuUIqBCKwAn5Ao_Sgvz3OQlVd5zfncKQwgt3Rtd8NB5QKyi_9Epj7kXHfuqjMDVoVpvDk3pmI8SeVaN619OJ6E0cPbWrlIwOC0yaQlM0zlz3kbyOieRKzWYJAqPdDY3Oxtb-GSg8OzpG8_9wV_-4R2pXvne7FQtGXmPgW3Xey1un50Fokm1y_jZNQ8sUWzFp3K2ggkpbafbHmMdesgArWQ9WCI4z63rs_cMXw_kl_WZpqHTzTrVdGDFXte_k7m; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:48:54 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:48:54 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462240134107432; path=/; expires=Thu, 26-Apr-46 01:48:54 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 44a14dad16363
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2248353879%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:18:54 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:48 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A48%3A47+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AuRlNZvMOhdn8iDWY5YoMB9iRTDzAVZKPj88lsnxYgljmF7zbjA-.Y7O&payer_email=titoriano%40gmail.com&txn_id=7PS80499ED0276817&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=605a1ca9a549c 
+[2016-05-02 18:49 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A48%3A47+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AuRlNZvMOhdn8iDWY5YoMB9iRTDzAVZKPj88lsnxYgljmF7zbjA-.Y7O&payer_email=titoriano%40gmail.com&txn_id=7PS80499ED0276817&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=605a1ca9a549c
+[2016-05-02 18:49 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:49:04 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=0IlT34x0UkapxUfROx4l5wHVLxhTszPnuqaBHwTzoyV5cSjUSB9LclCT2MZ5wnUiOEE7je919EIiEu6GHBwBYS62F6vb4xFrO2sKin-6fgPKFTNdEB4QscfYpeh1oyMLTuaIvPMfBTayrJjq2SGMYQUrkh7-Rqg_YM0mGIHmZgGMNGZtYN0Ka4tetB-FeZ8Wg1o5YA-Ch1AkQu1szwLLrZSZtzLLgxDjyB9vY_NhtUXkyPzOK2aUkiyU4Q3s5UgaZfrg3BiRqqL65_msp0unXGLO1s94piipiN11mdFaO5Jauai4NzaKU26NtyXBObH0zC3U10kVSF6W54Z4v19Yh2pSF8bqEKC83F-XnB1rBCb871570lys9ot5GXyiU1wNnV3fsuAbxNx3j92E4i-MjUnLKFl7X2z3nw_WUrxQBvETyN3fZmdOeAC7DC8; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:49:05 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:49:05 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462240144982205; path=/; expires=Thu, 26-Apr-46 01:49:04 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: e75209c1eaf80
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2416126039%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:19:05 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:49 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A48%3A47+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AuRlNZvMOhdn8iDWY5YoMB9iRTDzAVZKPj88lsnxYgljmF7zbjA-.Y7O&payer_email=titoriano%40gmail.com&txn_id=7PS80499ED0276817&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=605a1ca9a549c 
+[2016-05-02 18:49 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A48%3A47+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AuRlNZvMOhdn8iDWY5YoMB9iRTDzAVZKPj88lsnxYgljmF7zbjA-.Y7O&payer_email=titoriano%40gmail.com&txn_id=7PS80499ED0276817&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=605a1ca9a549c
+[2016-05-02 18:49 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:49:28 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=cMInKbIb3eU4q08Ep6w5W9hoqXrKDiXn5hl-l0pnPakduV12NfNkk2-D_5EPTBQN5DUlgqpwSeHSdD3oj1vXXZpdj03H3kJ4ycrzB9cwvmeT8GHUxsxsrR0ZDRWbfvPRGiZXESBqbhh8sa5VpeDiITX9LXoAJZj6mOaKXaDmMhrDpSSHEKugnSRkeJ14l86rc2wMu1uG0zNbOeU6-z6jTzepRlF0wAUSPcGbzZkCIQSaffc2ahGJ5Tzb6TqhPbhFPQnlAF0nA9np-Msso1BgZuRO5v6M3ZU3nBcJnQ1HcF7b-a9C3xaF5Vv2JO29QL3pvHwL8JmAPVBLl6WqoGUsgC4qIdBriVrtue24OJg727UZ2kXyVHaVc1tqrJO29m7NCyn64RoCDmSpnnj4AJd6FubCRIJX1Gc2HaS_w-IQdPnvj86u_8sR_cD1pzy; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:49:28 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:49:28 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462240168554398; path=/; expires=Thu, 26-Apr-46 01:49:28 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 47d3bc2d82ec8
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2818779223%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:19:28 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:49 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A48%3A47+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AuRlNZvMOhdn8iDWY5YoMB9iRTDzAVZKPj88lsnxYgljmF7zbjA-.Y7O&payer_email=titoriano%40gmail.com&txn_id=7PS80499ED0276817&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=605a1ca9a549c 
+[2016-05-02 18:50 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A48%3A47+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AuRlNZvMOhdn8iDWY5YoMB9iRTDzAVZKPj88lsnxYgljmF7zbjA-.Y7O&payer_email=titoriano%40gmail.com&txn_id=7PS80499ED0276817&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=605a1ca9a549c
+[2016-05-02 18:50 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:50:19 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=tNyAhK6qANYzc9PhXXcNLFy52yf_Huot0o8ycAv-Tso0hWMRyS3xxkYDeq-gt1Z-_1NgcG5tE06DowPNHV5Y3SEU9Ta84_daLw7Shm3bU3bVT5ZJNp3piWLMRD7yDZzNT3zFETFUMbNMW01NlUAxkChPlEnEkHMYjaQ_Hv5auDU0tsbbFxl8Mf3WqzEi5ukdhJ3sxTPWwsUmrX_YoNZFtwH44-RafwCULYHtS15vVMoqZJSj0VJxooOXhnrJPxIxpfcXBybsTRNxbm-KSq368d5oKXG6kx7BgezNENzjiVpUS3hDktId7UA2qVqvlsA_f1pJJMWkjx4XPDRnUDaEme-UgADh59TY0Nb9aQPGOpKnMQwg3usNlZoxre8rQSYf-Qgjpeye4tgeLsFbD-YHh-2u1egdCdyDDFt_MW; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:50:20 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:50:20 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462240220049136; path=/; expires=Thu, 26-Apr-46 01:50:20 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: ef518fce7ec7
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D3691194455%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:20:20 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:50 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A48%3A47+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AuRlNZvMOhdn8iDWY5YoMB9iRTDzAVZKPj88lsnxYgljmF7zbjA-.Y7O&payer_email=titoriano%40gmail.com&txn_id=7PS80499ED0276817&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=605a1ca9a549c 
+[2016-05-02 18:51 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A40%3A16+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=A--8MSCLabuvN8L.-MHjxC9uypBtATa2.zV.TON6MjKwEjFIDQGSR4n9&payer_email=titoriano%40gmail.com&txn_id=7GD71255TH449420L&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7ab3d18d4e814
+[2016-05-02 18:51 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:51:48 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=pa3WqFSgyFsfCeX2byP0UEKDyKQ8xN9AeKUYBJuwz3MjLqEurtVcLSEjzlI5u1uubFUClVJ7MbWfhbksskxVobh_MUak61yP0Vt-s0z48FsvOGiE-trVJLUcEKUAQUUlEo5yMGEYiiQtOBLjp6CHz0IFq-Zzetf0PpDLg2z6tcdxOKE-5jz3sM3MhwaSI7W05RVjTbOoyBwe2OE6sWgA4oNJzm0V9Z52fiY9D3aApRhcZlBHNRUTM6kwinhL8LhnhYdR9z7A3rg6v8rJT4_T7g751qKs6GARCHST3_cPlsVEu7peAb9aE_8BXWr_j2F-r7H-c4U0DpdhwS35hqBz_WYhdmfnTHnPLw-ws1yNTsVw2RWHeLFc2UituClrJNhTM_CSq6fgDRxgjduk0ipT96RQhkMjS1NBlGLu1dRVlIHZbBJ_q3PfYcBOMwK; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:51:48 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:51:48 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462240308283710; path=/; expires=Thu, 26-Apr-46 01:51:48 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 608d56f64076d
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D872687703%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:21:48 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:51 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A40%3A16+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=A--8MSCLabuvN8L.-MHjxC9uypBtATa2.zV.TON6MjKwEjFIDQGSR4n9&payer_email=titoriano%40gmail.com&txn_id=7GD71255TH449420L&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7ab3d18d4e814 
+[2016-05-02 18:51 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A48%3A47+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AuRlNZvMOhdn8iDWY5YoMB9iRTDzAVZKPj88lsnxYgljmF7zbjA-.Y7O&payer_email=titoriano%40gmail.com&txn_id=7PS80499ED0276817&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=605a1ca9a549c
+[2016-05-02 18:51 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:51:50 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=AU3v3_34oFzy-WMNAAuJT9XHDlpvVNSXWAcUYgt48ku3F7AmJTZG4FwsZ2YZWdaqVFkXqf816QsjfnHGYNgwmJC1tvseLkkQcdmx9DV5TZQWKFpR4SJhwkXr9xzU61nlZA3tR_1QGc8I13ASPt0-N3gcgeqSRXqjkJdVwG_HVaWEK7Pzhx_0YHYBkOOeGq5TQM69euuCDKTYyHxO2bRrkwLHDqCqUnU6FHjT9xPRXLXneOdflyINQ5BSxW87zinEetbtjWluZI4LpRC81dA--1iSlH0WpA6dtB7otfzb4M1k7Hqd5MwNyw4Y73sb4secIcfOgL5Y2bQL3KVJRxXkVoll47-EU4NwPSG2DX_a01XzjOJBQGLbdfZB6KDrQffTE-o3nDK8KNH-PuYZexGcdKtCNjVPMTApf_8PJJAo0sQgubWLgqQzqeMZqMe; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:51:50 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:51:50 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462240310211109; path=/; expires=Thu, 26-Apr-46 01:51:50 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 8fe8229b2fa98
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D906242135%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:21:50 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:51 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A48%3A47+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AuRlNZvMOhdn8iDWY5YoMB9iRTDzAVZKPj88lsnxYgljmF7zbjA-.Y7O&payer_email=titoriano%40gmail.com&txn_id=7PS80499ED0276817&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=605a1ca9a549c 
+[2016-05-02 18:54 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A48%3A47+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AuRlNZvMOhdn8iDWY5YoMB9iRTDzAVZKPj88lsnxYgljmF7zbjA-.Y7O&payer_email=titoriano%40gmail.com&txn_id=7PS80499ED0276817&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=605a1ca9a549c
+[2016-05-02 18:54 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:54:37 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=PoP50DMi9g5VK5t3bIKVMCqzRI6tLGsFnLQJ4omQV4iywr7M2PY-vIYcArAxS1dijvdUE-tSNaeXdUeHsDuznlgdI4pMNivx_cKBMxX5WiWnPl7w0hjCxbBpm1akoZHrr5EwD9hbwFIDXg6zJtBXA1LS_AUWIsLASRKcXpGtHCulonDpsG7XefSQnsKiQbTf7mNow-vb7gfflq6yJR8kVxF6jgWO-tf4wYP12ErOTAjJQw3ehFcAP89s7WaDFjsET161h5TKrd6UaTZID4g7v17PpkKsqGe19ELlSme6nPJi_Byk8hiaMFqxzmoTS8Pe4sRuxktxvAmuoJcPEDk4Ah5dQ9kA4cvcQYHHKnrqlIg0SPuDnVcIRJbVP2mvJpSMhjE-5kO3g0_dSP5rOQ83wBWT718lqOz2MM5ifYwt0bQNValcrgUCnkVrMuC; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:54:37 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:54:37 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462240477688242; path=/; expires=Thu, 26-Apr-46 01:54:37 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: dd23975ea3b20
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D3708037207%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:24:38 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:54 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A48%3A47+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AuRlNZvMOhdn8iDWY5YoMB9iRTDzAVZKPj88lsnxYgljmF7zbjA-.Y7O&payer_email=titoriano%40gmail.com&txn_id=7PS80499ED0276817&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=605a1ca9a549c 
+[2016-05-02 18:55 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A32%3A57+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AynlJ2zsmflH.74VEfIBZZJsEArxAgMVZhzCsirshXGVx5MmBEh47Bx.&payer_email=titoriano%40gmail.com&txn_id=9BN64316AV8700909&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=78bc632ebfda9
+[2016-05-02 18:55 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:55:14 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=R2fQYnlvFM2UhtBg_gQq5f-YfIs9nl3J905Hw_ISeOy_Uld_RSh5WYU_DEGampHTg5pW71AXvqkmYwEHpSwYWmjv2RJDnEo4YYRD95BnfPqe_gLm70JcR-IyFcjH4zdTXlO1NKg3LRUuEgY9mfAGkSA7ewTaegCwZ_8vKFfhouTeWbIR1lJ7PlOjAz1abP2ly9POsLxQjGNLhlqXypML3NHroIclgR4-s0digM493ggcuVQRgeNFoFqgHE2G0KpzoBU3KHp-ytuS5aA4t49KYHvs3s6rQbxSm0c_SANUYFArJv1_6tXwt7pQJSBK4Xqqmw-EIwAtIhbV-IddZtUj1jsWQeWITJz826xkYw8yxL2FZYQL1H8x75byD8AmeLa215k0-aPoT9b1vYJNaZviV30NLuQvMi_OmrL9dEbPT_SpKHxAsDXFs0na8Tm; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:55:15 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:55:15 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462240514774281; path=/; expires=Thu, 26-Apr-46 01:55:14 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: c5047532b8339
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D33892439%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:25:15 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:55 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A32%3A57+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AynlJ2zsmflH.74VEfIBZZJsEArxAgMVZhzCsirshXGVx5MmBEh47Bx.&payer_email=titoriano%40gmail.com&txn_id=9BN64316AV8700909&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=78bc632ebfda9 
+[2016-05-02 18:56 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A56%3A48+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAdS2CvWVk7TYg5ChGqaDVaXW4OtH&payer_email=titoriano%40gmail.com&txn_id=34R03377M9006172Y&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=1e76b39359aaf
+[2016-05-02 18:56 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 01:56:53 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=4Zk-MysaxkZnLRXVq1A3Xw5ThD8NjVC07WpybhPEst--_A6BPw6hgWl0pitXnPaQeDO3jDoATohA84r7a6sqgeatv9uzdtm32L8WFbn2SoN0PSOuFr67nwrpOAO9r6luj5UmK3Q2nw03k8WDaEaexidnJHgpyMOvk3mgLiH40_8Lsqzd9AnCfUjR1jhAefaLKcIl9EgoUckKrM3Fbt6kfT_Aca5m0UzTZ-4heztwlDsrpTvvEGnlwePsJD4EKyhmw39RrZQaIbTiTFkZEDxYRkQOsQSYfzv4BklcnQeYe73dsPWHNYswQ9GTgDUiXGY-eneS1o0c3PD787QVPtGNkKJbu0Fjj0ohjl0AJbtUd1HgAbu3NRi4eKaHz1lv4A90fs1u4Z9lLWVNHrz3GNMQzg_5IICP8wboIkwzufpO2Qf9c_yqSl1ZtyKYKHi; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 01:56:54 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 01:56:54 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462240613744917; path=/; expires=Thu, 26-Apr-46 01:56:53 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 5999be76b06a5
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D1694836823%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:26:54 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 18:56 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A56%3A48+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAdS2CvWVk7TYg5ChGqaDVaXW4OtH&payer_email=titoriano%40gmail.com&txn_id=34R03377M9006172Y&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=1e76b39359aaf 
+[2016-05-02 19:00 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A48%3A47+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AuRlNZvMOhdn8iDWY5YoMB9iRTDzAVZKPj88lsnxYgljmF7zbjA-.Y7O&payer_email=titoriano%40gmail.com&txn_id=7PS80499ED0276817&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=605a1ca9a549c
+[2016-05-02 19:00 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 02:00:06 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=_8NLRpdq_CT69yrNQh2bp37Ri2qGxkcv17LcZXU-8YibOyvP2ki8VrOZDhf2JIeOQ8MuFuSCL8D4mYXlvNdd2Z5AFhzDprd5wMc1sxmyZE8E1-qIbt3-u7hoAP70fto5rBmdu4Zt_5fM_KKrxfra39vzQtWTaEZHTDkG78MhQ7G9vphJNIlNSIsd2MnYjv5g2L3sD9gL5rbV4nAC5zhw-5dZsrBYTzOIOD4RViCx176CFlkbJwowiGhld9hDHHqGImEna3Kj79R267cCgerMiJf_sRpDHvsjLvNFREp8pwfyNknnRvg0NTvT7yz3-KnKGgbChZbXLYTtSRPPqMT7kzB11c09LSlQFTwPY1PU1WNPYQTxu8eM46WzzF7D-dMjmXSkrn8SYibhagCBZKw3zkrBgzgZerCsHHmGUDzxWV7slPvChdkD4xK9Dmy; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 02:00:06 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 02:00:06 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462240806594694; path=/; expires=Thu, 26-Apr-46 02:00:06 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: edb7f8938cdee
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D637937751%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:30:06 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 19:00 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A48%3A47+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AuRlNZvMOhdn8iDWY5YoMB9iRTDzAVZKPj88lsnxYgljmF7zbjA-.Y7O&payer_email=titoriano%40gmail.com&txn_id=7PS80499ED0276817&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=605a1ca9a549c 
+[2016-05-02 19:02 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A40%3A16+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=A--8MSCLabuvN8L.-MHjxC9uypBtATa2.zV.TON6MjKwEjFIDQGSR4n9&payer_email=titoriano%40gmail.com&txn_id=7GD71255TH449420L&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7ab3d18d4e814
+[2016-05-02 19:02 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 02:02:43 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=Bj78VuGwDKJH27VD-rsBWefmdYPWqzsT4UUKpiXdmmMDmRLj1WrBoCljEIpnWuD_hUxi90cUG_WL_yRmQRUfot-tWmQGutAV8pmgnEii7GIGwggoTDxwCPapbAlxJOvwSLXkQGjQ-8H9EJhj0asi7pZCHRkiPyK-LG42J1CCbWZCZnKMJr_FLYKdpMcrdYihFLXWreZ3158WhhGoZ6pxNi-wHQXaAXAXwnPcOKwQM2LfbIYihA7ZUwIEKiArPqFPjdokxyxAl1z6qZqlCIiCdfZl9PH7cJnp5W_w09RqRd0OeZjhkx5hvVX17cxSWof2jW4F9HpiNmcNZindduPRLSL-cN7hcDigIQKg9kj4f5LNK_uGjXDHPYhGyY2vYyQtInMdcZAvS0bhp4s6EIcgrv-uHbTMynd2TbDZit__E8uqa7KQth9kGZBOK5y; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 02:02:44 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 02:02:44 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462240963854568; path=/; expires=Thu, 26-Apr-46 02:02:43 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: c6943566ccdf2
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D3271960663%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:32:44 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 19:02 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A40%3A16+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=A--8MSCLabuvN8L.-MHjxC9uypBtATa2.zV.TON6MjKwEjFIDQGSR4n9&payer_email=titoriano%40gmail.com&txn_id=7GD71255TH449420L&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7ab3d18d4e814 
+[2016-05-02 19:03 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 880
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A19%3A13+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AZuRXZRkuk7frhfirfxxTkj0BDJGAXNv02pB-We8cYPzjp-sOte-vxQz&payer_email=titoriano%40gmail.com&txn_id=5MV38125TD039143G&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=e0c19c7d961c6
+[2016-05-02 19:03 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 02:03:27 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=tokC-oaQ9fnFUE4eAN0CQXmmPmLdhVkJK8qDBTIZLiEySwF7ktafe5MoqFSlKhC-tNysUYx-fg84BlYOeBmvcH3mqP-Mws--W38UfbZ5bsHYq6U3uo0PZPoJ-7JIhdfMmPgILYvuSmzCD2G47B0S6QGUdXV_dEsFfr2ZNiE-sTwSnUjU9-mRKtHWBRebErWYN-OnIQ0rZqBSiLVay-S8zswwBt5PWgBu8WKzeckyFqhlSandnY4wzuf_6c6xqLv5owGQ2634es6WmOUkf5hckQKH8c_R4EKTTfmMwYjGLFg1HjFi7jaHWKiwx_FrDIrE6QRs7x2ZKtgo8kUppgxekPteQErbCGt_vCokwkVVxPdJUDrgeuGZsl1788wmBhfjU4q9e0WtbzncgMrZProwXPuKDvdgWGJpkeutDp5XJOmvcZrIKbwKVMfdxz4; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 02:03:27 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 02:03:27 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462241007543794; path=/; expires=Thu, 26-Apr-46 02:03:27 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: b17cf62280096
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D4010158167%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:33:27 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 19:03 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A19%3A13+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AZuRXZRkuk7frhfirfxxTkj0BDJGAXNv02pB-We8cYPzjp-sOte-vxQz&payer_email=titoriano%40gmail.com&txn_id=5MV38125TD039143G&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=e0c19c7d961c6 
+[2016-05-02 19:05 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 880
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A22%3A15+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAndaKlhSwwLsN0EuDS3JWkQgiu3Q&payer_email=titoriano%40gmail.com&txn_id=10A93592WW303550P&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7451aa9abff58
+[2016-05-02 19:05 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 02:05:57 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=6rQ0Vfc7JEQ8j0XcDOCBVdydOeHRucbFYqaCCn-snVS0fJVM1RFG34VHFvHrEbjClvhNlGmygy8pFeJsyOeuZqN4nSR8SZUPGkwuK7yisnG8pxEgaL5p0MBcJgWtvmMft9vS4LlQoF5kVFM6AFeVP4RshBgPV1abn7gvANAQvxiyVGJoDNYVaQHddRVi74ofvP_3q9GKnYQVciz91V7o2dlfVzpqg99UmTaxqtE_qVWCYxlVZEFJSZc_ie7e7dKcgsyRyknC8mAAMjIx3H_2eIjXic-KfV5tEs0b2M4kGRV_frMBfysUx7ffZ3lCVwFmuCKC3dYKEiFpFX8WKsJ0X3Vyuf0-HiCIu4ZvMtw_SecPgBnCdjdPj2MlReLu7I44cOVnN2ow5UuxsYB7o0glxw_2VER9lksPUM-vELZgHRxnpr_kLxJ5_vEM7Fa; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 02:05:57 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 02:05:57 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462241157574221; path=/; expires=Thu, 26-Apr-46 02:05:57 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 62830a8d882dd
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2231838807%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:35:57 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 19:05 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Ineligible&payer_id=3436P96M2SVLC&tax=0.00&payment_date=18%3A22%3A15+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&first_name=Heather&mc_fee=0.01&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&quantity=1&verify_sign=AiPC9BjkCyDFQXbSkoZcgqH3hpacAndaKlhSwwLsN0EuDS3JWkQgiu3Q&payer_email=titoriano%40gmail.com&txn_id=10A93592WW303550P&payment_type=instant&btn_id=3326359&last_name=Winter&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&handling_amount=0.00&shipping_method=Default&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=7451aa9abff58 
+[2016-05-02 19:16 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A32%3A57+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AynlJ2zsmflH.74VEfIBZZJsEArxAgMVZhzCsirshXGVx5MmBEh47Bx.&payer_email=titoriano%40gmail.com&txn_id=9BN64316AV8700909&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=78bc632ebfda9
+[2016-05-02 19:16 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 02:16:47 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=6Zy6dx7hc93fT6DmHou7IpOwoFbVAPG38K_Xz5fisMjyGzVW8apwn6_ydy5wCLDKfWpgfo14NS15Lg0N0grvryDAdclN-TejYuGduMQ5Sgqn7OTvkAj71TCeT9ph7wyE5hq_dgGwoJhiu2AjQ9_Ro93A4Ab6V_ogPeBtXb5Q8IHKbGRXIrbXreaUz7XEgrt3AiH7y0xAGH6o3g0Qve_5lKABkp-eRKou0DJu9xJz-TqiR31hU30cVmOM_85fH2kHOYv-w8m1lbQH3sekwN60dtuI_2keZftPa9dpOKXxGzrzdE7ZX9KHRa0GHUTY0BE6Z3J-Zr1T-0cq-7Edf1DdTzR-w70oBFiwZG9fdGNbYB5oH-_1PhDiyoAq86dlw-zaWdhO8sxE5j18y_bLU9voF6YkzMengD-B88G04wqB-xRzHq_y_de2r2apVHq; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 02:16:47 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 02:16:47 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462241807507329; path=/; expires=Thu, 26-Apr-46 02:16:47 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 2521ca0d76ff5
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D252323927%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 02:46:47 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 19:16 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=18%3A32%3A57+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AynlJ2zsmflH.74VEfIBZZJsEArxAgMVZhzCsirshXGVx5MmBEh47Bx.&payer_email=titoriano%40gmail.com&txn_id=9BN64316AV8700909&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=78bc632ebfda9 
+[2016-05-02 19:36 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1067
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=19%3A36%3A18+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AlA5DB7geo5FOnJWcWYrbt7ZnmhTA8CMLHXHWjTtsRrkShICjz-w00XL&payer_email=titoriano%40gmail.com&txn_id=5C314346H3599215X&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=9f4a254f20bfa
+[2016-05-02 19:36 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 02:36:23 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=v5BmNOSvg7BZJvTu-5xzlFcxEa4epGeQdNJnNp-6_6yjMekPj16E31GtQqeruj6tU-8trcIhXu1EKyM2gmp27FrBtXayym7_YXf3OSgjZC6A42Fb4-9SuI_D_y_uNyqABgD20KC07SKcGqPSnemBH5L0CpM_7t0YcRsIc5q_qJ3tSo-XNV_mkEhC5RT8jDXWqXSxDN5j5TU0eem5IL43m6ieGgf6cUvh4nBxO62nDwmZvN4GSVsTIj2aHwaAUGoWfQj9jgMVWhD4IsxOW06BeNsDLYQl08oavfokLQP9KRBthBdT67dG1maeJXOus9Ijf3cRpErI5bmAjntRf1-pTnWlXm-Sktnb4yqAPPBkQble1BaJtMRq7i0syytZ80rsnsvQDtU5PrzYYyzF1dksltjqVMkg52rT2XvgzWXLk0wxzX0OEKQZCDNYiYO; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 02:36:23 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 02:36:23 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462242983629180; path=/; expires=Thu, 26-Apr-46 02:36:23 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 2f860eee94b36
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2802722903%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 03:06:24 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 19:36 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=19%3A36%3A18+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AlA5DB7geo5FOnJWcWYrbt7ZnmhTA8CMLHXHWjTtsRrkShICjz-w00XL&payer_email=titoriano%40gmail.com&txn_id=5C314346H3599215X&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=9f4a254f20bfa 
+[2016-05-02 19:38 America/Los_Angeles] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1065
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=19%3A38%3A35+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AI36sk2Aln3iC.t.mla1wMizPRcQA44WYgv-tTF1oNFr3mz0jYC7FNgu&payer_email=titoriano%40gmail.com&txn_id=8KH106015R0432744&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=34adb7471d4
+[2016-05-02 19:38 America/Los_Angeles] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Tue, 03 May 2016 02:38:42 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=p0DXijacBFWtmkyD89srT_6u3Cyi5e5F3212YjJI_sAHhx-Hq24q6GmpaV2j8znINUAsr0KY6D-VjxRtRawSpwS5v4a59scYrYegaOcZymfdQLUO4VRvvm7XtmWW4F56l8HrcREo2RfLEQlBPk-GsvcPOI8YME-LYFHrmhjzNsFtLdZPBC64Qb3vr00CeGgamQf4t_i3YreVMeNoirtyKo2cg9PjaXtO8Byueedl4SIgoxTLrwkotZpy8K6oY50p8GMSjEjRS2t_2a0yXg9b4icCy3N_x7WBzXoJOT-IrZnlLlZCVxWC2P8Zfv_OncjfUlcg9Yozc9D-pBCfb53GJqy54g0xbb4ZkRCQN6mmP2LwpYJ2wL6bZ4kiX73lsdOt8c_7zP5vJSTddki1zS9yNvQNFWu4LG_0uxslMfTDphL77RlhzP81G9vXy5q; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 01-May-2026 02:38:42 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 03-May-2018 02:38:42 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1462243122266354; path=/; expires=Thu, 26-Apr-46 02:38:42 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 3a93ed663bfcb
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D839854167%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 03 May 2016 03:08:42 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2016-05-02 19:38 America/Los_Angeles] Verified IPN: cmd=_notify-validate&mc_gross=0.01&protection_eligibility=Eligible&address_status=confirmed&payer_id=3436P96M2SVLC&tax=0.00&address_street=1+Main+St&payment_date=19%3A38%3A35+May+02%2C+2016+PDT&payment_status=Completed&charset=windows-1252&address_zip=95131&first_name=Heather&mc_fee=0.01&address_country_code=US&address_name=Heather+Winter&notify_version=3.8&custom=&payer_status=verified&business=jhartma0%40georgetowncollege.edu&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AI36sk2Aln3iC.t.mla1wMizPRcQA44WYgv-tTF1oNFr3mz0jYC7FNgu&payer_email=titoriano%40gmail.com&txn_id=8KH106015R0432744&payment_type=instant&btn_id=3326359&last_name=Winter&address_state=CA&receiver_email=jhartma0%40georgetowncollege.edu&payment_fee=0.01&shipping_discount=0.00&insurance_amount=0.00&receiver_id=9BDA796PF29JY&txn_type=web_accept&item_name=QuizKey&discount=0.00&mc_currency=USD&item_number=&residence_country=US&test_ipn=1&shipping_method=Default&handling_amount=0.00&transaction_subject=&payment_gross=0.01&shipping=0.00&ipn_track_id=34adb7471d4 

@@ -1,0 +1,278 @@
+Use Quiz;
+/************ CONNECTED OK ************/
+key: q0 value: Gender:
+key: a0 value: Male
+key: q1 value: Age:
+key: a1 value: 24-30
+key: q2 value: Number of years studying primary voice/instrument:
+key: a2 value: 16-20
+key: q3 value: Age when starting musical instruction of any kind:
+key: a3 value: 12-13
+key: q4 value: Age when starting musical study of primary instrument:
+key: a4 value: 12-13
+key: q5 value: Are you currently (select one):
+key: a5 value: Part-time professional musician
+key: q6 value: Primary voice type or instrument:
+key: a6 value: Keyboard
+key: q7 value: specificInstrument
+key: a7 value: keytar
+key: q8 value: Number of professional performances given (approximate):
+key: a8 value: 21-25
+key: q9 value: Number of total performances given (approximate):
+key: a9 value: 31-40
+key: q10 value: Do you have medical conditions impacting your ability to sing/play? (long-term injury, asthma, TMJD, etc.)
+key: a10 value: No
+key: q11 value: Number of alcoholic drinks per month:
+key: a11 value: 11-20
+key: q12 value: Use of any recreational drugs:
+key: a12 value: No
+key: q13 value: Do you take any blood pressure or anxiety medication(s):
+key: a13 value: No
+key: q14 value: Professional plan/career goals:
+key: a14 value: hello class
+select id from DemographicQuestion where question='Gender:';
+select id from DemographicQuestion where question='Age:';
+select id from DemographicQuestion where question='Number of years studying primary voice/instrument:';
+select id from DemographicQuestion where question='Age when starting musical instruction of any kind:';
+select id from DemographicQuestion where question='Age when starting musical study of primary instrument:';
+select id from DemographicQuestion where question='Are you currently (select one):';
+select id from DemographicQuestion where question='Primary voice type or instrument:';
+select id from DemographicQuestion where question='specificInstrument';
+select id from DemographicQuestion where question='Number of professional performances given (approximate):';
+select id from DemographicQuestion where question='Number of total performances given (approximate):';
+select id from DemographicQuestion where question='Do you have medical conditions impacting your ability to sing/play? (long-term injury, asthma, TMJD, etc.)';
+select id from DemographicQuestion where question='Number of alcoholic drinks per month:';
+select id from DemographicQuestion where question='Use of any recreational drugs:';
+select id from DemographicQuestion where question='Do you take any blood pressure or anxiety medication(s):';
+select id from DemographicQuestion where question='Professional plan/career goals:';
+update DemographicAnswer set answer = hello class where license_id = 11844 and demographic_question_id = 14;
+/************ CONNECTED OK ************/
+key: q0 value: Gender:
+key: a0 value: Male
+key: q1 value: Age:
+key: a1 value: 41-50
+key: q2 value: Number of years studying primary voice/instrument:
+key: a2 value: 11-15
+key: q3 value: Age when starting musical instruction of any kind:
+key: a3 value: 6-7
+key: q4 value: Age when starting musical study of primary instrument:
+key: a4 value: 8-9
+key: q5 value: Are you currently (select one):
+key: a5 value: Masters music student
+key: q6 value: Primary voice type or instrument:
+key: a6 value: Percussion
+key: q7 value: specificInstrument
+key: a7 value: bum instrument
+key: q8 value: Number of professional performances given (approximate):
+key: a8 value: 0-5
+key: q9 value: Number of total performances given (approximate):
+key: a9 value: 6-10
+key: q10 value: Do you have medical conditions impacting your ability to sing/play? (long-term injury, asthma, TMJD, etc.)
+key: a10 value: No
+key: q11 value: Number of alcoholic drinks per month:
+key: a11 value: Over 50
+key: q12 value: Use of any recreational drugs:
+key: a12 value: Yes
+key: q13 value: Do you take any blood pressure or anxiety medication(s):
+key: a13 value: No
+key: q14 value: Professional plan/career goals:
+key: a14 value: I'm a blast from the past.
+select id from DemographicQuestion where question='Gender:';
+select id from DemographicQuestion where question='Age:';
+select id from DemographicQuestion where question='Number of years studying primary voice/instrument:';
+select id from DemographicQuestion where question='Age when starting musical instruction of any kind:';
+select id from DemographicQuestion where question='Age when starting musical study of primary instrument:';
+select id from DemographicQuestion where question='Are you currently (select one):';
+select id from DemographicQuestion where question='Primary voice type or instrument:';
+select id from DemographicQuestion where question='specificInstrument';
+select id from DemographicQuestion where question='Number of professional performances given (approximate):';
+select id from DemographicQuestion where question='Number of total performances given (approximate):';
+select id from DemographicQuestion where question='Do you have medical conditions impacting your ability to sing/play? (long-term injury, asthma, TMJD, etc.)';
+select id from DemographicQuestion where question='Number of alcoholic drinks per month:';
+select id from DemographicQuestion where question='Use of any recreational drugs:';
+select id from DemographicQuestion where question='Do you take any blood pressure or anxiety medication(s):';
+select id from DemographicQuestion where question='Professional plan/career goals:';
+update DemographicAnswer set answer = 'I'm a blast from the past.' where license_id = 11844 and demographic_question_id = 14;
+/************ CONNECTED OK ************/
+key: q0 value: Gender:
+key: a0 value: Male
+key: q1 value: Age:
+key: a1 value: 31-40
+key: q2 value: Number of years studying primary voice/instrument:
+key: a2 value: 3-5
+key: q3 value: Age when starting musical instruction of any kind:
+key: a3 value: 6-7
+key: q4 value: Age when starting musical study of primary instrument:
+key: a4 value: 8-9
+key: q5 value: Are you currently (select one):
+key: a5 value: Masters music student
+key: q6 value: Primary voice type or instrument:
+key: a6 value: Brass
+key: q7 value: specificInstrument
+key: a7 value: 12312313
+key: q8 value: Number of professional performances given (approximate):
+key: a8 value: 6-10
+key: q9 value: Number of total performances given (approximate):
+key: a9 value: 31-40
+key: q10 value: Do you have medical conditions impacting your ability to sing/play? (long-term injury, asthma, TMJD, etc.)
+key: a10 value: No
+key: q11 value: Number of alcoholic drinks per month:
+key: a11 value: 21-30
+key: q12 value: Use of any recreational drugs:
+key: a12 value: No
+key: q13 value: Do you take any blood pressure or anxiety medication(s):
+key: a13 value: No
+key: q14 value: Professional plan/career goals:
+select id from DemographicQuestion where question='Gender:';
+update DemographicAnswer set answer = 'Male' where license_id = 11844 and demographic_question_id = 1;
+select id from DemographicQuestion where question='Age:';
+update DemographicAnswer set answer = '31-40' where license_id = 11844 and demographic_question_id = 2;
+select id from DemographicQuestion where question='Number of years studying primary voice/instrument:';
+update DemographicAnswer set answer = '3-5' where license_id = 11844 and demographic_question_id = 3;
+select id from DemographicQuestion where question='Age when starting musical instruction of any kind:';
+update DemographicAnswer set answer = '6-7' where license_id = 11844 and demographic_question_id = 4;
+select id from DemographicQuestion where question='Age when starting musical study of primary instrument:';
+update DemographicAnswer set answer = '8-9' where license_id = 11844 and demographic_question_id = 5;
+select id from DemographicQuestion where question='Are you currently (select one):';
+update DemographicAnswer set answer = 'Masters music student' where license_id = 11844 and demographic_question_id = 6;
+select id from DemographicQuestion where question='Primary voice type or instrument:';
+update DemographicAnswer set answer = 'Brass' where license_id = 11844 and demographic_question_id = 7;
+select id from DemographicQuestion where question='specificInstrument';
+update DemographicAnswer set answer = '12312313' where license_id = 11844 and demographic_question_id = ;
+select id from DemographicQuestion where question='Number of professional performances given (approximate):';
+update DemographicAnswer set answer = '6-10' where license_id = 11844 and demographic_question_id = 8;
+select id from DemographicQuestion where question='Number of total performances given (approximate):';
+update DemographicAnswer set answer = '31-40' where license_id = 11844 and demographic_question_id = 9;
+select id from DemographicQuestion where question='Do you have medical conditions impacting your ability to sing/play? (long-term injury, asthma, TMJD, etc.)';
+update DemographicAnswer set answer = 'No' where license_id = 11844 and demographic_question_id = 10;
+select id from DemographicQuestion where question='Number of alcoholic drinks per month:';
+update DemographicAnswer set answer = '21-30' where license_id = 11844 and demographic_question_id = 11;
+select id from DemographicQuestion where question='Use of any recreational drugs:';
+update DemographicAnswer set answer = 'No' where license_id = 11844 and demographic_question_id = 12;
+select id from DemographicQuestion where question='Do you take any blood pressure or anxiety medication(s):';
+update DemographicAnswer set answer = 'No' where license_id = 11844 and demographic_question_id = 13;
+select id from DemographicQuestion where question='Professional plan/career goals:';
+update DemographicAnswer set answer = 'I'm a blast from the past.' where license_id = 11844 and demographic_question_id = 14;
+/************ CONNECTED OK ************/
+key: q0 value: Gender:
+key: a0 value: Male
+key: q1 value: Age:
+key: a1 value: 31-40
+key: q2 value: Number of years studying primary voice/instrument:
+key: a2 value: 11-15
+key: q3 value: Age when starting musical instruction of any kind:
+key: a3 value: 8-9
+key: q4 value: Age when starting musical study of primary instrument:
+key: a4 value: 12-13
+key: q5 value: Are you currently (select one):
+key: a5 value: Full-time professional musician in early career stage
+key: q6 value: Primary voice type or instrument:
+key: a6 value: Keyboard
+key: q7 value: specificInstrument
+key: a7 value: heheehehehehe
+key: q8 value: Number of professional performances given (approximate):
+key: a8 value: 16-20
+key: q9 value: Number of total performances given (approximate):
+key: a9 value: 31-40
+key: q10 value: Do you have medical conditions impacting your ability to sing/play? (long-term injury, asthma, TMJD, etc.)
+key: a10 value: No
+key: q11 value: Number of alcoholic drinks per month:
+key: a11 value: 11-20
+key: q12 value: Use of any recreational drugs:
+key: a12 value: No
+key: q13 value: Do you take any blood pressure or anxiety medication(s):
+key: a13 value: No
+key: q14 value: Professional plan/career goals:
+'
+select id from DemographicQuestion where question='Gender:';
+update DemographicAnswer set answer = 'Male' where license_id = 11844 and demographic_question_id = 1;
+select id from DemographicQuestion where question='Age:';
+update DemographicAnswer set answer = '31-40' where license_id = 11844 and demographic_question_id = 2;
+select id from DemographicQuestion where question='Number of years studying primary voice/instrument:';
+update DemographicAnswer set answer = '11-15' where license_id = 11844 and demographic_question_id = 3;
+select id from DemographicQuestion where question='Age when starting musical instruction of any kind:';
+update DemographicAnswer set answer = '8-9' where license_id = 11844 and demographic_question_id = 4;
+select id from DemographicQuestion where question='Age when starting musical study of primary instrument:';
+update DemographicAnswer set answer = '12-13' where license_id = 11844 and demographic_question_id = 5;
+select id from DemographicQuestion where question='Are you currently (select one):';
+update DemographicAnswer set answer = 'Full-time professional musician in early career stage' where license_id = 11844 and demographic_question_id = 6;
+select id from DemographicQuestion where question='Primary voice type or instrument:';
+update DemographicAnswer set answer = 'Keyboard' where license_id = 11844 and demographic_question_id = 7;
+select id from DemographicQuestion where question='specificInstrument';
+update DemographicAnswer set answer = 'heheehehehehe' where license_id = 11844 and demographic_question_id = ;
+select id from DemographicQuestion where question='Number of professional performances given (approximate):';
+update DemographicAnswer set answer = '16-20' where license_id = 11844 and demographic_question_id = 8;
+select id from DemographicQuestion where question='Number of total performances given (approximate):';
+update DemographicAnswer set answer = '31-40' where license_id = 11844 and demographic_question_id = 9;
+select id from DemographicQuestion where question='Do you have medical conditions impacting your ability to sing/play? (long-term injury, asthma, TMJD, etc.)';
+update DemographicAnswer set answer = 'No' where license_id = 11844 and demographic_question_id = 10;
+select id from DemographicQuestion where question='Number of alcoholic drinks per month:';
+update DemographicAnswer set answer = '11-20' where license_id = 11844 and demographic_question_id = 11;
+select id from DemographicQuestion where question='Use of any recreational drugs:';
+update DemographicAnswer set answer = 'No' where license_id = 11844 and demographic_question_id = 12;
+select id from DemographicQuestion where question='Do you take any blood pressure or anxiety medication(s):';
+update DemographicAnswer set answer = 'No' where license_id = 11844 and demographic_question_id = 13;
+select id from DemographicQuestion where question='Professional plan/career goals:';
+update DemographicAnswer set answer = 'I\'m a blast from the past.' where license_id = 11844 and demographic_question_id = 14;
+/************ CONNECTED OK ************/
+key: q0 value: Gender:
+key: a0 value: Male
+key: q1 value: Age:
+key: a1 value: 31-40
+key: q2 value: Number of years studying primary voice/instrument:
+key: a2 value: 21-25
+key: q3 value: Age when starting musical instruction of any kind:
+key: a3 value: 6-7
+key: q4 value: Age when starting musical study of primary instrument:
+key: a4 value: 6-7
+key: q5 value: Are you currently (select one):
+key: a5 value: Undergraduate music major
+key: q6 value: Primary voice type or instrument:
+key: a6 value: Percussion
+key: q7 value: specificInstrument
+key: a7 value: 890890
+key: q8 value: Number of professional performances given (approximate):
+key: a8 value: 16-20
+key: q9 value: Number of total performances given (approximate):
+key: a9 value: 51-60
+key: q10 value: Do you have medical conditions impacting your ability to sing/play? (long-term injury, asthma, TMJD, etc.)
+key: a10 value: No
+key: q11 value: Number of alcoholic drinks per month:
+key: a11 value: 31-40
+key: q12 value: Use of any recreational drugs:
+key: a12 value: No
+key: q13 value: Do you take any blood pressure or anxiety medication(s):
+key: a13 value: No
+key: q14 value: Professional plan/career goals:
+key: a14 value: I'm a blast from the past's.
+update DemographicAnswer set answer = 'Male' where license_id = 11844 and demographic_question_id = 1;
+update DemographicAnswer set answer = '31-40' where license_id = 11844 and demographic_question_id = 2;
+update DemographicAnswer set answer = '21-25' where license_id = 11844 and demographic_question_id = 3;
+update DemographicAnswer set answer = '6-7' where license_id = 11844 and demographic_question_id = 4;
+update DemographicAnswer set answer = '6-7' where license_id = 11844 and demographic_question_id = 5;
+update DemographicAnswer set answer = 'Undergraduate music major' where license_id = 11844 and demographic_question_id = 6;
+update DemographicAnswer set answer = 'Percussion' where license_id = 11844 and demographic_question_id = 7;
+update DemographicAnswer set answer = '890890' where license_id = 11844 and demographic_question_id = ;
+update DemographicAnswer set answer = '16-20' where license_id = 11844 and demographic_question_id = 8;
+update DemographicAnswer set answer = '51-60' where license_id = 11844 and demographic_question_id = 9;
+update DemographicAnswer set answer = 'No' where license_id = 11844 and demographic_question_id = 10;
+update DemographicAnswer set answer = '31-40' where license_id = 11844 and demographic_question_id = 11;
+update DemographicAnswer set answer = 'No' where license_id = 11844 and demographic_question_id = 12;
+update DemographicAnswer set answer = 'No' where license_id = 11844 and demographic_question_id = 13;
+update DemographicAnswer set answer = 'I\'m a blast from the past\'s.' where license_id = 11844 and demographic_question_id = 14;
+/************ CONNECTED OK ************/
+update DemographicAnswer set answer = 'Male' where license_id = 11844 and demographic_question_id = 1;
+update DemographicAnswer set answer = '31-40' where license_id = 11844 and demographic_question_id = 2;
+update DemographicAnswer set answer = '16-20' where license_id = 11844 and demographic_question_id = 3;
+update DemographicAnswer set answer = '10-11' where license_id = 11844 and demographic_question_id = 4;
+update DemographicAnswer set answer = '12-13' where license_id = 11844 and demographic_question_id = 5;
+update DemographicAnswer set answer = 'Part-time professional musician' where license_id = 11844 and demographic_question_id = 6;
+update DemographicAnswer set answer = 'Vocalist' where license_id = 11844 and demographic_question_id = 7;
+update DemographicAnswer set answer = 'hahajfdslks' where license_id = 11844 and demographic_question_id = ;
+update DemographicAnswer set answer = '26-30' where license_id = 11844 and demographic_question_id = 8;
+update DemographicAnswer set answer = '31-40' where license_id = 11844 and demographic_question_id = 9;
+update DemographicAnswer set answer = 'No' where license_id = 11844 and demographic_question_id = 10;
+update DemographicAnswer set answer = '11-20' where license_id = 11844 and demographic_question_id = 11;
+update DemographicAnswer set answer = 'No' where license_id = 11844 and demographic_question_id = 12;
+update DemographicAnswer set answer = 'No' where license_id = 11844 and demographic_question_id = 13;
+update DemographicAnswer set answer = 'I\'m you\'re' where license_id = 11844 and demographic_question_id = 14;

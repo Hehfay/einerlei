@@ -1,0 +1,31 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
+/* Compute Results */
+$mysqli = new mysqli("", "jhartma0", "jhartma0", "Quiz");
+
+/* Sub Categories First */
+$query1 = "select count(*) from LikertAnswerSubCategory;";
+$result = $mysqli->($query1);
+$num_sub_categories = $result->fetch_row();
+
+for($i = 1; $i < $num_sub_categories[0]; $i++)
+{
+  $query0 = "select LikertAnswer.answer from LikertAnswer join LikertQuestion on LikertAnswer.question_id = LikertQuestion.id and LikertQuestion.sub_category_id1 = $i and LikertAnswer.license_id = 11844;"; /*11844 should be session variable*/
+  /*Compute average*/
+  $result1 = $mysqli->query($query0);
+  $k_max = $result1->num_rows();
+  $average = 0;
+  while($score = $result1->fetch_row())
+  {
+    $average += $score[0];
+  }
+  $average /= $k_max;
+  printf("Sub Category ID: %d\n Average: %d\n", $i, $average);
+
+  /*Store results*/
+  $query2 = "insert into SubCategoryResults(license_id, sub_category_id, result) values(11844, $i, $average);";
+  printf("Query: %s\n", $query2);
+}
+?>

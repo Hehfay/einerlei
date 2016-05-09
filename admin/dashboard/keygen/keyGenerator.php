@@ -5,25 +5,20 @@ if( !isset($_SESSION["loggedin"]) ){
   header('Location: ../../');
 }
 
+require_once '../../../../performanceanxietyquestionnaire.com/src/login.php';
 
 $count = $_POST["keycount"];
 
-$host = "";
-$username = "tbroadus";
-$password = "tbroadus";
-$database = "Quiz";
-
-$mysqli = new mysqli($host, $username, $password, $database);
+$mysqli = new mysqli($host, $user, $pass, $dtbs);
 
 if(mysqli_connect_errno()){
-  
   echo "<p>";
   echo "Connect Error: ".mysqli_connect_errno();
   echo "</p>";
 }
 else{
   
-  for($i=0; $i < $count; $i++){
+  for($i=0; $i < $count; $i++) {
   
     $licKey = keygen();
     $hashedKey = hash("md5", $licKey);
@@ -32,7 +27,7 @@ else{
 
     $result = $mysqli->query($query);
 
-    while( $result == ""){
+    while( $result->num_rows != 0){
     
       //echo "<br>".$hashedKey;
       $licKey = keygen();
@@ -54,18 +49,32 @@ else{
 
     if($result){
       
-      $keyFile .="\n".$licKey;
-      $keyOutput .="<br>".$licKey;
+      $keyFile .= $licKey."\n";
+      $keyOutput .= $licKey."<br>";
 
-      //echo "<br>successfully inserted";
+      $get_id = "select id from License where licenseKey = '$hashedKey';";
+      $result = $mysqli->query($get_id);
+      $key_id = $result->fetch_array();
+
+      /*
+      for($i = 1; $i <= 15; $i++)
+      {
+        $query1 = "insert into DemographicAnswer(license_id, demographic_question_id, answer) values($key_id[0], $i, '');";
+        $mysqli->query($query1);
+      }
+
+      for($i = 1718; $i <= 1874; $i++)
+      {
+        $query1 = "insert into LikertAnswer(license_id, question_id, answer) values($key_id[0], $i, 6);";
+        $mysqli->query($query1);
+      }
+       */
 
     }
     else{
     
       echo "<br>query unsuccessful";
-
     }
-
   }
 
   $_SESSION['keyOutput'] = $keyOutput;
@@ -75,7 +84,7 @@ else{
 }
 function keygen(){
 
-  $key = ' ';
+  $key = '';
   $length = 10;
 
   $inputs = array_merge( range("a","z"), range(0,9), range("A","Z") );

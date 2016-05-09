@@ -1,74 +1,23 @@
-<html lang = "en">
-
-   <head>
-      <title>Performanc Anxiety Admin Page</title>
-      <link href = "css/bootstrap.min.css" rel = "stylesheet">
-
-      <style>
-         body {
-            padding-top: 40px;
-            padding-bottom: 40px;
-         }
-
-         .form-signin {
-            max-width: 330px;
-            padding: 15px;
-            margin: 0 auto;
-         }
-
-         .form-signin .form-signin-heading,
-         .form-signin .checkbox {
-            margin-bottom: 10px;
-         }
-
-         .form-signin .checkbox {
-            font-weight: normal;
-         }
-
-         .form-signin .form-control {
-            position: relative;
-            height: auto;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            padding: 10px;
-            font-size: 16px;
-         }
-
-         .form-signin .form-control:focus {
-            z-index: 2;
-         }
-
-         .form-signin input[type="email"] {
-            margin-bottom: -1px;
-            border-bottom-right-radius: 0;
-            border-bottom-left-radius: 0;
-         }
-
-         .form-signin input[type="password"] {
-            margin-bottom: 10px;
-            border-top-left-radius: 0;
-            border-top-right-radius: 0;
-         }
-
-         h2{
-            text-align: center;
-         }
-      </style>
-
-   </head>
-
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="../style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+</head>
+<body>
+<section>
+  <img src='../../images/einerlei_publishing_site001005.png'>
+</section>
+  <div id="container">
+  <div id="content">
    <body>
-
-      <h2>Performance Anxiety Quiz Admin Page</h2>
-      <div class = "container form-signin">
+      <h1>Admin Login</h1>
 
          <?php
             $msg = '';
          ?>
-      </div> <!-- /container -->
-
-      <div class = "container">
 
          <form class = "form-signin" role = "form"
             action = "./dashboard/authenticate.php"
@@ -76,15 +25,23 @@
 
             <h4 class = "form-signin-heading"><?php echo $msg; ?></h4>
             <input type = "text" class = "form-control"
-               name = "username" placeholder = "username"
+               name = "username" placeholder = "email"
                required autofocus></br>
             <input type = "password" class = "form-control"
                name = "password" placeholder = "password" required>
-            <button class = "btn btn-lg btn-primary btn-block" type = "submit"
+            <button class = "button-no-float" type = "submit"
                name = "login">Login</button>
          </form>
-
+        <form action="reset.php" method="post">
+          <input type="hidden" name="user-change-password" value="true">
+          <input type = "submit" name = "login" id="button-no-float" value="Recover Password">
+        </form>
+      </div>
       </div>
 
    </body>
+<footer>
+  <h1>Einerlei Publishing</h1>
+  <p>general@einerleipublishing.com | <a href="http://einerleipublishing.com">EinerleiPublishing.com</a></p>
+</footer>
 </html>
